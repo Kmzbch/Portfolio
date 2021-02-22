@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import './App.css'
+import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import Drawer from './components/drawer/Drawer'
+import Home from './components/home/Home'
+import About from './components/about/About'
+import Projects from './components/projects/Projects'
+import Resume from './components/resume/Resume'
+import Contact from './components/contact/Contact'
+import NotFound from './components/404/NotFound'
 
 function App() {
+  console.log('Welcome to Kei\'s portfolio! ');
+  console.log('This portfolio is build with React.')
+
+  //
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Drawer/>      
+          <Route exact path={'/'} component={Home}/>
+          <Route exact path={'/about'} component={About}/>
+          <Route exact path={'/projects'} component={Projects}/>
+          <Route exact path={'/resume'} component={Resume}/>
+          <Route exact path={'/contact'} component={Contact}/>
+          <Route exact path='*' component={NotFound}/>
+    </Router>
+
   );
 }
 
