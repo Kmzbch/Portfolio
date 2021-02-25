@@ -9,6 +9,36 @@
 	pointer-events: none;
 }
 
+/* Common Styles */
+.page {
+	position: absolute;
+	top: 0;
+	left: 20vw;
+	right: 0;
+}
+  
+.divider {
+	border: 1px solid #fafafa;
+	width: 200px;
+	margin: 20px 0 0;
+  }
+  
+  .center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  /* Accent color? */
+  /* .color {
+	color: #c5b358;
+  } */
+  
+
+  
+
+
+
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
 		animation: App-logo-spin infinite 20s linear;
