@@ -39,10 +39,10 @@ export default class About extends Component {
 										I'm a Full-Stack developer based in Toronto, ON. I majored in Software
 										Engineering and gained professional experiences in. I have a serious passion for
 										X Y and Z. I am currently seeking a software engineering/full-stack developer
-										position where XXXXX is valued.
+										position where ????? is valued.
 									</Typography>
 								</Grid>
-								<Grid item xs={5} sm={5}>
+								<Grid style={{ textAlign: 'center' }} item xs={5} sm={5}>
 									<img className={'profile-image'} src="./images/about/profile.jpg" alt="profile" />
 								</Grid>
 							</Grid>
@@ -58,7 +58,7 @@ export default class About extends Component {
 										I'm a Full-Stack developer based in Toronto, ON. I majored in Software
 										Engineering and gained professional experiences in. I have a serious passion for
 										X Y and Z. I am currently seeking a software engineering/full-stack developer
-										position where XXXXX is valued.
+										position where ???? is valued.
 									</Typography>
 								</Grid>
 								<Grid item xs={5} sm={5}>
