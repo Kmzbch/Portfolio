@@ -23,7 +23,7 @@ export default class Projects extends Component {
 						{/* HEADER */}
 
 						{/* CAPTION */}
-						<Typography className="header" variant="h4">
+						<Typography className="header" variant="h3">
 							PROJECTS
 						</Typography>
 

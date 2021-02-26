@@ -15,7 +15,7 @@ export default class Resume extends Component {
 				<section id="" className="resume" data-section="">
 					<div className="view main content">
 						{/* CAPTION */}
-						<Typography className="header" variant="h4">
+						<Typography className="header" variant="h3">
 							RESUME
 						</Typography>
 

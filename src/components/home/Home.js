@@ -12,10 +12,11 @@ export default class Home extends Component {
 			<div className={'page'}>
 				<section id="" className="home" data-section="">
 					<div className={'view main content'}>
-						<hr className={'divider center'} />
+						<Typography variant="h2" style={{ paddingTop: '30vh' }}>
+							KEI MIZUBUCHI
+						</Typography>
 					</div>
 				</section>
-				aaaa
 			</div>
 		);
 	}

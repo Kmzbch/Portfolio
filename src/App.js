@@ -10,6 +10,7 @@ import Projects from './components/projects/Projects';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
 import NotFound from './components/404/NotFound';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
 	console.log("Welcome to Kei's portfolio! ");
@@ -18,8 +19,14 @@ function App() {
 	//
 	return (
 		<Router basename={process.env.PUBLIC_URL}>
-			<Drawer />
-			<Route
+			{/* <Drawer /> */}
+			<Navbar />
+			<Home />
+			<About />
+			<Projects />
+			<Resume />
+			<Contact />
+			{/* <Route
 				render={({ location }) => (
 					<Switch location={location}>
 						<Route exact path={'/'} component={Home} />
@@ -30,7 +37,7 @@ function App() {
 						<Route exact path="*" component={NotFound} />
 					</Switch>
 				)}
-			/>
+			/> */}
 		</Router>
 	);
 }

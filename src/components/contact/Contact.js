@@ -16,7 +16,7 @@ export default class Contact extends Component {
 						{/* HEADER */}
 
 						{/* CAPTION */}
-						<Typography className="header" variant="h4">
+						<Typography className="header" variant="h3">
 							CONTACT
 						</Typography>
 

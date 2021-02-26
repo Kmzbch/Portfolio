@@ -18,9 +18,7 @@ export default class About extends Component {
 				<section id="" className="about" data-section="">
 					<div className={'view main content'}>
 						{/* HEADER */}
-
-						{/* CAPTION */}
-						<Typography className="header" variant="h4">
+						<Typography className="header" variant="h3">
 							ABOUT
 						</Typography>
 

@@ -1,29 +1,17 @@
 .home {
+	// background
 	background-repeat: no-repeat;
 	background-image: url('/assets/images/home/home-bg.jpg');
 	background-blend-mode: lighten;
 	background-color: #3f4f64;
+
 	.content {
 		width: 100%;
-		height: 80vh;
-
-		// left: 30vh;
-		// background-color: rgba(0, 0, 0, 0.109) !important;
-		// background-color: rgba(219, 224, 235, 1) !important;
+		height: 100vh;
 		z-index: 100;
-	}
-
-	.header {
-		// text-align: center;
-		color: #ffffff;
-		padding: 20px;
-		background-color: #3f4e67;
-	}
-
-	.panel {
-		width: 80%;
-		// height: 60vh;
-		padding: 5vh 5vw;
-		margin: 5vh auto;
+		text-align: center;
+		font-size: 30px;
+		margin: auto auto;
+		color: white;
 	}
 }
