@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Typography, Paper, Grid, FormControl, InputLabel, Input, FormHelperText, TextField } from '@material-ui/core';
+import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import './Contact.scss';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+import ContactItems from './ContactItems';
 export default class Contact extends Component {
 	constructor(props) {
 		super(props);
@@ -17,55 +15,81 @@ export default class Contact extends Component {
 			<div className={'page'}>
 				<section id="" className="contact" data-section="">
 					<div className="view main content">
-						<Typography
-							style={{
-								color: 'white'
-							}}
-							className="header"
-							variant="h3"
-						>
+						<Typography className="header" variant="h3" style={{ color: 'white' }}>
 							CONTACT
 						</Typography>
-
 						<hr className={'divider center'} />
-
-						{/* Right side */}
-						<div className="contact-form vertical-middle">
-							<h2 className={'sub-header'}>Let's Talk</h2>
-							<form
-								onSubmit={this.submitForm}
-								// TODO: formspree??
-								// https://formspree.io
-								action="https://formspree.io/f/xaylarqb"
-								method="POST"
-							>
-								<input type="text" name="_gotcha" style={{ display: 'none' }} />
-								<input
-									className={'contact-form-input'}
-									type={'email'}
-									name="email"
-									placeholder="Email"
-									required={true}
-								/>
-								<input
-									className={'contact-form-input'}
-									type={'text'}
-									name="name"
-									placeholder="Name"
-									required={true}
-								/>
-								<textarea
-									className={'contact-form-input message'}
-									name="message"
-									placeholder="Message"
-									required={true}
-								/>
-								<br />
-								<p className={'form-message'}>Thanks, talk soon!</p>
-								<button className={'form-button'}>Send</button>
-								<p className={'form-message-error'}>Ooops! There was an error.</p>
-							</form>
-						</div>
+						<Typography className="caption" variant="h5">
+							Have a question or want to work together?
+						</Typography>
+						<Grid
+							container
+							spacing={2}
+							justify="center"
+							style={{
+								textAlign: 'center',
+								margin: '0 auto',
+								width: '80%'
+							}}
+						>
+							<Grid item xs={6} sm={6}>
+								<div className={'contact-items'}>
+									<List>
+										{ContactItems.map((item, index) => {
+											return (
+												<ListItem>
+													<ListItemIcon
+														style={{
+															marginLeft: 'auto',
+															marginRight: '0'
+														}}
+													>
+														{item.icon}
+													</ListItemIcon>
+													<ListItemText>{item.link}</ListItemText>
+												</ListItem>
+											);
+										})}
+									</List>
+								</div>
+							</Grid>
+							<Grid item xs={6} sm={6}>
+								{/* Right side */}
+								<div className="contact-form vertical-middle">
+									<form
+										onSubmit={this.submitForm}
+										action="https://formspree.io/f/xaylarqb"
+										method="POST"
+									>
+										<input type="text" name="_gotcha" style={{ display: 'none' }} />
+										<input
+											className={'contact-form-input'}
+											type={'email'}
+											name="email"
+											placeholder="Email"
+											required={true}
+										/>
+										<input
+											className={'contact-form-input'}
+											type={'text'}
+											name="name"
+											placeholder="Name"
+											required={true}
+										/>
+										<textarea
+											className={'contact-form-input message'}
+											name="message"
+											placeholder="Message"
+											required={true}
+										/>
+										<br />
+										<p className={'form-message'}>Thanks, talk soon!</p>
+										<button className={'form-button'}>Send</button>
+										<p className={'form-message-error'}>Ooops! There was an error.</p>
+									</form>
+								</div>
+							</Grid>
+						</Grid>
 					</div>
 				</section>
 			</div>

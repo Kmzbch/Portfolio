@@ -4,20 +4,45 @@
 	.content {
 		width: 100%;
 		height: 100%;
-		// background-color: rgba(219, 224, 235, 1) !important;
-		// background-color: #3f4e67;
+		min-height: 100vh;
 		background-color: #df777b;
 		margin-top: auto;
 		margin-bottom: auto;
+		padding-top: 15vh 0;
 		z-index: 100;
+		//
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contact-items {
+		width: 50%;
+		// background-color: #ccc;
+		// text-align: center;
+		margin: 5vh auto;
+	}
+
+	.content-section {
+		display: inline-block;
+		line-height: 3em;
+		padding-left: 5%;
+		font-weight: bold;
+		width: 450px;
+		margin-left: 0;
+		margin-right: auto;
+		text-align: left;
+	}
+
+	.caption {
+		margin: 3vh auto;
+		text-align: center;
 	}
 
 	.wrap {
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto;
 		// position: relative;
 		text-align: center;
-		// display: table-cell;
 		vertical-align: middle;
 		height: 75vh;
 	}
@@ -75,7 +100,7 @@
 
 	.contact-form {
 		margin: 0 auto;
-		width: 50%;
+		// width: 50%;
 		text-align: center;
 	}
 
