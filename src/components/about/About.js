@@ -50,6 +50,25 @@ export default class About extends Component {
 
 							{/* ABOUT TECH  */}
 							<Grid container spacing={2} justify="center">
+								<Grid item xs={5} sm={5}>
+									<img
+										className={'about-tech-image l'}
+										src={'./images/about/roma-exterior.jpg'}
+										alt={'Engine room of Ferrari Roma'}
+									/>
+								</Grid>
+								<Grid item xs={7} sm={7}>
+									<Typography variant="h4">Languages</Typography>
+									<Typography>
+										I'm a Full-Stack developer based in Toronto, ON. I majored in Software
+										Engineering and gained professional experiences in. I have a serious passion for
+										X Y and Z. I am currently seeking a software engineering/full-stack developer
+										position where ???? is valued.
+									</Typography>
+								</Grid>
+							</Grid>
+
+							<Grid container spacing={2} justify="center">
 								<Grid item xs={7} sm={7}>
 									<Typography variant="h4">Languages</Typography>
 									<Typography>
@@ -60,7 +79,49 @@ export default class About extends Component {
 									</Typography>
 								</Grid>
 								<Grid item xs={5} sm={5}>
-									<img className={'profile-image'} src="./images/about/profile.jpg" alt="profile" />
+									<img
+										className={'about-tech-image l'}
+										src={'./images/about/roma-exterior.jpg'}
+										alt={'Engine room of Ferrari Roma'}
+									/>
+								</Grid>
+							</Grid>
+
+							<Grid container spacing={2} justify="center">
+								<Grid item xs={5} sm={5}>
+									<img
+										className={'about-tech-image l'}
+										src={'./images/about/roma-exterior.jpg'}
+										alt={'Engine room of Ferrari Roma'}
+									/>
+								</Grid>
+								<Grid item xs={7} sm={7}>
+									<Typography variant="h4">Languages</Typography>
+									<Typography>
+										I'm a Full-Stack developer based in Toronto, ON. I majored in Software
+										Engineering and gained professional experiences in. I have a serious passion for
+										X Y and Z. I am currently seeking a software engineering/full-stack developer
+										position where ???? is valued.
+									</Typography>
+								</Grid>
+							</Grid>
+
+							<Grid container spacing={2} justify="center">
+								<Grid item xs={7} sm={7}>
+									<Typography variant="h4">Languages</Typography>
+									<Typography>
+										I'm a Full-Stack developer based in Toronto, ON. I majored in Software
+										Engineering and gained professional experiences in. I have a serious passion for
+										X Y and Z. I am currently seeking a software engineering/full-stack developer
+										position where ???? is valued.
+									</Typography>
+								</Grid>
+								<Grid item xs={5} sm={5}>
+									<img
+										className={'about-tech-image l'}
+										src={'./images/about/roma-exterior.jpg'}
+										alt={'Engine room of Ferrari Roma'}
+									/>
 								</Grid>
 							</Grid>
 						</Paper>

@@ -9,6 +9,10 @@
 }
 
 /* Common Styles */
+.tech-stack-image {
+	height: 3.5rem;
+}
+
 .header {
 	padding-top: 50px;
 	text-align: center;
@@ -24,19 +28,18 @@
 .divider {
 	border: 1px solid #fafafa;
 	width: 200px;
-	margin: 20px 0 0;
-  }
-  
-  .center {
+	margin: 5px 0 0;
+}
+
+.center {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-  }
+}
 
-
-
-
-
+.line-wrap {
+	overflow: hidden;
+}
 
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {

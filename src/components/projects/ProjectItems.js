@@ -19,6 +19,21 @@ const ProjectItems = [
 		imageLink: './images/projects/fury.png',
 		projectLink: 'https://cosmos-games.github.io/Fury-The_Destroyer/',
 		githubLink: 'https://github.com/COSMOS-Games/Fury-The_Destroyer'
+	},
+	{
+		title: 'The Great Bandits',
+		description: 'Web-based single screen PvP submarine game for 2 players.',
+		imageLink: './images/projects/fury.png',
+		projectLink: 'https://cosmos-games.github.io/Fury-The_Destroyer/',
+		githubLink: 'https://github.com/COSMOS-Games/Fury-The_Destroyer'
+	},
+	{
+		title: 'Staktekst',
+		description: 'Chrome extension for web search, text-clipping, and note-taking',
+		imageLink: './images/projects/fury.png',
+		projectLink:
+			'https://chrome.google.com/webstore/detail/ecnhgpnligcapbfpaoklofmigomdjhkb/publish-accepted?authuser=0',
+		githubLink: 'https://github.com/Kmzbch/staktekst.git'
 	}
 ];
 

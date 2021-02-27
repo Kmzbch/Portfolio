@@ -12,7 +12,14 @@ export default class Home extends Component {
 			<div className={'page'}>
 				<section id="" className="home" data-section="">
 					<div className={'view main content'}>
-						<Typography variant="h2" style={{ paddingTop: '30vh' }}>
+						<Typography
+							variant="h2"
+							style={{
+								paddingTop: '30vh',
+								// fontFamily: 'Oswald, Sans Serif',
+								fontFamily: 'Raleway, Sans Serif'
+							}}
+						>
 							KEI MIZUBUCHI
 						</Typography>
 					</div>

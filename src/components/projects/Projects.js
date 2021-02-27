@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './Projects.scss';
-// materia-ui
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
+// material-ui
+import { Link, Typography, Paper, Grid, Button } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+
+// custom components and scss
 import ProjectItems from './ProjectItems';
-import { ButtonGroup } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
+import './Projects.scss';
 
 export default class Projects extends Component {
 	/** Life Cycle Methods */
@@ -15,50 +15,64 @@ export default class Projects extends Component {
 		this.state = { showComponent: true };
 	}
 
+	/** Render */
 	render() {
 		return (
 			<div className={'page'}>
 				<section id="" className="project" data-section="">
 					<div className="view main content">
-						{/* HEADER */}
-
-						{/* CAPTION */}
+						{/* <h3 className="header">
+						PROJECTS
+						</h3> */}
 						<Typography className="header" variant="h3">
 							PROJECTS
 						</Typography>
 
-						{/* DIVIDER */}
 						<hr className={'divider center'} />
 
 						{/* PROJECTS */}
 						{ProjectItems.map((item, index) => {
 							return (
-								// PANEL
 								<Paper className={'panel'}>
 									<Grid container spacing={2} justify="center">
-										<Grid item xs={6} sm={6}>
-											<Typography className={'project-title'} variant="h3">
+										{/* Project Information */}
+										<Grid item className={'sub-panel left'} xs={6} sm={6}>
+											{/* Title */}
+											<Typography className={'project-title line-wrap'} variant="h3">
 												{item.title}
 											</Typography>
-											<Typography>{item.description}</Typography>
-											<Button
-												className={'view-button'}
-												size="large"
-												variant="outlined"
-												color="secondary"
-											>
-												View Demo
-											</Button>
-											<Button
-												className={'view-button'}
-												size="large"
-												variant="outlined"
-												color="secondary"
-											>
-												View Code
-											</Button>
+											{/* Description */}
+											<Typography className={'project-description'}>
+												{item.description}
+											</Typography>
+											{/* Links */}
+											<Grid container direction="column">
+												<Button
+													className={'view-button'}
+													size="large"
+													variant="outlined"
+													color="secondary"
+													startIcon={<DesktopWindowsIcon />}
+													href={item.projectLink}
+													target="_blank"
+												>
+													View Demo
+												</Button>
+												<Button
+													className={'view-button'}
+													size="large"
+													variant="outlined"
+													color="secondary"
+													startIcon={<GitHubIcon />}
+													href={item.githubLink}
+													target="_blank"
+												>
+													View Code
+												</Button>
+											</Grid>
 										</Grid>
-										<Grid className={'sub-panel b'} item xs={6} sm={6}>
+										{/* Screenshots */}
+										<Grid item className={'sub-panel right'} xs={6} sm={6}>
 											<img
 												className={'project-image'}
 												src={item.imageLink}
