@@ -7,20 +7,26 @@
 		// left: 30vh;
 		// background-color: rgba(0, 0, 0, 0.109) !important;
 		// background-color: #f3f1ee !important;
+		// background-color: red;
 		z-index: 100;
+	}
+	.caption {
+		margin: 3vh auto;
+		text-align: center;
 	}
 
 	.panel {
 		width: 60%;
 		// height: 60vh;
 		padding: 5vh 5vw;
-		margin: 5vh auto;
+		margin: 10vh auto;
 	}
 
 	.profile-image {
 		width: 20vw;
 		// clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-		clip-path: circle(42% at 50% 50%);
+		clip-path: circle(35% at 50% 50%);
+		// border: 9px solid #00cc00;
 
 		// opacity: .8;
 	}

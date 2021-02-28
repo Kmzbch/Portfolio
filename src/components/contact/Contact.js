@@ -15,9 +15,10 @@ export default class Contact extends Component {
 			<div className={'page'}>
 				<section id="" className="contact" data-section="">
 					<div className="view main content">
-						<Typography className="header" variant="h3" style={{ color: 'white' }}>
+						<div className="header" style={{ color: 'white' }}>
 							CONTACT
-						</Typography>
+						</div>
+
 						<hr className={'divider center'} />
 						<Typography className="caption" variant="h5">
 							Have a question or want to work together?

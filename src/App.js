@@ -25,6 +25,10 @@ function App() {
 			<About />
 			<Projects />
 			<Resume />
+
+			{/* <div style={{ backgroundColor: '#CCC', width: '100%', height: '100px' }} />
+			<div style={{ backgroundColor: '#DDD', width: '100%', height: '100px' }} /> */}
+
 			<Contact />
 			{/* <Route
 				render={({ location }) => (

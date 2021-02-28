@@ -19,16 +19,18 @@ export default class Projects extends Component {
 	render() {
 		return (
 			<div className={'page'}>
-				<section id="" className="project" data-section="">
+				<section id="project" className="project" data-section="">
 					<div className="view main content">
 						{/* <h3 className="header">
 						PROJECTS
 						</h3> */}
-						<Typography className="header" variant="h3">
-							PROJECTS
-						</Typography>
+						<div className="header">PROJECTS</div>
 
 						<hr className={'divider center'} />
+
+						<Typography className="caption" variant="h5">
+							Have a question or want to work together?
+						</Typography>
 
 						{/* PROJECTS */}
 						{ProjectItems.map((item, index) => {

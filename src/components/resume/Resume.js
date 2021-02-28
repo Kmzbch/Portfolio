@@ -14,19 +14,15 @@ export default class Resume extends Component {
 	render() {
 		return (
 			<div className={'page'}>
-				<section id="" className="resume" data-section="">
+				<section id="resume" className="resume" data-section="">
 					<div className="view main content">
-						<Typography
-							style={{
-								color: '#3f4e67'
-							}}
-							className="header"
-							variant="h3"
-						>
-							RESUME
-						</Typography>
+						<div className="header">RESUME</div>
 
 						<hr className={'divider center'} />
+
+						<Typography className="caption" variant="h5">
+							Have a question or want to work together?
+						</Typography>
 
 						<div>
 							<ul className="resume-body">

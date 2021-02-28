@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .App {
 	text-align: center;
 	margin-top: 55px;
@@ -14,21 +16,28 @@
 }
 
 .header {
-	padding-top: 50px;
+	font-family: "Raleway";
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 24px;	
+	padding-top: 100px;
 	text-align: center;
-	color: black;
+	color: #444649;
 }
 
 .page {
-	/* position: absolute; */
+	/* TODO: fix styles */
+	/* margin:-5vh 0 0 0; */
 	top: 0;
-	left: 20vw;
+	left: 0;
+	/* left: 20vw; */
 }
 
 .divider {
-	border: 1px solid #fafafa;
-	width: 200px;
-	margin: 5px 0 0;
+	/* border: 1px solid #fafafa; */
+	border: 2px solid #df777b ;
+	width: 100px;
+	margin: 20px 0 0 0;
 }
 
 .center {
