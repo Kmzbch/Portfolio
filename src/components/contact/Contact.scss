@@ -16,113 +16,29 @@
 		margin-right: auto;
 	}
 
-	.contact-items {
-		width: 50%;
-		// background-color: #ccc;
-		// text-align: center;
-		margin: 5vh auto;
-	}
-
-	.content-section {
-		display: inline-block;
-		line-height: 3em;
-		padding-left: 5%;
-		font-weight: bold;
-		width: 450px;
-		margin-left: 0;
-		margin-right: auto;
-		text-align: left;
-	}
-
 	.caption {
 		margin: 3vh auto;
 		text-align: center;
 	}
 
-	.wrap {
+	.panel {
 		margin: 0 auto;
-		// position: relative;
-		text-align: center;
-		vertical-align: middle;
-		height: 75vh;
+		width: 80%;
 	}
 
-	.left,
-	.right {
-		width: 40vw;
-		height: 600px;
-	}
-
-	a,
-	a:hover {
-		text-decoration: none;
-		color: #fafafa;
-		transition: 0.3s;
-	}
-
-	a:hover {
-		color: #c5b358;
-	}
-
-	.outer-section {
-		margin: 40px 0;
-		font-size: 1.2em;
-		width: 100%;
-	}
-
-	.icon-section {
-		display: inline-block;
-		line-height: 3em;
-		margin-left: auto;
-		margin-right: 0;
-	}
-
-	.content-section {
-		display: inline-block;
-		line-height: 3em;
-		padding-left: 5%;
-		font-weight: bold;
-		width: 450px;
-		margin-left: 0;
-		margin-right: auto;
-		text-align: left;
-	}
-
-	.mailbox {
-		width: 33vw;
-		opacity: .7;
-	}
-
-	.sub-header {
-		font-size: 2em;
-		font-family: 'Kaushan Script', cursive;
-	}
-
-	.contact-form {
+	.contact-items {
+		width: 50%;
+		// background-color: #ccc;
 		margin: 0 auto;
-		// width: 50%;
-		text-align: center;
 	}
 
 	.contact-form-input {
 		width: 80%;
-		margin: 1rem 0;
-		padding: 0.5rem 1rem;
-		border-radius: 10px;
-		outline: none;
+		margin: 0.7rem 0;
+		// padding: 0.5rem 1rem;
+		border-radius: 5px;
 		background-color: white;
 		color: black;
-		border: none;
-		transition: 0.3s;
-	}
-
-	.contact-form-input:focus {
-		box-shadow: 0 0 10px #fafafa;
-		-webkit-box-shadow: 0 0 10px #fafafa;
-	}
-
-	.contact-form-input.message {
-		height: 25vh;
 	}
 
 	.form-button {
@@ -133,7 +49,6 @@
 		background-color: #172229;
 		color: #fafafa;
 		border: none;
-		transition: .3s;
 		font-weight: bold;
 	}
 

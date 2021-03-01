@@ -26,15 +26,12 @@
 }
 
 .page {
-	/* TODO: fix styles */
-	/* margin:-5vh 0 0 0; */
+	position: relative;
 	top: 0;
 	left: 0;
-	/* left: 20vw; */
 }
 
 .divider {
-	/* border: 1px solid #fafafa; */
 	border: 2px solid #df777b ;
 	width: 100px;
 	margin: 20px 0 0 0;
@@ -44,6 +41,10 @@
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.white {
+	color: white;
 }
 
 .line-wrap {

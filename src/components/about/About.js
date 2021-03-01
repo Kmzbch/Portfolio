@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
 import './About.scss';
 
@@ -27,29 +29,115 @@ export default class About extends Component {
 							Have a question or want to work together?
 						</Typography>
 
-						{/* PANEL */}
-						<Paper className={'panel'}>
-							{/* ABOUT ME */}
-							<Grid container spacing={3} justify="center">
-								<Grid item xs={7} sm={7}>
-									<Typography style={{ margin: '3vh auto' }} variant="h4">
-										Hi, my name is Kei Mizubuchi. Nice to meet you!
-									</Typography>
-									<Typography>
-										My path in software engineering began in 2017. I majored in software
-										engineering, graduated with high honours, and gained professional experience in
-										both the private and public sectors to broaden my horizons. I am currently
-										seeking a software engineering/full-stack developer position in the Greater
-										Toronto Area where dependability is valued.{' '}
-									</Typography>
-								</Grid>
-								<Grid style={{ textAlign: 'center' }} item xs={5} sm={5}>
-									<img className={'profile-image'} src="./images/about/profile.jpg" alt="profile" />
-								</Grid>
+						{/* ABOUT ME */}
+						<Grid
+							container
+							spacing={3}
+							justify="center"
+							style={{
+								width: '70%',
+								padding: '5vh 5vw',
+								margin: '3vh auto'
+							}}
+						>
+							<Grid item xs={7} sm={7}>
+								<Typography style={{ margin: '5vh auto' }} variant="h4">
+									Hi, I'm Kei Mizubuchi. I'm a software engineer.
+								</Typography>
+								<Typography>
+									With 5+ years of experience in on-site IT work with direct clients seeking a
+									position where reliability is valued; Specialized in full-stack development,
+									experienced in scripting, detail-oriented and collaborative problem-solver
+								</Typography>
 							</Grid>
+							<Grid style={{ textAlign: 'center' }} item xs={5} sm={5}>
+								<img className={'profile-image'} src="./images/about/profile.jpg" alt="profile" />
+							</Grid>
+						</Grid>
 
-							{/* ABOUT TECH  */}
-							<Grid container spacing={2} justify="center">
+						<Typography className="caption" variant="h4">
+							What can I offer?
+						</Typography>
+
+						<Grid
+							container
+							spacing={3}
+							justify="center"
+							style={{
+								width: '70%',
+								padding: '5vh 5vw',
+								margin: '3vh auto'
+							}}
+						>
+							<ListItem>
+								<ListItemIcon
+									style={{
+										margin: 'auto'
+									}}
+								>
+									<GitHubIcon
+										style={{
+											fontSize: '80px',
+											color: '#3f4e67'
+										}}
+									/>
+								</ListItemIcon>
+								<ListItemIcon
+									style={{
+										margin: 'auto'
+									}}
+								>
+									<GitHubIcon
+										style={{
+											fontSize: '80px',
+											color: '#3f4e67'
+										}}
+									/>
+								</ListItemIcon>
+								<ListItemIcon
+									style={{
+										margin: 'auto'
+									}}
+								>
+									<GitHubIcon
+										style={{
+											fontSize: '80px',
+											color: '#3f4e67'
+										}}
+									/>
+								</ListItemIcon>
+
+								<ListItemIcon
+									style={{
+										margin: 'auto'
+									}}
+								>
+									<GitHubIcon
+										style={{
+											fontSize: '80px',
+											color: '#3f4e67'
+										}}
+									/>
+								</ListItemIcon>
+							</ListItem>
+						</Grid>
+
+						<Typography className="caption" variant="h4">
+							SKILLS
+						</Typography>
+
+						{/* ABOUT TECH  */}
+						<Grid
+							container
+							spacing={2}
+							justify="center"
+							style={{
+								width: '70%',
+								padding: '5vh 5vw',
+								margin: '3vh auto'
+							}}
+						>
+							<Grid container direction="row">
 								<Grid item xs={5} sm={5}>
 									<img
 										className={'about-tech-image l'}
@@ -67,27 +155,7 @@ export default class About extends Component {
 									</Typography>
 								</Grid>
 							</Grid>
-
-							<Grid container spacing={2} justify="center">
-								<Grid item xs={7} sm={7}>
-									<Typography variant="h4">Languages</Typography>
-									<Typography>
-										I'm a Full-Stack developer based in Toronto, ON. I majored in Software
-										Engineering and gained professional experiences in. I have a serious passion for
-										X Y and Z. I am currently seeking a software engineering/full-stack developer
-										position where ???? is valued.
-									</Typography>
-								</Grid>
-								<Grid item xs={5} sm={5}>
-									<img
-										className={'about-tech-image l'}
-										src={'./images/about/roma-exterior.jpg'}
-										alt={'Engine room of Ferrari Roma'}
-									/>
-								</Grid>
-							</Grid>
-
-							<Grid container spacing={2} justify="center">
+							<Grid container direction="row-reverse">
 								<Grid item xs={5} sm={5}>
 									<img
 										className={'about-tech-image l'}
@@ -105,7 +173,25 @@ export default class About extends Component {
 									</Typography>
 								</Grid>
 							</Grid>
-						</Paper>
+							<Grid container direction="row">
+								<Grid item xs={5} sm={5}>
+									<img
+										className={'about-tech-image l'}
+										src={'./images/about/roma-exterior.jpg'}
+										alt={'Engine room of Ferrari Roma'}
+									/>
+								</Grid>
+								<Grid item xs={7} sm={7}>
+									<Typography variant="h4">Languages</Typography>
+									<Typography>
+										I'm a Full-Stack developer based in Toronto, ON. I majored in Software
+										Engineering and gained professional experiences in. I have a serious passion for
+										X Y and Z. I am currently seeking a software engineering/full-stack developer
+										position where ???? is valued.
+									</Typography>
+								</Grid>
+							</Grid>
+						</Grid>
 					</div>
 				</section>
 			</div>

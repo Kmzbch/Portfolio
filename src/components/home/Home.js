@@ -16,11 +16,11 @@ export default class Home extends Component {
 							variant="h2"
 							style={{
 								paddingTop: '30vh',
-								// fontFamily: 'Oswald, Sans Serif',
 								fontFamily: 'Raleway, Sans Serif'
 							}}
 						>
-							KEI MIZUBUCHI
+							Hello. I'm KEI MIZUBUCHI. {'\n'}
+							I'm a full-stack developer.
 						</Typography>
 					</div>
 				</section>
