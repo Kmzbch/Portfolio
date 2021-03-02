@@ -37,7 +37,7 @@ const ResumeItems = [
 			},
 			{
 				altTxt: 'GitHub',
-				link: './images/techStacks/github.png'
+				link: './images/techStacks/github.svg'
 			},
 			{
 				altTxt: 'Swagger',
@@ -63,7 +63,6 @@ const ResumeItems = [
 		title: 'Co-op Application Developer',
 		company: 'CIBC: Personal Banking Products Technology',
 		duties: [
-			'CIBC Personal Banking Products Technology (PBPT)',
 			'Optimized and conducted API testing for Spring MVC banking middleware with SOAP UI',
 			'Created and modified Shell Scripts for archiving access log and assisting with the API testing',
 			'Conducted audit on VCS of the team to provide recommendation on migration options in collaboration with a senior developer',
@@ -79,6 +78,14 @@ const ResumeItems = [
 				link: './images/techStacks/spring.svg'
 			},
 			{
+				altTxt: 'Struts',
+				link: './images/techStacks/struts.svg'
+			},
+			{
+				altTxt: 'SOAP UI',
+				link: './images/techStacks/soapui.png'
+			},
+			{
 				altTxt: 'Microsoft SQL Server',
 				link: './images/techStacks/mssql.png'
 			},
@@ -88,11 +95,7 @@ const ResumeItems = [
 			},
 			{
 				altTxt: 'GitHub',
-				link: './images/techStacks/github.png'
-			},
-			{
-				altTxt: 'Jira',
-				link: './images/techStacks/jira.svg'
+				link: './images/techStacks/github.svg'
 			}
 		]
 	},
@@ -101,7 +104,6 @@ const ResumeItems = [
 		title: 'Co-op Application Developer',
 		company: 'CIBC: Treasury & Risk Management Technology',
 		duties: [
-			'CIBC - Treasury & Risk Management Technology',
 			'Acted in a wealth management web application development',
 			'Implemented both the front-end and back-end of the application with ASP.NET Core, Angular 5, Kendo UI, and Entity Framework 4.5',
 			'Examined technical specifications and architecture of a legacy Java EE application for its migration',
@@ -110,20 +112,33 @@ const ResumeItems = [
 		],
 		techStacks: [
 			{
-				altTxt: 'Java',
-				link: './images/techStacks/java.png'
+				altTxt: 'Angular',
+				link: './images/techStacks/angular.svg'
 			},
 			{
-				altTxt: 'Spring',
-				link: './images/techStacks/spring.svg'
+				altTxt: 'C#',
+				link: './images/techStacks/csharp.svg'
+			},
+			{
+				altTxt: '.NET Core',
+				link: './images/techStacks/dot-net-core.svg'
 			},
 			{
 				altTxt: 'Microsoft SQL Server',
 				link: './images/techStacks/mssql.png'
 			},
 			{
-				altTxt: 'Microsoft Azure',
-				link: './images/techStacks/azure.png'
+				altTxt: 'Kendo UI',
+				link: './images/techStacks/kendo-ui.png'
+			},
+			{
+				altTxt: 'J2EE',
+				link: './images/techStacks/j2ee.svg'
+			},
+
+			{
+				altTxt: 'Azure',
+				link: './images/techStacks/azure.svg'
 			},
 			{
 				altTxt: 'Git',
@@ -131,11 +146,7 @@ const ResumeItems = [
 			},
 			{
 				altTxt: 'GitHub',
-				link: './images/techStacks/github.png'
-			},
-			{
-				altTxt: 'Swagger',
-				link: './images/techStacks/swagger.png'
+				link: './images/techStacks/github.svg'
 			}
 		]
 	},
@@ -153,16 +164,45 @@ const ResumeItems = [
 		],
 		techStacks: [
 			{
+				altTxt: 'Linux',
+				link: './images/techStacks/linux.svg'
+			},
+			{
+				altTxt: 'Red Hat',
+				link: './images/techStacks/red-hat.svg'
+			},
+			{
+				altTxt: 'Apache',
+				link: './images/techStacks/apache.svg'
+			},
+			{
+				altTxt: 'MySQL',
+				link: './images/techStacks/mysql.svg'
+			},
+			{
+				altTxt: 'PHP',
+				link: './images/techStacks/php.svg'
+			},
+			{
+				altTxt: 'Perl',
+				link: './images/techStacks/perl.svg'
+			},
+			{
 				altTxt: 'Java',
-				link: './images/techStacks/java.png'
+				link: './images/techStacks/java.svg'
+			},
+
+			{
+				altTxt: 'PostgreSQL',
+				link: './images/techStacks/postgresql.svg'
 			},
 			{
-				altTxt: 'Amazon Web Service',
-				link: './images/techStacks/aws.png'
+				altTxt: 'MARC 21',
+				link: './images/techStacks/marc21.png'
 			},
 			{
-				altTxt: 'Microsoft Azure',
-				link: './images/techStacks/azure.png'
+				altTxt: 'DSPACE',
+				link: './images/techStacks/dspace.png'
 			}
 		]
 	}
