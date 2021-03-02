@@ -1,6 +1,6 @@
 const ResumeItems = [
 	{
-		dateRange: 'Sep. 2020 - Dec. 2020',
+		dateRange: 'SEP. 2020 - DEC. 2020',
 		title: 'Back-end Developer',
 		company: 'Centennial College: WIMTACH',
 		duties: [
@@ -71,9 +71,9 @@ const ResumeItems = [
 	},
 
 	{
-		dateRange: 'Sep. 2019 - Dec. 2019',
+		dateRange: 'SEP. 2019 - DEC. 2019',
 		title: 'Co-op Application Developer',
-		company: 'CIBC',
+		company: 'CIBC: Personal Banking Products Technology',
 		duties: [
 			'CIBC Personal Banking Products Technology (PBPT)',
 			'Optimized and conducted API testing for Spring MVC banking middleware with SOAP UI',
@@ -141,9 +141,9 @@ const ResumeItems = [
 		]
 	},
 	{
-		dateRange: 'Jan. 2019 - Apr. 2019',
+		dateRange: 'JAN. 2019 - APR. 2019',
 		title: 'Co-op Application Developer',
-		company: 'CIBC',
+		company: 'CIBC: Treasury & Risk Management Technology',
 		duties: [
 			'CIBC - Treasury & Risk Management Technology',
 			'Acted in a wealth management web application development',
@@ -212,7 +212,7 @@ const ResumeItems = [
 		]
 	},
 	{
-		dateRange: 'Apr. 2008 - Mar. 2016',
+		dateRange: 'APR. 2008 - MAR. 2016',
 		title: 'On-Site IT Support Programmer',
 		company: 'Wizard Inc.',
 		duties: [

@@ -17,4 +17,19 @@
 		margin: auto auto;
 		color: white;
 	}
+
+	.view-button {
+		min-width: 200px;
+		// width: 200px;
+		height: 50px;
+		font-size: 18px;
+		margin: 5vh 0;
+		color: white;
+		border: 2px white solid;
+	}
+
+	.view-button:hover {
+		color: #b82b32;
+		border: 2px #b82b32 solid;
+	}
 }

@@ -19,7 +19,7 @@ export default class Projects extends Component {
 				<div className="content">
 					<div className="header">PROJECTS</div>
 
-					<hr className={'divider center'} />
+					<hr className={'divider-yellow center'} />
 
 					{/* PROJECTS */}
 					{ProjectItems.map((item, index) => {

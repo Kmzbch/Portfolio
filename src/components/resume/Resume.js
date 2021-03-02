@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-
+import { Typography, Grid, Paper, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 import './Resume.scss';
-import { Typography, Grid, Paper, List, ListItem } from '@material-ui/core';
-
 import ResumeItems from './ResumeItems';
 
 export default class Resume extends Component {
+	// Life cycle methods
 	constructor(props) {
 		super(props);
 		this.state = { showComponent: true };
 	}
 
+	// renderer
 	render() {
 		return (
 			<div id="resume" className={'page resume'}>
@@ -19,61 +19,44 @@ export default class Resume extends Component {
 
 					<hr className={'divider center'} />
 
-					<div>
-						<ul className="resume-body">
-							{ResumeItems.map((item, index) => {
-								return (
-									<li key={index} className={'timeline-event timeline-event' + (index + 1)}>
-										{/* EVENT ICON */}
-										<div className={'timeline-event-icon' + (index + 1)}>
-											<label className={'timeline-event-icon'} />
-										</div>
-										<div className="timeline-event-copy">
-											{/* DATE RANGE */}
-											<p className={'resume-date-range'}>{item.dateRange}</p>
-											{/* JOB TITLE */}
-											<div className={'line-wrap'}>
-												<h3 className={'color timeline-title' + (index + 1)}>{item.title}</h3>
-											</div>
-											{/* COMPANY */}
-											<div className={'line-wrap'}>
-												<h4 className={'color timeline-company' + (index + 1)}>
-													{item.company}
-												</h4>
-											</div>
-											{/* DUTIES */}
-											<List className={'resume-duties'}>
-												{item.duties.map((item, index) => {
-													return <ListItem>- {item}</ListItem>;
-												})}
-											</List>
-											{/* TECH STACK  */}
-											{/* <div
-													className={'timeline-tech-stack timeline-tech-stack' + (index + 1)}
-												>
-													{item.techStacks.map((item, index) => {
-														return (
-															<div key={index} className={'tech-stack-wrapper'}>
-																<img
-																	className={'tech-stack-image'}
-																	src={item.link}
-																	title={item.altTxt}
-																	alt={'Logo of ' + item.altTxt}
-																/>
-																<div className="middle-wrapper translate middle">
-																	<span>{item.altTxt}</span>
-																</div>
-															</div>
-														);
-													})}
-												</div> */}
-										</div>
-									</li>
-								);
-							})}
-						</ul>
-					</div>
-					<br />
+					<Typography className="caption white" variant="h5">
+						Have a question or want to work together?
+					</Typography>
+
+					<ul className="resume-body">
+						{ResumeItems.map((item, index) => {
+							return (
+								<li key={index} className={'resume-event'}>
+									<div className={'resume-event-icon' + (index + 1)}>
+										<label className={'resume-event-icon'} />
+									</div>
+									<div className="resume-event-item">
+										{/* <p className={'resume-date-range'}>{item.dateRange}</p> */}
+										<div className={'resume-date-range'}>{item.dateRange}</div>
+
+										<Typography className={'resume-title'} variant={'h3'}>
+											{item.title}
+										</Typography>
+
+										<Typography className={'resume-company'} variant={'h4'}>
+											{item.company}
+										</Typography>
+
+										<List className={'resume-duties'}>
+											{item.duties.map((subItem, index) => {
+												return (
+													<ListItem key={subItem}>
+														<ListItemIcon>{'\u25aa'} </ListItemIcon>
+														<ListItemText>{subItem}</ListItemText>
+													</ListItem>
+												);
+											})}
+										</List>
+									</div>
+								</li>
+							);
+						})}
+					</ul>
 				</div>
 			</div>
 		);

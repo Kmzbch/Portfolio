@@ -37,6 +37,12 @@
 	margin: 20px 0 0 0;
 }
 
+.divider-yellow {
+	border: 2px solid #fbe77d;
+	width: 100px;
+	margin: 20px 0 0 0;
+}
+
 .center {
 	text-align: center;
 	margin-left: auto;
@@ -52,6 +58,9 @@
 }
 .green {
 	color: #40bdae;
+}
+.yellow {
+	color: #fbe77d;
 }
 
 .white {

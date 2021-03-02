@@ -1,13 +1,20 @@
 .resume {
+	// $color-1: rgba(219, 224, 235, 1);
+	$color-1: #f7f7f7;
+	$color-2: #ee707d;
+	$color-3: #3f4e67;
+	$color-4: #40bdae;
+	$color-5: #b82b32;
+	$color-6: #fbe77d;
 	.content {
-		margin-top: auto;
-		margin-bottom: auto;
+		// background-color: #dce1eb;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(219, 224, 235, 1) !important;
-		// background-color: #F7F7F7 !important;
-
+		margin: auto 0;
 		z-index: 100;
+		ul {
+			margin: 0 auto;
+		}
 	}
 
 	.caption {
@@ -16,107 +23,77 @@
 	}
 
 	.resume-body {
-		width: 70%;
-		margin: 4em auto;
 		position: relative;
-		list-style: none;
+		width: 70%;
 		padding: 0;
-
-		// timeline border
+		margin: 4em auto;
+		list-style: none;
 		&:before {
-			background-color: #3f4e67;
+			background-color: $color-3;
 			content: " ";
 			margin-left: -1px;
 			position: absolute;
-			top: 1px;
+			top: 27px;
 			left: 2em;
-			width: 2px;
-			height: 100%;
+			width: 1px;
+			height: 97%;
 		}
 	}
 
-	.timeline-event {
-		position: relative;
-
-		&:hover {
-			.timeline-event-icon {
-				transform: rotate(220deg);
-				transition: all 0.3s ease-in-out 0s;
-				background-color: #b82b32;
-			}
-
-			.timeline-event-thumbnail {
-				box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-				transition: .3s;
-				background-color: #b82b32;
-			}
-
-			.timeline-event-copy {
-				h3 {
-					animation-name: color_change;
-					animation-duration: 1s;
-					transition: .3s;
-					animation-iteration-count: 1;
-					animation-direction: alternate;
-					color: #b82b32;
-				}
-			}
-		}
+	.resume-date-range {
+		color: $color-1;
+		font-size: 1em;
+		font-weight: bold;
+		background-color: $color-2;
+		display: inline-block;
+		padding: 0.25em 1em 0.2em 1em;
+		margin: 1.2em 0 .5em 0;
 	}
 
-	.timeline-event-copy {
+	.resume-event-item {
 		padding: 2em;
 		position: relative;
 		top: -1.875em;
 		left: 3em;
 		width: 90%;
-
-		h3 {
-			font-size: 1.8em;
-			font-weight: bold;
-		}
-
-		h4 {
-			font-size: 1.2em;
-			margin-bottom: 1.2em;
-			font-style: italic;
-			font-weight: bold;
-		}
-
-		strong {
-			font-weight: 700;
-		}
-
-		ul li {
-			font-size: 1.2em;
-		}
-
-		p:not(.resume-date-range) {
-			padding-bottom: 1.2em;
-		}
 	}
 
-	.timeline-event-icon {
+	.resume-title {
+		margin: 3vh auto;
+		font-size: 1.8em;
+		font-weight: bold;
+	}
+
+	.resume-company {
+		font-size: 1.2em;
+		margin-bottom: 1.2em;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	.resume-event {
+		position: relative;
+
+		// &:hover {
+		// 	.resume-event-icon {
+		// 		transform: rotate(220deg);
+		// 		transition: all 0.3s ease-in-out 0s;
+		// 		background-color: yellow;
+		// 		// width: 10px;
+		// 	}
+		// }
+	}
+
+	.resume-event-icon {
 		transform: rotate(45deg);
-		background-color: #ee707d;
-		outline: 10px solid #ee707d;
+		background-color: $color-6;
+		outline: 5px solid $color-2;
 		display: block;
 		margin: 0.5em 0.5em 0.5em -0.5em;
 		position: absolute;
-		top: 0.5em;
-		left: 2em;
-		width: 1em;
-		height: 1em;
-	}
-
-	.resume-date-range {
-		transition: box-shadow 0.5s ease-in 0.1s;
-		color: white;
-		font-size: 1em;
-		background-color: #ee707d;
-		display: inline-block;
-		margin-bottom: 1.2em;
-		padding: 0.25em 1em 0.2em 1em;
-		margin-top: .5em;
+		top: 1.6em;
+		left: 2.3em;
+		width: 0.3em;
+		height: 0.3em;
 	}
 }
