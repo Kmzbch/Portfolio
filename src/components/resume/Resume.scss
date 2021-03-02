@@ -6,8 +6,9 @@
 	$color-4: #40bdae;
 	$color-5: #b82b32;
 	$color-6: #fbe77d;
+
 	.content {
-		// background-color: #dce1eb;
+		background-color: #fafafa;
 		width: 100%;
 		height: 100%;
 		margin: auto 0;
@@ -20,6 +21,13 @@
 	.caption {
 		margin: 3vh auto;
 		text-align: center;
+	}
+
+	.resume-tech-stack {
+		width: 100%;
+		margin-top: 20px;
+		padding: 1rem;
+		border-radius: 10px;
 	}
 
 	.resume-body {
@@ -48,6 +56,17 @@
 		display: inline-block;
 		padding: 0.25em 1em 0.2em 1em;
 		margin: 1.2em 0 .5em 0;
+	}
+
+	.resume-tech-stack-item {
+		color: $color-1;
+		font-size: 1em;
+		font-weight: bold;
+		background-color: #3f4e67;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 0.25em 1em 0.2em 1em;
+		margin: 1em 0.3em .1em 0.3em;
 	}
 
 	.resume-event-item {

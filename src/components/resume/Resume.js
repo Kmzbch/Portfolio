@@ -19,10 +19,6 @@ export default class Resume extends Component {
 
 					<hr className={'divider center'} />
 
-					<Typography className="caption white" variant="h5">
-						Have a question or want to work together?
-					</Typography>
-
 					<ul className="resume-body">
 						{ResumeItems.map((item, index) => {
 							return (
@@ -52,6 +48,24 @@ export default class Resume extends Component {
 												);
 											})}
 										</List>
+										<div className={'resume-tech-stack'}>
+											{item.techStacks.map((item, index) => {
+												return (
+													<div className={'tech-stack-wrapper'}>
+														<img
+															className={'tech-stack-image'}
+															src={item.link}
+															title={item.altTxt}
+															alt={'Logo of ' + item.altTxt}
+														/>
+														<div className="middle-wrapper translate middle">
+															<span>{item.altTxt}</span>
+														</div>
+													</div>
+													// <div className={'resume-tech-stack-item'}>{item.altTxt}</div>
+												);
+											})}
+										</div>
 									</div>
 								</li>
 							);

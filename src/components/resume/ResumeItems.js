@@ -32,18 +32,6 @@ const ResumeItems = [
 				link: './images/techStacks/rest-assured.png'
 			},
 			{
-				altTxt: 'Project Lombok',
-				link: './images/techStacks/projectLombok.png'
-			},
-			{
-				altTxt: 'Amazon Web Service',
-				link: './images/techStacks/aws.png'
-			},
-			{
-				altTxt: 'Microsoft Azure',
-				link: './images/techStacks/azure.png'
-			},
-			{
 				altTxt: 'Git',
 				link: './images/techStacks/git.png'
 			},
@@ -95,26 +83,6 @@ const ResumeItems = [
 				link: './images/techStacks/mssql.png'
 			},
 			{
-				altTxt: 'Junit5',
-				link: './images/techStacks/junit5.png'
-			},
-			{
-				altTxt: 'REST-assured',
-				link: './images/techStacks/rest-assured.png'
-			},
-			{
-				altTxt: 'Project Lombok',
-				link: './images/techStacks/projectLombok.png'
-			},
-			{
-				altTxt: 'Amazon Web Service',
-				link: './images/techStacks/aws.png'
-			},
-			{
-				altTxt: 'Microsoft Azure',
-				link: './images/techStacks/azure.png'
-			},
-			{
 				altTxt: 'Git',
 				link: './images/techStacks/git.png'
 			},
@@ -123,20 +91,8 @@ const ResumeItems = [
 				link: './images/techStacks/github.png'
 			},
 			{
-				altTxt: 'Swagger',
-				link: './images/techStacks/swagger.png'
-			},
-			{
 				altTxt: 'Jira',
 				link: './images/techStacks/jira.svg'
-			},
-			{
-				altTxt: 'Confluence',
-				link: './images/techStacks/confluence.png'
-			},
-			{
-				altTxt: 'Trello',
-				link: './images/techStacks/trello.png'
 			}
 		]
 	},
@@ -166,22 +122,6 @@ const ResumeItems = [
 				link: './images/techStacks/mssql.png'
 			},
 			{
-				altTxt: 'Junit5',
-				link: './images/techStacks/junit5.png'
-			},
-			{
-				altTxt: 'REST-assured',
-				link: './images/techStacks/rest-assured.png'
-			},
-			{
-				altTxt: 'Project Lombok',
-				link: './images/techStacks/projectLombok.png'
-			},
-			{
-				altTxt: 'Amazon Web Service',
-				link: './images/techStacks/aws.png'
-			},
-			{
 				altTxt: 'Microsoft Azure',
 				link: './images/techStacks/azure.png'
 			},
@@ -196,18 +136,6 @@ const ResumeItems = [
 			{
 				altTxt: 'Swagger',
 				link: './images/techStacks/swagger.png'
-			},
-			{
-				altTxt: 'Jira',
-				link: './images/techStacks/jira.svg'
-			},
-			{
-				altTxt: 'Confluence',
-				link: './images/techStacks/confluence.png'
-			},
-			{
-				altTxt: 'Trello',
-				link: './images/techStacks/trello.png'
 			}
 		]
 	},
@@ -229,56 +157,12 @@ const ResumeItems = [
 				link: './images/techStacks/java.png'
 			},
 			{
-				altTxt: 'Spring',
-				link: './images/techStacks/spring.svg'
-			},
-			{
-				altTxt: 'Microsoft SQL Server',
-				link: './images/techStacks/mssql.png'
-			},
-			{
-				altTxt: 'Junit5',
-				link: './images/techStacks/junit5.png'
-			},
-			{
-				altTxt: 'REST-assured',
-				link: './images/techStacks/rest-assured.png'
-			},
-			{
-				altTxt: 'Project Lombok',
-				link: './images/techStacks/projectLombok.png'
-			},
-			{
 				altTxt: 'Amazon Web Service',
 				link: './images/techStacks/aws.png'
 			},
 			{
 				altTxt: 'Microsoft Azure',
 				link: './images/techStacks/azure.png'
-			},
-			{
-				altTxt: 'Git',
-				link: './images/techStacks/git.png'
-			},
-			{
-				altTxt: 'GitHub',
-				link: './images/techStacks/github.png'
-			},
-			{
-				altTxt: 'Swagger',
-				link: './images/techStacks/swagger.png'
-			},
-			{
-				altTxt: 'Jira',
-				link: './images/techStacks/jira.svg'
-			},
-			{
-				altTxt: 'Confluence',
-				link: './images/techStacks/confluence.png'
-			},
-			{
-				altTxt: 'Trello',
-				link: './images/techStacks/trello.png'
 			}
 		]
 	}
