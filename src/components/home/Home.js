@@ -9,21 +9,19 @@ export default class Home extends Component {
 
 	render() {
 		return (
-			<div className={'page'}>
-				<section id="" className="home" data-section="">
-					<div className={'view main content'}>
-						<Typography
-							variant="h2"
-							style={{
-								paddingTop: '30vh',
-								fontFamily: 'Raleway, Sans Serif'
-							}}
-						>
-							Hello. I'm KEI MIZUBUCHI. {'\n'}
-							I'm a full-stack developer.
-						</Typography>
-					</div>
-				</section>
+			<div id="home" className={'page home'}>
+				<div className={'view main content'}>
+					<Typography
+						variant="h2"
+						style={{
+							paddingTop: '30vh',
+							fontFamily: 'Raleway, Sans Serif'
+						}}
+					>
+						Hello. I'm KEI MIZUBUCHI. {'\n'}
+						I'm a full-stack developer.
+					</Typography>
+				</div>
 			</div>
 		);
 	}

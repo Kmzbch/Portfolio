@@ -1,22 +1,22 @@
 const NavbarItems = [
 	{
 		title: 'About',
-		url: '/about',
+		url: '#about',
 		className: 'navbar-links'
 	},
 	{
 		title: 'Projects',
-		url: '/projects',
+		url: '#project',
 		className: 'navbar-links'
 	},
 	{
 		title: 'Resume',
-		url: '/resume',
+		url: '#resume',
 		className: 'navbar-links'
 	},
 	{
 		title: 'Contact',
-		url: '/contact',
+		url: '#contact',
 		className: 'navbar-links'
 	}
 ];
