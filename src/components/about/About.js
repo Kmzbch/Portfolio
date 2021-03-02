@@ -78,7 +78,7 @@ export default class About extends Component {
 									<GitHubIcon
 										style={{
 											fontSize: '80px',
-											color: '#3f4e67'
+											color: '#40bdae'
 										}}
 									/>
 								</ListItemIcon>
@@ -90,7 +90,7 @@ export default class About extends Component {
 									<GitHubIcon
 										style={{
 											fontSize: '80px',
-											color: '#3f4e67'
+											color: '#40bdae'
 										}}
 									/>
 								</ListItemIcon>
@@ -102,7 +102,7 @@ export default class About extends Component {
 									<GitHubIcon
 										style={{
 											fontSize: '80px',
-											color: '#3f4e67'
+											color: '#40bdae'
 										}}
 									/>
 								</ListItemIcon>
@@ -115,7 +115,7 @@ export default class About extends Component {
 									<GitHubIcon
 										style={{
 											fontSize: '80px',
-											color: '#3f4e67'
+											color: '#40bdae'
 										}}
 									/>
 								</ListItemIcon>

@@ -5,55 +5,27 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const ContactItems = [
 	{
-		link: 'cdfray@gmail.com',
+		link: 'mailto:cdfray@gmail.com',
 		icon: (() => {
-			return (
-				<MailOutlineIcon
-					style={{
-						fontSize: 45
-						// color: '#696969'
-					}}
-				/>
-			);
+			return <MailOutlineIcon className="contact-icon" />;
 		})()
 	},
 	{
-		link: 'https://www.linkedin.com/in/kmizubuchi/',
+		link: 'https://www.linkedin.com/in/kmzbch/',
 		icon: (() => {
-			return (
-				<LinkedInIcon
-					style={{
-						fontSize: 45
-						// color: '#696969'
-					}}
-				/>
-			);
+			return <LinkedInIcon className="contact-icon" />;
 		})()
 	},
 	{
 		link: 'https://github.com/Kmzbch',
 		icon: (() => {
-			return (
-				<GitHubIcon
-					style={{
-						fontSize: 45
-						// color: '#696969'
-					}}
-				/>
-			);
+			return <GitHubIcon className="contact-icon" />;
 		})()
 	},
 	{
 		link: 'Toronto, Ontario',
 		icon: (() => {
-			return (
-				<LocationOnOutlinedIcon
-					style={{
-						fontSize: 45
-						// color: '#696969'
-					}}
-				/>
-			);
+			return <LocationOnOutlinedIcon className="contact-icon" />;
 		})()
 	}
 ];

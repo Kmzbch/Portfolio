@@ -3,7 +3,6 @@ import './App.css';
 import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Drawer from './components/drawer/Drawer';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
@@ -16,28 +15,14 @@ function App() {
 	console.log("Welcome to Kei's portfolio! ");
 	console.log('This portfolio is build with React.');
 
-	//
 	return (
 		<Router basename={process.env.PUBLIC_URL}>
-			{/* <Drawer /> */}
-			<Navbar />
+			{/* <Navbar />
 			<Home />
 			<About />
 			<Projects />
-			<Resume />
+			<Resume /> */}
 			<Contact />
-			{/* <Route
-				render={({ location }) => (
-					<Switch location={location}>
-						<Route exact path={'/'} component={Home} />
-						<Route exact path={'/about'} component={About} />
-						<Route exact path={'/projects'} component={Projects} />
-						<Route exact path={'/resume'} component={Resume} />
-						<Route exact path={'/contact'} component={Contact} />
-						<Route exact path="*" component={NotFound} />
-					</Switch>
-				)}
-			/> */}
 		</Router>
 	);
 }

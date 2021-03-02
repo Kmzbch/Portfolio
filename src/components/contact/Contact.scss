@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 .contact {
+	$color-1: #3f4e67;
+	$color-2: #fafafa;
+	$color-3: #df777b;
+	$color-4: #172229;
+	$color-5: #b82b32;
+	$color-6: #dce1eb;
+
 	.content {
 		width: 100%;
 		height: 100%;
 		min-height: 100vh;
-		background-color: #df777b;
-		margin-top: auto;
-		margin-bottom: auto;
+		background-color: $color-1;
 		padding-top: 15vh 0;
 		z-index: 100;
-		//
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	.caption {
@@ -27,48 +28,72 @@
 	}
 
 	.contact-items {
-		width: 50%;
-		// background-color: #ccc;
+		width: 80%;
 		margin: 0 auto;
+	}
+
+	.contact-links {
+		color: $color-2;
+		font-family: "Raleway";
+		font-Weight: 'bold !important';
+		margin-left: 20px;
+		margin-right: 0;
+		transition: 0.2s;
+	}
+
+	.contact-links:hover {
+		color: $color-3;
+		text-decoration: none;
+		transition: 0.2s;
+	}
+
+	.disabled-link {
+		pointer-events: none;
+	}
+
+	.contact-icon {
+		font-size: 50px;
+		color: $color-6;
+	}
+
+	// form
+	.contact-form {
+		text-align: center;
 	}
 
 	.contact-form-input {
 		width: 80%;
 		margin: 0.7rem 0;
-		// padding: 0.5rem 1rem;
 		border-radius: 5px;
-		background-color: white;
-		color: black;
+		background-color: $color-2;
+		color: $color-4;
 	}
 
+	// form button
 	.form-button {
 		margin: 1rem 0;
 		padding: 0.5rem 3rem;
 		border-radius: 10px;
-		outline: none;
-		background-color: #172229;
-		color: #fafafa;
-		border: none;
+		background-color: $color-4;
+		color: $color-2;
 		font-weight: bold;
 	}
 
 	.form-button:hover {
-		background-color: #c5b358;
-		color: #0e1111;
-		box-shadow: 0 0 10px #fafafa;
-		-webkit-box-shadow: 0 0 10px #fafafa;
+		background-color: $color-3;
+		color: $color-4;
 	}
 
+	// validation messages
 	.form-message {
+		color: $color-2;
 		font-size: 1.2em;
 		font-weight: bold;
-		display: none;
 	}
 
 	.form-message-error {
+		color: $color-3;
 		font-size: 1.2em;
 		font-weight: bold;
-		color: red;
-		display: none;
 	}
 }

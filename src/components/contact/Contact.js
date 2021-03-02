@@ -1,51 +1,64 @@
 import React, { Component } from 'react';
 import { Typography, Grid } from '@material-ui/core';
-import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemIcon, ListItemText, Link } from '@material-ui/core';
 import './Contact.scss';
 import ContactItems from './ContactItems';
 
 import { TextField, Button } from '@material-ui/core';
+import ReactDOM from 'react-dom';
 
 export default class Contact extends Component {
+	emailServiceApi = 'https://formspree.io/f/mnqokoqj';
+
+	// life cycle methods
 	constructor(props) {
 		super(props);
 		this.state = { showComponent: true };
 	}
 
+	resetContactForm = (ev) => {
+		const formMessage = document.querySelector('.form-message');
+		const formButton = document.querySelector('.form-button');
+		// reset validation message
+		if (!formMessage.classList.contains('hidden')) {
+			ReactDOM.findDOMNode(formMessage).classList.add('hidden');
+			ReactDOM.findDOMNode(formButton).classList.remove('hidden');
+		}
+	};
+
 	submitForm = (ev) => {
-		console.log('!!!!!!');
 		ev.preventDefault();
 
 		const form = ev.target;
 		const data = new FormData(form);
 		const xhr = new XMLHttpRequest();
-		const formMessageStyle = document.querySelector('.form-message').style;
-		const formButtonStyle = document.querySelector('.form-button').style;
-		const formMessageErrorStyle = document.querySelector('.form-message-error').style;
+		const formMessage = document.querySelector('.form-message');
+		const formButton = document.querySelector('.form-button');
+		const formMessageError = document.querySelector('.form-message-error');
 
 		xhr.open(form.method, form.action);
 		xhr.setRequestHeader('Accept', 'application/json');
-
-		console.log(xhr);
 		xhr.onreadystatechange = () => {
 			if (xhr.readyState !== XMLHttpRequest.DONE) {
 				return;
 			}
 			if (xhr.status === 200) {
 				form.reset();
-				formMessageStyle.display = 'block';
-				formButtonStyle.display = 'none';
+				ReactDOM.findDOMNode(formMessage).classList.remove('hidden');
+				ReactDOM.findDOMNode(formButton).classList.add('hidden');
+				ReactDOM.findDOMNode(formMessageError).classList.add('hidden');
 			} else {
-				formMessageErrorStyle.display = 'block';
+				ReactDOM.findDOMNode(formMessageError).classList.remove('hidden');
 			}
 		};
 
 		xhr.send(data);
 	};
 
+	// renderer
 	render() {
 		return (
-			<div className={'page contact'}>
+			<div id="contact" className={'page contact'}>
 				<div className="content">
 					<div className="header white">CONTACT</div>
 
@@ -62,15 +75,27 @@ export default class Contact extends Component {
 									{ContactItems.map((item, index) => {
 										return (
 											<ListItem>
-												<ListItemIcon
-													style={{
-														marginLeft: 'auto',
-														marginRight: '0'
-													}}
-												>
-													{item.icon}
-												</ListItemIcon>
-												<ListItemText>{item.link}</ListItemText>
+												<ListItemIcon>{item.icon}</ListItemIcon>
+												<ListItemText
+													primary={
+														<Link
+															className={
+																item.link.match(/^https?:\/\/(www\.)?|mailto:/i) ? (
+																	'contact-links'
+																) : (
+																	'contact-links disabled-link'
+																)
+															}
+															href={item.link}
+															{...(item.link.match(/^https?:\/\//i)
+																? { target: '_blank' }
+																: {})}
+															variant="h6"
+														>
+															{item.link.replace(/^https?:\/\/(www\.)?|mailto:/i, '')}
+														</Link>
+													}
+												/>
 											</ListItem>
 										);
 									})}
@@ -79,8 +104,7 @@ export default class Contact extends Component {
 						</Grid>
 						<Grid item xs={6} sm={6}>
 							<div className="contact-form">
-								<form onSubmit={this.submitForm} action="https://formspree.io/f/mnqokoqj" method="POST">
-									<input type="text" name="_gotcha" style={{ display: 'none' }} />
+								<form onSubmit={this.submitForm} action={this.emailServiceApi} method="POST">
 									<TextField
 										className="contact-form-input"
 										id="email"
@@ -89,6 +113,7 @@ export default class Contact extends Component {
 										label="Email"
 										variant="filled"
 										size="small"
+										onFocus={this.resetContactForm}
 										required
 									/>
 									<TextField
@@ -99,24 +124,28 @@ export default class Contact extends Component {
 										label="Name"
 										variant="filled"
 										size="small"
+										onFocus={this.resetContactForm}
 										required
 									/>
 									<TextField
-										className="contact-form-input message"
+										className="contact-form-input"
 										id="message"
 										name="message"
 										label="Message"
-										variant="outlined"
+										variant="filled"
 										multiline={true}
 										rows={8}
+										onFocus={this.resetContactForm}
 										required
 									/>
 									<br />
-									<p className={'form-message'}>Thanks, talk soon!</p>
+									<p className={'form-message hidden'}>Thank you. Your message has been sent.</p>
 									<Button type="submit" className={'form-button'} size="large" variant="outlined">
-										Submit
+										Send
 									</Button>
-									<p className={'form-message-error'}>Ooops! There was an error.</p>
+									<p className={'form-message-error hidden'}>
+										Ooops! There was an error trying to send your message.
+									</p>
 								</form>
 							</div>
 						</Grid>

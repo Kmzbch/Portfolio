@@ -19,7 +19,7 @@
 	font-family: "Raleway";
 	font-size: 40px;
 	font-weight: bold;
-	line-height: 24px;	
+	line-height: 24px;
 	padding-top: 100px;
 	text-align: center;
 	color: #444649;
@@ -32,7 +32,7 @@
 }
 
 .divider {
-	border: 2px solid #df777b ;
+	border: 2px solid #df777b;
 	width: 100px;
 	margin: 20px 0 0 0;
 }
@@ -41,6 +41,14 @@
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.pink {
+	color: #df777b;
 }
 
 .white {
