@@ -3,6 +3,9 @@
 	$color-1: #243a47;
 	$color-2: #f3f1ee;
 	$color-3: #40bdae;
+	$color-4: #df777b;
+	$color-5: #3f4e67;
+	$color-6: #b82b32;
 
 	.content {
 		width: 100%;
@@ -54,5 +57,10 @@
 		height: 50px;
 		font-size: 18px;
 		margin: 0.5rem 0;
+	}
+
+	.view-button:hover {
+		color: $color-6;
+		border: 2px $color-6 solid;
 	}
 }
