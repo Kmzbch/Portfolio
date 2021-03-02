@@ -19,10 +19,10 @@ function App() {
 		<Router basename={process.env.PUBLIC_URL}>
 			{/* <Navbar />
 			<Home />
-			<About />
+			<About /> */}
 			<Projects />
-			<Resume /> */}
-			<Contact />
+			{/* <Resume />
+			<Contact /> */}
 		</Router>
 	);
 }

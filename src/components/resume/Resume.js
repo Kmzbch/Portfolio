@@ -19,10 +19,6 @@ export default class Resume extends Component {
 
 					<hr className={'divider center'} />
 
-					<Typography className="caption" variant="h5">
-						Have a question or want to work together?
-					</Typography>
-
 					<div>
 						<ul className="resume-body">
 							{ResumeItems.map((item, index) => {

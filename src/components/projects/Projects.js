@@ -21,11 +21,6 @@ export default class Projects extends Component {
 
 					<hr className={'divider center'} />
 
-					{/* TODO: sentence needed */}
-					<Typography className="caption" variant="h5">
-						Have a question or want to work together?
-					</Typography>
-
 					{/* PROJECTS */}
 					{ProjectItems.map((item, index) => {
 						return (
@@ -33,13 +28,12 @@ export default class Projects extends Component {
 								<Grid container spacing={2} justify="center">
 									{/* Project Information */}
 									<Grid item className={'sub-panel left'} xs={6} sm={6}>
-										{/* Title */}
-										<Typography className={'project-title line-wrap'} variant="h3">
+										<Typography className={'project-title'} variant="h3">
 											{item.title}
 										</Typography>
-										{/* Description */}
+
 										<Typography className={'project-description'}>{item.description}</Typography>
-										{/* Links */}
+
 										<Grid container direction="column">
 											<Button
 												className={'view-button'}
@@ -50,7 +44,7 @@ export default class Projects extends Component {
 												href={item.projectLink}
 												target="_blank"
 											>
-												View Demo
+												View App
 											</Button>
 											<Button
 												className={'view-button'}

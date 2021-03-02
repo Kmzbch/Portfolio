@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Typography, Grid } from '@material-ui/core';
-import { List, ListItem, ListItemIcon, ListItemText, Link } from '@material-ui/core';
+import ReactDOM from 'react-dom';
+import { Typography, Link, Grid } from '@material-ui/core';
+import { TextField, Button } from '@material-ui/core';
+import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import './Contact.scss';
 import ContactItems from './ContactItems';
-
-import { TextField, Button } from '@material-ui/core';
-import ReactDOM from 'react-dom';
 
 export default class Contact extends Component {
 	emailServiceApi = 'https://formspree.io/f/mnqokoqj';

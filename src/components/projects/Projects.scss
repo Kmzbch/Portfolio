@@ -1,15 +1,15 @@
 .project {
+	// TODO: sort out styles
+	$color-1: #243a47;
+	$color-2: #f3f1ee;
+	$color-3: #40bdae;
+
 	.content {
 		width: 100%;
 		height: 100%;
-		background-color: #f3f1ee !important;
-		z-index: 100;
+		background-color: $color-2;
 		padding-bottom: 15vh;
-	}
-
-	.caption {
-		margin: 3vh auto;
-		text-align: center;
+		z-index: 100;
 	}
 
 	.panel {
@@ -17,45 +17,42 @@
 		min-height: 30vh;
 		padding: 5vh 5vw;
 		margin: 5vh auto;
-		border-left: 5px solid #40bdae;
-		// border-left: 5px solid #ff817e;
+		border-left: 5px solid $color-3;
+	}
 
-		// sub panel styles
-		.sub-panel.left {
-			padding: 0;
-		}
+	.sub-panel.left {
+		padding: 0;
+	}
 
-		.sub-panel.right {
-			padding: 0 6vw 0 6vw;
-			margin: auto 0;
-			text-align: center;
-		}
+	.sub-panel.right {
+		padding: 0 6vw;
+		margin: auto 0;
+	}
 
-		.sub-panel {
-			display: inline-block;
-			width: 40vw;
-			vertical-align: top;
+	.sub-panel {
+		display: inline-block;
+		width: 40vw;
+	}
 
-			.project-title {
-				font-size: 2.7em;
-				margin-bottom: 2rem;
-			}
+	.project-title {
+		color: $color-1;
+		font-size: 2.7em;
+		margin-bottom: 2rem;
+	}
 
-			.project-description {
-				margin-bottom: 2rem;
-			}
+	.project-description {
+		margin-bottom: 2rem;
+	}
 
-			.view-button {
-				width: 200px;
-				height: 50px;
-				font-size: 18px;
-				margin: 0.5rem 0;
-			}
+	.project-image {
+		margin: 0 auto;
+		width: 25vw;
+	}
 
-			.project-image {
-				margin: 0 auto;
-				width: 25vw;
-			}
-		}
+	.view-button {
+		width: 200px;
+		height: 50px;
+		font-size: 18px;
+		margin: 0.5rem 0;
 	}
 }
