@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Typography, Grid, Paper, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 import './Resume.scss';
 import ResumeItems from './ResumeItems';
-
+import TechStack from '../shared/TechStack';
 export default class Resume extends Component {
 	// Life cycle methods
 	constructor(props) {
@@ -51,18 +51,18 @@ export default class Resume extends Component {
 										<div className={'resume-tech-stack'}>
 											{item.techStacks.map((item, index) => {
 												return (
-													<div className={'tech-stack-wrapper'}>
-														<img
-															className={'tech-stack-image'}
-															src={item.link}
-															title={item.altTxt}
-															alt={'Logo of ' + item.altTxt}
-														/>
-														<div className="middle-wrapper translate middle">
-															<span>{item.altTxt}</span>
-														</div>
-													</div>
-													// <div className={'resume-tech-stack-item'}>{item.altTxt}</div>
+													// <div button className={'tech-stack-wrapper'}>
+													// 	<img
+													// 		className={'tech-stack-image'}
+													// 		src={item.link}
+													// 		title={item.altTxt}
+													// 		alt={'Logo of ' + item.altTxt}
+													// 	/>
+													// 	<div className="middle-wrapper translate middle">
+													// 		<span>{item.altTxt}</span>
+													// 	</div>
+													// </div>
+													<TechStack src={item.link} title={item.altTxt} alt={item.altTxt} />
 												);
 											})}
 										</div>
