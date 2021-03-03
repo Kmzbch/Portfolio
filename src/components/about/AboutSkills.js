@@ -1,77 +1,74 @@
-import React from 'react';
+import React, { Component } from 'react';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
 
-export default function AboutSkills(props) {
-	return (
-		<div>
-			<Typography className="caption" variant="h4">
-				SKILLS
-			</Typography>
-			<Grid
-				container
-				spacing={3}
-				justify="center"
-				style={{
-					width: '70%',
-					padding: '5vh 5vw',
-					margin: '3vh auto'
-				}}
-			>
-				<ListItem>
-					<ListItemIcon
-						style={{
-							margin: 'auto'
-						}}
-					>
-						<GitHubIcon
+export default class AboutSkills extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { showComponent: true };
+	}
+	render() {
+		return (
+			<div>
+				<Typography className="caption" variant="h4">
+					SKILLS
+				</Typography>
+				<Grid className={'about-skills'} container spacing={3} justify="center">
+					<ListItem>
+						<ListItemIcon
 							style={{
-								fontSize: '80px',
-								color: '#40bdae'
+								margin: 'auto'
 							}}
-						/>
-					</ListItemIcon>
-					<ListItemIcon
-						style={{
-							margin: 'auto'
-						}}
-					>
-						<GitHubIcon
+						>
+							<GitHubIcon
+								style={{
+									fontSize: '80px',
+									color: '#40bdae'
+								}}
+							/>
+						</ListItemIcon>
+						<ListItemIcon
 							style={{
-								fontSize: '80px',
-								color: '#40bdae'
+								margin: 'auto'
 							}}
-						/>
-					</ListItemIcon>
-					<ListItemIcon
-						style={{
-							margin: 'auto'
-						}}
-					>
-						<GitHubIcon
+						>
+							<GitHubIcon
+								style={{
+									fontSize: '80px',
+									color: '#40bdae'
+								}}
+							/>
+						</ListItemIcon>
+						<ListItemIcon
 							style={{
-								fontSize: '80px',
-								color: '#40bdae'
+								margin: 'auto'
 							}}
-						/>
-					</ListItemIcon>
+						>
+							<GitHubIcon
+								style={{
+									fontSize: '80px',
+									color: '#40bdae'
+								}}
+							/>
+						</ListItemIcon>
 
-					<ListItemIcon
-						style={{
-							margin: 'auto'
-						}}
-					>
-						<GitHubIcon
+						<ListItemIcon
 							style={{
-								fontSize: '80px',
-								color: '#40bdae'
+								margin: 'auto'
 							}}
-						/>
-					</ListItemIcon>
-				</ListItem>
-			</Grid>
-		</div>
-	);
+						>
+							<GitHubIcon
+								style={{
+									fontSize: '80px',
+									color: '#40bdae'
+								}}
+							/>
+						</ListItemIcon>
+					</ListItem>
+				</Grid>
+			</div>
+		);
+	}
 }

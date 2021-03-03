@@ -5,13 +5,11 @@ import AboutTech from './AboutTech';
 import AboutSkills from './AboutSkills';
 
 export default class About extends Component {
-	// Life cycle methods
 	constructor(props) {
 		super(props);
 		this.state = { showComponent: true };
 	}
 
-	// renderer
 	render() {
 		return (
 			<div id="about" className="page about">

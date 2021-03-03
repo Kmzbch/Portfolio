@@ -38,10 +38,6 @@ export const Languages = [
 	{
 		altTxt: 'SQL',
 		link: './images/techStacks/sql.png'
-	},
-	{
-		altTxt: 'PL/SQL',
-		link: './images/techStacks/pl-sql.svg'
 	}
 ];
 
@@ -67,20 +63,12 @@ export const FrameworksAndLibraries = [
 		link: './images/techStacks/asp-net.png'
 	},
 	{
-		altTxt: 'Gsap',
-		link: './images/techStacks/gsap.png'
-	},
-	{
 		altTxt: 'Junit5',
 		link: './images/techStacks/junit5.png'
 	},
 	{
 		altTxt: 'REST-assured',
 		link: './images/techStacks/rest-assured.png'
-	},
-	{
-		altTxt: 'Selenium',
-		link: './images/techStacks/selenium.png'
 	},
 	{
 		altTxt: 'CreateJS',
@@ -124,14 +112,6 @@ export const DbmsAndServers = [
 	{
 		altTxt: 'J2EE',
 		link: './images/techStacks/j2ee.png'
-	},
-	{
-		altTxt: 'Jenkins',
-		link: './images/techStacks/jenkins.png'
-	},
-	{
-		altTxt: 'Docker',
-		link: './images/techStacks/docker.png'
 	}
 ];
 
@@ -142,19 +122,11 @@ export const DesignAndManagements = [
 	},
 	{
 		altTxt: 'GitHub',
-		link: './images/techStacks/github.png'
+		link: './images/techStacks/github.svg'
 	},
 	{
 		altTxt: 'Swagger',
 		link: './images/techStacks/swagger.png'
-	},
-	{
-		altTxt: 'Apigee',
-		link: './images/techStacks/apigee.png'
-	},
-	{
-		altTxt: 'Visual Paradigm',
-		link: './images/techStacks/visual-paradigm.png'
 	},
 	{
 		altTxt: 'Visio',
@@ -171,10 +143,6 @@ export const DesignAndManagements = [
 	{
 		altTxt: 'Trello',
 		link: './images/techStacks/trello.png'
-	},
-	{
-		altTxt: 'Wordpress.org',
-		link: './images/techStacks/wordpress.png'
 	},
 	{
 		altTxt: 'Adobe XD',

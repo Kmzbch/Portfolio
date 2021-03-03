@@ -34,22 +34,22 @@
 		text-decoration: none;
 	}
 
-	// .nav-links:after {
-	// 	bottom: 0;
-	// 	content: "";
-	// 	display: block;
-	// 	height: 2px;
-	// 	left: 50%;
-	// 	position: absolute;
-	// 	background: #fafafa;
-	// 	// transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	// 	width: 0;
-	// }
+	.nav-links:after {
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 2px;
+		left: 50%;
+		position: absolute;
+		background: #fafafa;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+	}
 
-	// .nav-links:hover:after {
-	// 	width: 100%;
-	// 	left: 0;
-	// }
+	.nav-links:hover:after {
+		width: 100%;
+		left: 0;
+	}
 
 	// logo
 	.logo {
