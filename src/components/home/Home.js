@@ -20,8 +20,18 @@ export default class Home extends Component {
 							fontFamily: 'Raleway, Sans Serif'
 						}}
 					>
-						Hello. I'm Kei Mizubuchi. {'\n'}
-						I'm a full-stack developer.
+						Hi, I'm{' '}
+						<Typography
+							variant="h2"
+							style={{
+								whiteSpace: 'pre-line',
+								color: '#fbe77d',
+								display: 'inline'
+							}}
+						>
+							Kei
+						</Typography>,
+						<Typography variant="h2">a software engineer</Typography>
 					</Typography>
 
 					<Button className={'view-button'} size="large" variant="outlined" href="#about">
