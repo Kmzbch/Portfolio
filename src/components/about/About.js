@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Typography } from '@material-ui/core';
+
 import './About.scss';
 import AboutMe from './AboutMe';
 import AboutTech from './AboutTech';
@@ -16,6 +18,11 @@ export default class About extends Component {
 				<div className={'content'}>
 					<div className="header">ABOUT</div>
 					<hr className={'divider center'} />
+
+					<Typography className="caption" variant="h5">
+						Have a question or want to work together?
+					</Typography>
+
 					<AboutMe />
 					<AboutSkills />
 					<AboutTech />

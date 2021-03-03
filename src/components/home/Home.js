@@ -29,7 +29,7 @@ export default class Home extends Component {
 								display: 'inline'
 							}}
 						>
-							Kei
+							Kei Mizubuchi
 						</Typography>,
 						<Typography variant="h2">a software engineer</Typography>
 					</Typography>

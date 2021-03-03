@@ -8,7 +8,6 @@ import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
-import NotFound from './components/404/NotFound';
 import Navbar from './components/navbar/Navbar';
 
 function App() {

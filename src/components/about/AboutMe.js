@@ -10,19 +10,22 @@ export default class AboutMe extends Component {
 	render() {
 		return (
 			<div>
-				<Typography className="caption" variant="h5">
-					Have a question or want to work together?
-				</Typography>
-
 				<Grid className={'about-me'} container spacing={3} justify="center">
 					<Grid item xs={7} sm={7}>
 						<Typography style={{ margin: '5vh auto' }} variant="h4">
-							Hi, I'm Kei Mizubuchi. I'm a software engineer.
+							Biography
 						</Typography>
-						<Typography>
+						<Typography style={{ margin: '5vh auto' }}>
 							With 5+ years of experience in on-site IT work with direct clients seeking a position where
 							reliability is valued; Specialized in full-stack development, experienced in scripting,
 							detail-oriented and collaborative problem-solver
+						</Typography>
+						<Typography style={{ margin: '5vh auto' }}>
+							Previously, I worked at Works Applications, Singapore as a Software Engineer, where I worked
+							on delivering central libraries, microservices and distributed multi-tenant architecture to
+							thousands of developers inside the company who utilized them to build various products for
+							our customers. Aside from work, I am also an open-source enthusiast and have created
+							projects that were listed in GitHub trending.
 						</Typography>
 					</Grid>
 					<Grid style={{ textAlign: 'center' }} item xs={5} sm={5}>

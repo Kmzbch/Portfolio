@@ -19,7 +19,7 @@ export default class AboutTech extends Component {
 				</Typography>
 				<Grid className={'about-tech'} container spacing={2} justify="center">
 					{/*  */}
-					<Grid className={'sub-panel'} container direction="row">
+					<Grid className={'sub-panel'} container spacing={2} direction="row">
 						<Grid item xs={7} sm={7}>
 							<Typography variant="h4" className="sub-header">
 								Languages
@@ -60,7 +60,7 @@ export default class AboutTech extends Component {
 					{/* https://unsplash.com/photos/0PPKxWtYh0g 
 					https://unsplash.com/photos/Q9y3LRuuxmg
 					*/}
-					<Grid className={'sub-panel'} container direction="row">
+					<Grid className={'sub-panel'} container spacing={2} direction="row">
 						<Grid item xs={7} sm={7}>
 							<Typography variant="h4" className="sub-header">
 								DBM & Servers
@@ -76,7 +76,7 @@ export default class AboutTech extends Component {
 					{/* https://unsplash.com/photos/nJdwUHmaY8A
 					https://unsplash.com/photos/zoCDWPuiRuA
 					*/}
-					<Grid className={'sub-panel'} container container spacing={2} direction="row">
+					<Grid className={'sub-panel'} container spacing={2} direction="row">
 						<Grid item xs={7} sm={7}>
 							<Typography variant="h4" className="sub-header">
 								Design & Managements
