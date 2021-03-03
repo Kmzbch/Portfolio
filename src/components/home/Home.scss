@@ -6,14 +6,14 @@
 	background-repeat: no-repeat;
 	background-image: url('/assets/images/home/home-bg.jpg');
 	// background-blend-mode: lighten;
-	background-color: #3f4f64;
+	// background-color: #3f4f64;
 
 	// background-blend-mode: luminosity;
 	// background-color: #3f4f64;
 	// background-blend-mode: soft-light;
 	// background-color: #626bb0;
-	// background-blend-mode: soft-light;
-	// background-color: #3f4f64;
+	background-blend-mode: soft-light;
+	background-color: #3f4f64;
 
 	.content {
 		width: 100%;
@@ -33,10 +33,19 @@
 		margin: 5vh 0;
 		color: white;
 		border: 2px white solid;
+		background-color: rgba(64, 64, 64, 0.2);
 	}
 
 	.view-button:hover {
-		color: #b82b32;
+		// color: #b82b32;
+		background-color: #b82b32;
 		border: 2px #b82b32 solid;
+		.endicon {
+			transform: rotate(90deg);
+			transition: .3s;
+		}
+
+		// background-color: #ee707d;
+		// border: 2px #ee707d solid;
 	}
 }

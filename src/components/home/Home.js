@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.scss';
 import { Typography } from '@material-ui/core';
 import { Button } from '@material-ui/core';
+import { ArrowForwardOutlined } from '@material-ui/icons';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -34,7 +35,13 @@ export default class Home extends Component {
 						<Typography variant="h2">a software engineer</Typography>
 					</Typography>
 
-					<Button className={'view-button'} size="large" variant="outlined" href="#about">
+					<Button
+						className={'view-button'}
+						size="large"
+						variant="outlined"
+						href="#about"
+						endIcon={<ArrowForwardOutlined className="endicon" />}
+					>
 						Explore my work
 					</Button>
 				</div>
