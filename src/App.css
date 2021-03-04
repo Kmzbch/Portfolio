@@ -32,16 +32,23 @@
 }
 
 .divider {
-	border: 2px solid #df777b;
+	border: 2px solid #3f4e67;
 	width: 100px;
 	margin: 20px 0 0 0;
 }
 
-.divider-yellow {
+.divider.pink {
+	border-color: #df777b;
+}
+.divider.yellow {
+	border-color: #fbe77d;
+}
+
+/* .divider-yellow {
 	border: 2px solid #fbe77d;
 	width: 100px;
 	margin: 20px 0 0 0;
-}
+} */
 
 .center {
 	text-align: center;

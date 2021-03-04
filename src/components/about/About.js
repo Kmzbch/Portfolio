@@ -17,7 +17,7 @@ export default class About extends Component {
 			<div id="about" className="page about">
 				<div className={'content'}>
 					<div className="header">ABOUT</div>
-					<hr className={'divider center'} />
+					<hr className={'divider pink center'} />
 
 					<Typography className="caption" variant="h5">
 						Have a question or want to work together?

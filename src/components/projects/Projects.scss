@@ -1,16 +1,13 @@
 .project {
-	// TODO: sort out styles
-	$color-1: #243a47;
-	$color-2: #f3f1ee;
-	$color-3: #40bdae;
-	$color-4: #df777b;
-	$color-5: #3f4e67;
-	$color-6: #b82b32;
+	$primary: #f3f1ee;
+	$secondary: #40bdae;
+	$accent: #b82b32;
+	$header: #243a47;
 
 	.content {
 		width: 100%;
 		height: 100%;
-		background-color: $color-2;
+		background-color: $primary;
 		padding-bottom: 15vh;
 		z-index: 100;
 	}
@@ -20,7 +17,7 @@
 		min-height: 30vh;
 		padding: 5vh 5vw;
 		margin: 5vh auto;
-		border-left: 5px solid $color-3;
+		border-left: 5px solid $secondary;
 	}
 
 	.sub-panel.left {
@@ -38,7 +35,7 @@
 	}
 
 	.project-title {
-		color: $color-1;
+		color: $header;
 		font-size: 2.7em;
 		margin-bottom: 2rem;
 	}
@@ -60,7 +57,7 @@
 	}
 
 	.view-button:hover {
-		color: $color-6;
-		border: 2px $color-6 solid;
+		color: $accent;
+		border: 2px $accent solid;
 	}
 }

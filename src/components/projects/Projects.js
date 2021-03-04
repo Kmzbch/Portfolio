@@ -1,42 +1,37 @@
 import React, { Component } from 'react';
-import { Link, Typography, Paper, Grid, Button } from '@material-ui/core';
+import { Typography, Paper, Grid, Button } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 import ProjectItems from './ProjectItems';
 import './Projects.scss';
 
 export default class Projects extends Component {
-	/** Life Cycle Methods */
 	constructor(props) {
 		super(props);
-		this.state = { showComponent: true };
 	}
 
-	/** Render */
 	render() {
 		return (
-			<div id="project" className={'page project'}>
+			<div id="project" className="page project">
 				<div className="content">
 					<div className="header">PROJECTS</div>
 
-					<hr className={'divider-yellow center'} />
+					<hr className="divider yellow center" />
 
-					{/* PROJECTS */}
 					{ProjectItems.map((item, index) => {
 						return (
-							<Paper className={'panel'}>
+							<Paper className="panel">
 								<Grid container spacing={2} justify="center">
-									{/* Project Information */}
-									<Grid item className={'sub-panel left'} xs={6} sm={6}>
-										<Typography className={'project-title'} variant="h3">
+									<Grid item className="sub-panel left" xs={6} sm={6}>
+										<Typography className="project-title" variant="h3">
 											{item.title}
 										</Typography>
 
-										<Typography className={'project-description'}>{item.description}</Typography>
+										<Typography className="project-description">{item.description}</Typography>
 
 										<Grid container direction="column">
 											<Button
-												className={'view-button'}
+												className="view-button"
 												size="large"
 												variant="outlined"
 												color="secondary"
@@ -47,7 +42,7 @@ export default class Projects extends Component {
 												View App
 											</Button>
 											<Button
-												className={'view-button'}
+												className="view-button"
 												size="large"
 												variant="outlined"
 												color="secondary"
@@ -59,10 +54,9 @@ export default class Projects extends Component {
 											</Button>
 										</Grid>
 									</Grid>
-									{/* Screenshots */}
-									<Grid item className={'sub-panel right'} xs={6} sm={6}>
+									<Grid item className="sub-panel right" xs={6} sm={6}>
 										<img
-											className={'project-image'}
+											className="project-image"
 											src={item.imageLink}
 											alt={'screenshots of ' + item.title}
 										/>

@@ -1,44 +1,42 @@
 import React, { Component } from 'react';
-import { Typography, Grid, Paper, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
-import './Resume.scss';
+import { Typography, Grid, Paper } from '@material-ui/core';
+import { List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 import ResumeItems from './ResumeItems';
 import TechStack from '../shared/TechStack';
+import './Resume.scss';
+
 export default class Resume extends Component {
-	// Life cycle methods
 	constructor(props) {
 		super(props);
-		this.state = { showComponent: true };
 	}
 
-	// renderer
 	render() {
 		return (
-			<div id="resume" className={'page resume'}>
+			<div id="resume" className="page resume">
 				<div className="content">
 					<div className="header">RESUME</div>
 
-					<hr className={'divider center'} />
+					<hr className="divider pink center" />
 
 					<ul className="resume-body">
 						{ResumeItems.map((item, index) => {
 							return (
-								<li key={index} className={'resume-event'}>
+								<li key={index} className="resume-event">
 									<div className={'resume-event-icon' + (index + 1)}>
-										<label className={'resume-event-icon'} />
+										<label className="resume-event-icon" />
 									</div>
 									<div className="resume-event-item">
-										{/* <p className={'resume-date-range'}>{item.dateRange}</p> */}
-										<div className={'resume-date-range'}>{item.dateRange}</div>
+										<div className="resume-date-range">{item.dateRange}</div>
 
-										<Typography className={'resume-title'} variant={'h3'}>
+										<Typography className="resume-title" variant={'h3'}>
 											{item.title}
 										</Typography>
 
-										<Typography className={'resume-company'} variant={'h4'}>
+										<Typography className="resume-company" variant={'h4'}>
 											{item.company}
 										</Typography>
 
-										<List className={'resume-duties'}>
+										<List className="resume-duties">
 											{item.duties.map((subItem, index) => {
 												return (
 													<ListItem key={subItem}>
@@ -48,20 +46,9 @@ export default class Resume extends Component {
 												);
 											})}
 										</List>
-										<div className={'resume-tech-stack'}>
+										<div className="resume-tech-stack">
 											{item.techStacks.map((item, index) => {
 												return (
-													// <div button className={'tech-stack-wrapper'}>
-													// 	<img
-													// 		className={'tech-stack-image'}
-													// 		src={item.link}
-													// 		title={item.altTxt}
-													// 		alt={'Logo of ' + item.altTxt}
-													// 	/>
-													// 	<div className="middle-wrapper translate middle">
-													// 		<span>{item.altTxt}</span>
-													// 	</div>
-													// </div>
 													<TechStack src={item.link} title={item.altTxt} alt={item.altTxt} />
 												);
 											})}

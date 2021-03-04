@@ -66,7 +66,7 @@ export default class Contact extends Component {
 				<div className="content">
 					<div className="header white">CONTACT</div>
 
-					<hr className="divider center" />
+					<hr className="divider pink center" />
 
 					<Typography className="caption white" variant="h5">
 						Have a question or want to work together?
