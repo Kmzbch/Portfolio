@@ -1,0 +1,24 @@
+.tech-stack-wrapper {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin: .5rem;
+	border-radius: 5px;
+	background-color: #fafafa;
+
+	.middle-wrapper {
+		width: 100%;
+		height: 100%;
+		color: #000000;
+		border-top: 1px solid #dddddd;
+		border-radius: 0;
+		transition: 0.2s;
+	}
+	.tech-stack-image {
+		padding: .6rem;
+	}
+
+	.tech-stack-description {
+		padding: .3rem;
+	}
+}

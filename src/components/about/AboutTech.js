@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import TechStack from '../shared/TechStack';
+import TechStack from '../shared/techstack/TechStack';
 import './About.scss';
 import { Languages, FrameworksAndLibraries, DbmsAndServers, DesignAndManagements } from './AboutItems';
 

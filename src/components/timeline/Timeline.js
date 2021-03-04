@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
 import { List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
 import TimelineItems from './TimelineItems';
-import TechStack from '../shared/TechStack';
+import TechStack from '../shared/techstack/TechStack';
 import './Timeline.scss';
 
 export default class Timeline extends Component {
