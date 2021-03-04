@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TechStack extends Component {
+export default class TechStack extends Component {
 	constructor(props) {
 		super(props);
 	}
@@ -29,5 +29,3 @@ class TechStack extends Component {
 		);
 	}
 }
-
-export default TechStack;

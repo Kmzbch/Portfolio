@@ -44,6 +44,7 @@ export default class Timeline extends Component {
 												);
 											})}
 										</List>
+
 										<div className="timeline-tech-stack">
 											{item.techStacks.map((subItem, subIndex) => {
 												return (
