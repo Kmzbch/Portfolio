@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import './Navbar.scss';
-import { NavLink } from 'react-router-dom';
-
-import { Typography, Link, List, ListItem, ListItemText } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
+import { List, ListItem, ListItemText } from '@material-ui/core';
 import { HashLink } from 'react-router-hash-link';
-
 import NavbarItems from './NavbarItems';
+import './Navbar.scss';
 
 export default class extends Component {
 	render() {
 		const { currentScreen } = this.props.currentScreen;
 
 		return (
-			<div className={'navbar'}>
-				<div className={'nav-container'}>
-					<div className={'logo'}>
-						<Typography className={'logo-link'} variant="h4" component={HashLink} smooth to="#home">
+			<div className="navbar">
+				<div className="nav-container">
+					<div className="logo">
+						<Typography className="logo-link" variant="h4" component={HashLink} smooth to="#home">
 							KEI MIZUBUCHI
 						</Typography>
 					</div>
-					<div className={'menu'}>
-						<List className={'menu-list'}>
+
+					<div className="menu">
+						<List className="menu-list">
 							{NavbarItems.map((item, index) => {
 								return (
 									<ListItem

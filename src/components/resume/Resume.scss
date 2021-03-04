@@ -1,5 +1,4 @@
 .resume {
-	// $color-1: rgba(219, 224, 235, 1);
 	$color-1: #f7f7f7;
 	$color-2: #ee707d;
 	$color-3: #3f4e67;
@@ -93,14 +92,14 @@
 	.resume-event {
 		position: relative;
 
-		// &:hover {
-		// 	.resume-event-icon {
-		// 		transform: rotate(220deg);
-		// 		transition: all 0.3s ease-in-out 0s;
-		// 		background-color: yellow;
-		// 		// width: 10px;
-		// 	}
-		// }
+		&:hover {
+			.resume-event-icon {
+				transform: rotate(220deg);
+				transition: all 0.3s ease-in-out 0s;
+				background-color: yellow;
+				// width: 10px;
+			}
+		}
 	}
 
 	.resume-event-icon {

@@ -22,9 +22,7 @@ export default class Resume extends Component {
 						{ResumeItems.map((item, index) => {
 							return (
 								<li key={index} className="resume-event">
-									<div className={'resume-event-icon' + (index + 1)}>
-										<label className="resume-event-icon" />
-									</div>
+									<div className="resume-event-icon" />
 									<div className="resume-event-item">
 										<div className="resume-date-range">{item.dateRange}</div>
 

@@ -1,9 +1,4 @@
 const NavbarItems = [
-	// {
-	// 	title: 'Home',
-	// 	url: '#home',
-	// 	className: 'navbar-links'
-	// },
 	{
 		title: 'About',
 		url: '#about',
