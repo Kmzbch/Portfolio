@@ -10,8 +10,8 @@ const NavbarItems = [
 		className: 'navbar-links'
 	},
 	{
-		title: 'Resume',
-		url: '#resume',
+		title: 'Timeline',
+		url: '#timeline',
 		className: 'navbar-links'
 	},
 	{

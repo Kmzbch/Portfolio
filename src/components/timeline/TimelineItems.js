@@ -1,4 +1,4 @@
-const ResumeItems = [
+const TimelineItems = [
 	{
 		dateRange: 'SEP. 2020 - DEC. 2020',
 		title: 'Back-end Developer',
@@ -208,4 +208,4 @@ const ResumeItems = [
 	}
 ];
 
-export default ResumeItems;
+export default TimelineItems;

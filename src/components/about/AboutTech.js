@@ -33,7 +33,7 @@ export default class AboutTech extends Component {
 						https://unsplash.com/photos/szrJ3wjzOMg
 						 */}
 					<Grid item xs={5} sm={5} className="image-panel">
-						<img className={'about-tech-image'} src={'./images/about/language2.jpg'} alt={'Notebook'} />
+						<img className={'about-tech-image'} src={'./images/about/languages.jpg'} alt={'Keyboard'} />
 					</Grid>
 				</Grid>
 				{/* https://unsplash.com/photos/OQSCtabGkSY
@@ -49,7 +49,7 @@ export default class AboutTech extends Component {
 						})}
 					</Grid>
 					<Grid item xs={6} sm={6} className="image-panel">
-						<img className={'about-tech-image'} src={'./images/about/libraries.jpg'} alt={'Libraries'} />
+						<img className={'about-tech-image'} src={'./images/about/libraries.jpg'} alt={'Books'} />
 					</Grid>
 				</Grid>
 				{/* https://unsplash.com/photos/0PPKxWtYh0g 
@@ -65,7 +65,7 @@ export default class AboutTech extends Component {
 						})}
 					</Grid>
 					<Grid item xs={5} sm={5} className="image-panel">
-						<img className={'about-tech-image'} src={'./images/about/dbm2.jpg'} alt={'Books'} />
+						<img className={'about-tech-image'} src={'./images/about/dbm.jpg'} alt={'Books'} />
 					</Grid>
 				</Grid>
 				{/* https://unsplash.com/photos/nJdwUHmaY8A
