@@ -31,8 +31,10 @@ export default class Home extends Component {
 							}}
 						>
 							Kei Mizubuchi
-						</Typography>,
-						<Typography variant="h2">a software engineer</Typography>
+						</Typography>
+						<Typography variant="h3" style={{ opacity: '.6' }}>
+							Software Developer
+						</Typography>
 					</Typography>
 
 					<Button
