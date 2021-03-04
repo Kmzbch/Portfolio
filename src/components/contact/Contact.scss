@@ -1,16 +1,16 @@
 .contact {
-	$color-1: #3f4e67;
-	$color-2: #fafafa;
-	$color-3: #df777b;
-	$color-4: #172229;
-	$color-5: #b82b32;
-	$color-6: #dce1eb;
+	$primary: #3f4e67;
+	$primary-variant: #172229;
+	$accent: #df777b;
+	$neutral: #fafafa;
+	$error: #df777b;
+	$icon: #dce1eb;
 
 	.content {
 		width: 100%;
 		height: 100%;
 		min-height: 100vh;
-		background-color: $color-1;
+		background-color: $primary;
 		padding-top: 15vh 0;
 		z-index: 100;
 	}
@@ -31,7 +31,7 @@
 	}
 
 	.contact-links {
-		color: $color-2;
+		color: $neutral;
 		font-family: "Raleway";
 		font-Weight: 'bold !important';
 		margin-left: 20px;
@@ -40,57 +40,56 @@
 	}
 
 	.contact-links:hover {
-		color: $color-3;
+		color: $accent;
 		text-decoration: none;
 		transition: 0.2s;
 	}
 
-	.disabled-link {
-		pointer-events: none;
-	}
-
 	.contact-icon {
 		font-size: 50px;
-		color: $color-6;
+		color: $icon;
 	}
 
-	// form
 	.contact-form {
 		text-align: center;
 	}
 
-	.contact-form-input {
+	.form-input {
 		width: 80%;
 		margin: 0.7rem 0;
 		border-radius: 5px;
-		background-color: $color-2;
-		color: $color-4;
+		background-color: $neutral;
+		color: $primary-variant;
 	}
 
-	// form button
 	.form-button {
 		margin: 1rem 0;
 		padding: 0.5rem 3rem;
 		border-radius: 5px;
-		background-color: $color-4;
-		color: $color-2;
+		background-color: $primary-variant;
+		color: $neutral;
 		font-weight: bold;
 	}
 
 	.form-button:hover {
-		background-color: $color-3;
-		color: $color-4;
+		background-color: $accent;
+		color: $primary-variant;
 	}
 
-	// validation messages
 	.form-message {
-		color: $color-2;
+		color: $neutral;
 		font-size: 1.2em;
 		font-weight: bold;
 	}
 
+	.form-message-icon {
+		vertical-align: middle;
+		padding-bottom: 3px;
+		margin-right: 5px;
+	}
+
 	.form-message-error {
-		color: $color-3;
+		color: $error;
 		font-size: 1.2em;
 		font-weight: bold;
 	}

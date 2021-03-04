@@ -53,6 +53,10 @@
 	display: none;
 }
 
+.disabled {
+	pointer-events: none;
+}
+
 .pink {
 	color: #df777b;
 }

@@ -13,23 +13,7 @@ import Navbar from './components/navbar/Navbar';
 import { Component, useState, useEffect } from 'react';
 
 class App extends Component {
-	// console.log("Welcome to Kei's portfolio! ");
-	// console.log('This portfolio is build with React.');
-
-	// useEffect(() => {
-	// 	let isMounted = true; // note this flag denote mount status
-	// 	someAsyncOperation().then(data => {
-	// 	  if (isMounted) setState(data);
-	// 	})
-	// 	return () => { isMounted = false }; // use effect cleanup to set flag false, if unmounted
-	//   });
-
-	// state = {
-	// 	isTop: true
-	// };
-
 	state = {
-		// isTop: true
 		currentScreen: 'home'
 	};
 
@@ -60,12 +44,10 @@ class App extends Component {
 					this.setState({ currentScreen: 'projects' });
 				}
 			} else if (resumePos.y - 100 < 0 && contactPos.y - 100 >= 0) {
-				console.log('RESUME!!');
 				if (this.state.currentScreen !== 'resume') {
 					this.setState({ currentScreen: 'resume' });
 				}
 			} else if (contactPos.y - 100 <= 0) {
-				console.log('CONTACT!!');
 				if (this.state.currentScreen !== 'contact') {
 					this.setState({ currentScreen: 'contact' });
 				}
