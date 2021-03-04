@@ -6,6 +6,18 @@ import TechStack from '../shared/techstack/TechStack';
 import './About.scss';
 
 export default class AboutTech extends Component {
+	// Image retrieved from https://unsplash.com/photos/szrJ3wjzOMg
+	language = './images/about/language.jpg';
+
+	// Image retrieved from https://unsplash.com/photos/2JIvboGLeho
+	library = './images/about/library.jpg';
+
+	// Image retrieved from https://unsplash.com/photos/0PPKxWtYh0g
+	dbm = './images/about/dbm.jpg';
+
+	// Image retrieved from https://unsplash.com/photos/zoCDWPuiRuA
+	design = './images/about/design.jpg';
+
 	constructor(props) {
 		super(props);
 	}
@@ -27,7 +39,7 @@ export default class AboutTech extends Component {
 						})}
 					</Grid>
 					<Grid item xs={5} sm={5} className="image-panel">
-						<img className="about-tech-image" src={'./images/about/languages.jpg'} alt={'Keyboard'} />
+						<img className="about-tech-image" src={this.language} alt={'Keyboard'} />
 					</Grid>
 				</Grid>
 
@@ -45,7 +57,7 @@ export default class AboutTech extends Component {
 						</div>
 					</Grid>
 					<Grid item xs={6} sm={6} className="image-panel">
-						<img className="about-tech-image" src={'./images/about/libraries.jpg'} alt={'Books'} />
+						<img className="about-tech-image" src={this.library} alt={'Books'} />
 					</Grid>
 				</Grid>
 
@@ -59,7 +71,7 @@ export default class AboutTech extends Component {
 						})}
 					</Grid>
 					<Grid item xs={5} sm={5} className="image-panel">
-						<img className="about-tech-image" src={'./images/about/dbm.jpg'} alt={'Books'} />
+						<img className="about-tech-image" src={this.dbm} alt={'Books'} />
 					</Grid>
 				</Grid>
 
@@ -77,7 +89,7 @@ export default class AboutTech extends Component {
 						</div>
 					</Grid>
 					<Grid className="image-panel" item xs={6} sm={6}>
-						<img className="about-tech-image" src={'./images/about/design.jpg'} alt={'Desk'} />
+						<img className="about-tech-image" src={this.design} alt={'Desk'} />
 					</Grid>
 				</Grid>
 			</Grid>

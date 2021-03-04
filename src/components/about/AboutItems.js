@@ -1,147 +1,181 @@
 export const Languages = [
 	{
-		altTxt: 'Java',
-		link: './images/techStacks/java.png'
+		// Icon retrieved from https://worldvectorlogo.com/logo/java-4
+		link: './images/techStacks/java.svg',
+		altTxt: 'Java'
 	},
 	{
-		altTxt: 'C#',
-		link: './images/techStacks/c-sharp.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/c--4
+		link: './images/techStacks/c-sharp.svg',
+		altTxt: 'C#'
 	},
 	{
-		altTxt: 'JavaScript',
-		link: './images/techStacks/javascript.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/logo-javascript
+		link: './images/techStacks/javascript.svg',
+		altTxt: 'JavaScript'
 	},
 	{
-		altTxt: 'TypeScript',
-		link: './images/techStacks/typescript.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/typescript
+		link: './images/techStacks/typescript.svg',
+		altTxt: 'TypeScript'
 	},
 	{
-		altTxt: 'HTML5',
-		link: './images/techStacks/html5.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/html5
+		link: './images/techStacks/html5.svg',
+		altTxt: 'HTML5'
 	},
 	{
-		altTxt: 'SASS',
-		link: './images/techStacks/sass.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/sass-1
+		link: './images/techStacks/sass.svg',
+		altTxt: 'SASS'
 	},
 	{
-		altTxt: 'CSS3',
-		link: './images/techStacks/css3.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/css3
+		link: './images/techStacks/css3.svg',
+		altTxt: 'CSS3'
 	},
 	{
-		altTxt: 'Perl',
-		link: './images/techStacks/perl.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/perl-programming-language
+		link: './images/techStacks/perl.svg',
+		altTxt: 'Perl'
 	},
 	{
-		altTxt: 'PHP',
-		link: './images/techStacks/php.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/php
+		link: './images/techStacks/php.svg',
+		altTxt: 'PHP'
 	},
 	{
-		altTxt: 'Python',
-		link: './images/techStacks/python.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/python-5
+		link: './images/techStacks/python.svg',
+		altTxt: 'Python'
 	}
 ];
 
 export const FrameworksAndLibraries = [
 	{
-		altTxt: 'Angular',
-		link: './images/techStacks/angular.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/angular-icon-1
+		link: './images/techStacks/angular.svg',
+		altTxt: 'Angular'
 	},
 	{
-		altTxt: 'ASP.NET',
-		link: './images/techStacks/asp-net.png'
+		// Icon retrieved from https://www.pngegg.com/en/png-dbugy
+		link: './images/techStacks/aspnetcore.png',
+		altTxt: 'ASP.NET'
 	},
 	{
-		altTxt: 'Spring',
-		link: './images/techStacks/spring.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/spring-3
+		link: './images/techStacks/spring.svg',
+		altTxt: 'Spring'
 	},
 	{
-		altTxt: 'React',
-		link: './images/techStacks/react.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/react-2
+		link: './images/techStacks/react.svg',
+		altTxt: 'React'
 	},
 	{
-		altTxt: 'Node.js',
-		link: './images/techStacks/nodejs.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/nodejs-icon
+		link: './images/techStacks/nodejs.svg',
+		altTxt: 'Node.js'
 	},
 	{
-		altTxt: 'Junit5',
-		link: './images/techStacks/junit5.png'
+		// Icon retrieved from https://junit.org/junit5/assets/img/junit5-logo.png
+		link: './images/techStacks/junit5.png',
+		altTxt: 'Junit5'
 	},
 	{
-		altTxt: 'REST-assured',
-		link: './images/techStacks/rest-assured.png'
+		// Icon retrieved from https://avatars.githubusercontent.com/u/19369327?s=400&v=4
+		link: './images/techStacks/rest-assured.png',
+		altTxt: 'REST-assured'
 	},
 	{
-		altTxt: 'CreateJS',
-		link: './images/techStacks/createjs.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/createjs
+		link: './images/techStacks/createjs.svg',
+		altTxt: 'CreateJS'
 	}
 ];
 
 export const DbmsAndServers = [
 	{
-		altTxt: 'SQL Server',
-		link: './images/techStacks/mssql.png'
+		// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
+		link: './images/techStacks/mssql.png',
+		altTxt: 'SQL Server'
 	},
 	{
-		altTxt: 'Oracle',
-		link: './images/techStacks/oracle.png'
+		// Icon retrieved from https://sybyl.com/wp-content/uploads/2019/11/Oracle-Logo-For-Website.png
+		link: './images/techStacks/oracle.png',
+		altTxt: 'Oracle'
 	},
 	{
-		altTxt: 'MySQL',
-		link: './images/techStacks/mysql.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/mysql-6
+		link: './images/techStacks/mysql.svg',
+		altTxt: 'MySQL'
 	},
 	{
-		altTxt: 'Firebase',
-		link: './images/techStacks/firebase.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/firebase-1
+		link: './images/techStacks/firebase.svg',
+		altTxt: 'Firebase'
 	},
 	{
-		altTxt: 'Microsoft Azure',
-		link: './images/techStacks/azure.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/azure-1
+		link: './images/techStacks/azure.svg',
+		altTxt: 'Microsoft Azure'
 	},
 	{
-		altTxt: 'Amazon Web Service',
-		link: './images/techStacks/aws.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/aws-2
+		link: './images/techStacks/aws.svg',
+		altTxt: 'Amazon Web Service'
 	},
 	{
-		altTxt: 'MongoDB',
-		link: './images/techStacks/mongodb.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/mongodb-icon-1
+		link: './images/techStacks/mongodb.svg',
+		altTxt: 'MongoDB'
 	},
 	{
-		altTxt: 'DynamoDB',
-		link: './images/techStacks/dynamodb.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/aws-dynamodb
+		link: './images/techStacks/dynamodb.svg',
+		altTxt: 'DynamoDB'
 	}
 ];
 
 export const DesignAndManagements = [
 	{
-		altTxt: 'Git',
-		link: './images/techStacks/git.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/git-icon
+		link: './images/techStacks/git.svg',
+		altTxt: 'Git'
 	},
 	{
-		altTxt: 'GitHub',
-		link: './images/techStacks/github.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/github-icon
+		link: './images/techStacks/github.svg',
+		altTxt: 'GitHub'
 	},
 	{
-		altTxt: 'Swagger',
-		link: './images/techStacks/swagger.png'
+		// By Fehguy - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61631304
+		link: './images/techStacks/swagger.png',
+		altTxt: 'Swagger'
 	},
 	{
-		altTxt: 'Visio',
-		link: './images/techStacks/visio.png'
+		// Created c. 2013 by Microsoft Corporation, Public domain, via Wikimedia Commons
+		link: './images/techStacks/visio.png',
+		altTxt: 'Visio'
 	},
 	{
-		altTxt: 'Jira',
-		link: './images/techStacks/jira.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/jira-1
+		link: './images/techStacks/jira.svg',
+		altTxt: 'Jira'
 	},
 	{
-		altTxt: 'Confluence',
-		link: './images/techStacks/confluence.png'
+		// Icon retrieved from https://www.atlassian.com/software/confluence
+		link: './images/techStacks/confluence.png',
+		altTxt: 'Confluence'
 	},
 	{
-		altTxt: 'Trello',
-		link: './images/techStacks/trello.svg'
+		// Icon retrieved from https://worldvectorlogo.com/logo/trello
+		link: './images/techStacks/trello.svg',
+		altTxt: 'Trello'
 	},
 	{
-		altTxt: 'Adobe XD',
-		link: './images/techStacks/adobe-xd.png'
+		// Icon retrieved from https://worldvectorlogo.com/logo/adobe-xd
+		link: './images/techStacks/adobexd.svg',
+		altTxt: 'Adobe XD'
 	}
 ];

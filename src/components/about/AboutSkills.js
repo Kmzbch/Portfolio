@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import { Typography } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
 import {
 	BusinessCenterOutlined,
 	BusinessOutlined,
@@ -25,62 +22,60 @@ export default class AboutSkills extends Component {
 
 	render() {
 		return (
-			<div>
-				<Grid className={'about-skills'} container spacing={3} justify="center" direction="row">
-					<Typography variant="h4">SKILLS</Typography>
-					<Grid
-						container
-						justify="space-around"
-						style={{
-							margin: '3vh 0'
-						}}
-					>
-						<Grid className="skill-item">
-							<DesktopWindowsOutlined className="specialties" />
-							<Typography variant="h6">Web Development</Typography>
-						</Grid>
-						<Grid className="skill-item">
-							<CodeOutlined className="specialties" />
-
-							<Typography variant="h6">Scripting</Typography>
-						</Grid>
-						<Grid className="skill-item">
-							<BusinessOutlined className="specialties" />
-							<Typography variant="h6">On-site Work</Typography>
-						</Grid>
-						<Grid className="skill-item">
-							<StorageOutlined className="specialties" />
-							<Typography variant="h6">LAMP</Typography>
-						</Grid>
+			<Grid className="about-skills" container spacing={3} justify="center" direction="row">
+				<Typography variant="h4">SKILLS</Typography>
+				<Grid
+					container
+					justify="space-around"
+					style={{
+						margin: '3vh 0'
+					}}
+				>
+					<Grid className="skill-item">
+						<DesktopWindowsOutlined className="specialties" />
+						<Typography variant="h6">Web Development</Typography>
 					</Grid>
-					<Grid
-						style={{
-							margin: '3vh 0'
-						}}
-						container
-						justify="space-around"
-					>
-						<Grid className="skill-item">
-							<SearchOutlined className="soft-skills" />
-							<Typography variant="h6">Detail-oriented</Typography>
-						</Grid>
-						<Grid className="skill-item">
-							<DirectionsRunOutlined className="soft-skills" />
-							<Typography variant="h6">Tenacity</Typography>
-						</Grid>
+					<Grid className="skill-item">
+						<CodeOutlined className="specialties" />
 
-						<Grid className="skill-item">
-							<PeopleOutlined className="soft-skills" />
-							<Typography variant="h6">Collaboration</Typography>
-						</Grid>
-
-						<Grid className="skill-item">
-							<SettingsOutlined className="soft-skills" />
-							<Typography variant="h6">Configuration</Typography>
-						</Grid>
+						<Typography variant="h6">Scripting</Typography>
+					</Grid>
+					<Grid className="skill-item">
+						<BusinessOutlined className="specialties" />
+						<Typography variant="h6">On-site Work</Typography>
+					</Grid>
+					<Grid className="skill-item">
+						<StorageOutlined className="specialties" />
+						<Typography variant="h6">LAMP</Typography>
 					</Grid>
 				</Grid>
-			</div>
+				<Grid
+					style={{
+						margin: '3vh 0'
+					}}
+					container
+					justify="space-around"
+				>
+					<Grid className="skill-item">
+						<SearchOutlined className="soft-skills" />
+						<Typography variant="h6">Detail-oriented</Typography>
+					</Grid>
+					<Grid className="skill-item">
+						<DirectionsRunOutlined className="soft-skills" />
+						<Typography variant="h6">Tenacity</Typography>
+					</Grid>
+
+					<Grid className="skill-item">
+						<PeopleOutlined className="soft-skills" />
+						<Typography variant="h6">Collaboration</Typography>
+					</Grid>
+
+					<Grid className="skill-item">
+						<SettingsOutlined className="soft-skills" />
+						<Typography variant="h6">Configuration</Typography>
+					</Grid>
+				</Grid>
+			</Grid>
 		);
 	}
 }

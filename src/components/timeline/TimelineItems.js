@@ -12,48 +12,59 @@ const TimelineItems = [
 		],
 		techStacks: [
 			{
-				altTxt: 'Java',
-				link: './images/techStacks/java.png'
+				// Icon retrieved from https://worldvectorlogo.com/logo/java-4
+				link: './images/techStacks/java.svg',
+				altTxt: 'Java'
 			},
 			{
-				altTxt: 'Spring',
-				link: './images/techStacks/spring.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/spring-3
+				link: './images/techStacks/spring.svg',
+				altTxt: 'Spring'
 			},
 			{
-				altTxt: 'Microsoft SQL Server',
-				link: './images/techStacks/mssql.png'
+				// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
+				link: './images/techStacks/mssql.png',
+				altTxt: 'SQL Server'
 			},
 			{
-				altTxt: 'Junit5',
-				link: './images/techStacks/junit5.png'
+				// Icon retrieved from https://junit.org/junit5/assets/img/junit5-logo.png
+				link: './images/techStacks/junit5.png',
+				altTxt: 'Junit5'
 			},
 			{
-				altTxt: 'REST-assured',
-				link: './images/techStacks/rest-assured.png'
+				// Icon retrieved from https://avatars.githubusercontent.com/u/19369327?s=400&v=4
+				link: './images/techStacks/rest-assured.png',
+				altTxt: 'REST-assured'
 			},
 			{
-				altTxt: 'Git',
-				link: './images/techStacks/git.png'
+				// Icon retrieved from https://worldvectorlogo.com/logo/git-icon
+				link: './images/techStacks/git.svg',
+				altTxt: 'Git'
 			},
 			{
-				altTxt: 'GitHub',
-				link: './images/techStacks/github.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/github-icon
+				link: './images/techStacks/github.svg',
+				altTxt: 'GitHub'
 			},
 			{
-				altTxt: 'Swagger',
-				link: './images/techStacks/swagger.png'
+				// By Fehguy - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61631304
+				link: './images/techStacks/swagger.png',
+				altTxt: 'Swagger'
 			},
 			{
-				altTxt: 'Jira',
-				link: './images/techStacks/jira.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/jira-1
+				link: './images/techStacks/jira.svg',
+				altTxt: 'Jira'
 			},
 			{
-				altTxt: 'Confluence',
-				link: './images/techStacks/confluence.png'
+				// Icon retrieved from https://www.atlassian.com/software/confluence
+				link: './images/techStacks/confluence.png',
+				altTxt: 'Confluence'
 			},
 			{
-				altTxt: 'Trello',
-				link: './images/techStacks/trello.png'
+				// Icon retrieved from https://worldvectorlogo.com/logo/trello
+				link: './images/techStacks/trello.svg',
+				altTxt: 'Trello'
 			}
 		]
 	},
@@ -70,32 +81,39 @@ const TimelineItems = [
 		],
 		techStacks: [
 			{
-				altTxt: 'Java',
-				link: './images/techStacks/java.png'
+				// Icon retrieved from https://worldvectorlogo.com/logo/java-4
+				link: './images/techStacks/java.svg',
+				altTxt: 'Java'
 			},
 			{
-				altTxt: 'Spring',
-				link: './images/techStacks/spring.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/spring-3
+				link: './images/techStacks/spring.svg',
+				altTxt: 'Spring'
 			},
 			{
-				altTxt: 'Struts',
-				link: './images/techStacks/struts.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/struts
+				link: './images/techStacks/struts.svg',
+				altTxt: 'Struts'
 			},
 			{
-				altTxt: 'SOAP UI',
-				link: './images/techStacks/soapui.png'
+				// Icon retrieved from https://www.soapui.org/open-source/features/
+				link: './images/techStacks/soapui.png',
+				altTxt: 'SOAP UI'
 			},
 			{
-				altTxt: 'Microsoft SQL Server',
-				link: './images/techStacks/mssql.png'
+				// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
+				link: './images/techStacks/mssql.png',
+				altTxt: 'SQL Server'
 			},
 			{
-				altTxt: 'Git',
-				link: './images/techStacks/git.png'
+				// Icon retrieved from https://worldvectorlogo.com/logo/git-icon
+				link: './images/techStacks/git.svg',
+				altTxt: 'Git'
 			},
 			{
-				altTxt: 'GitHub',
-				link: './images/techStacks/github.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/github-icon
+				link: './images/techStacks/github.svg',
+				altTxt: 'GitHub'
 			}
 		]
 	},
@@ -112,41 +130,49 @@ const TimelineItems = [
 		],
 		techStacks: [
 			{
-				altTxt: 'Angular',
-				link: './images/techStacks/angular.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/angular-icon-1
+				link: './images/techStacks/angular.svg',
+				altTxt: 'Angular'
 			},
 			{
-				altTxt: 'C#',
-				link: './images/techStacks/csharp.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/c--4
+				link: './images/techStacks/c-sharp.svg',
+				altTxt: 'C#'
 			},
 			{
-				altTxt: '.NET Core',
-				link: './images/techStacks/dot-net-core.svg'
+				// Icon retrieved from https://www.pngegg.com/en/png-dbugy
+				link: './images/techStacks/aspnetcore.png',
+				altTxt: 'ASP.NET'
 			},
 			{
-				altTxt: 'Microsoft SQL Server',
-				link: './images/techStacks/mssql.png'
+				// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
+				link: './images/techStacks/mssql.png',
+				altTxt: 'SQL Server'
 			},
 			{
-				altTxt: 'Kendo UI',
-				link: './images/techStacks/kendo-ui.png'
+				// Icon retrieved from https://aurelia-ui-toolkits.github.io/demo-kendo/images/kendo-ui-logo.png
+				link: './images/techStacks/kendo-ui.png',
+				altTxt: 'Kendo UI'
 			},
 			{
-				altTxt: 'J2EE',
-				link: './images/techStacks/j2ee.svg'
-			},
-
-			{
-				altTxt: 'Azure',
-				link: './images/techStacks/azure.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/jee-2
+				link: './images/techStacks/j2ee.svg',
+				altTxt: 'J2EE'
 			},
 			{
-				altTxt: 'Git',
-				link: './images/techStacks/git.png'
+				// Icon retrieved from https://worldvectorlogo.com/logo/azure-1
+				link: './images/techStacks/azure.svg',
+				altTxt: 'Microsoft Azure'
 			},
 			{
-				altTxt: 'GitHub',
-				link: './images/techStacks/github.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/git-icon
+				link: './images/techStacks/git.svg',
+				altTxt: 'Git'
+			},
+			{
+				// Icon retrieved from https://worldvectorlogo.com/logo/github-icon
+				link: './images/techStacks/github.svg',
+				altTxt: 'GitHub'
 			}
 		]
 	},
@@ -164,45 +190,54 @@ const TimelineItems = [
 		],
 		techStacks: [
 			{
-				altTxt: 'Linux',
-				link: './images/techStacks/linux.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/linux-tux
+				link: './images/techStacks/linux.svg',
+				altTxt: 'Linux'
 			},
 			{
-				altTxt: 'Red Hat',
-				link: './images/techStacks/red-hat.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/red-hat-1
+				link: './images/techStacks/red-hat.svg',
+				altTxt: 'Red Hat'
 			},
 			{
-				altTxt: 'Apache',
-				link: './images/techStacks/apache.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/apache-13
+				link: './images/techStacks/apache.svg',
+				altTxt: 'Apache'
 			},
 			{
-				altTxt: 'MySQL',
-				link: './images/techStacks/mysql.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/mysql-6
+				link: './images/techStacks/mysql.svg',
+				altTxt: 'MySQL'
 			},
 			{
-				altTxt: 'PHP',
-				link: './images/techStacks/php.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/php
+				link: './images/techStacks/php.svg',
+				altTxt: 'PHP'
 			},
 			{
-				altTxt: 'Perl',
-				link: './images/techStacks/perl.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/perl-programming-language
+				link: './images/techStacks/perl.svg',
+				altTxt: 'Perl'
 			},
 			{
-				altTxt: 'Java',
-				link: './images/techStacks/java.svg'
-			},
-
-			{
-				altTxt: 'PostgreSQL',
-				link: './images/techStacks/postgresql.svg'
+				// Icon retrieved from https://worldvectorlogo.com/logo/java-4
+				link: './images/techStacks/java.svg',
+				altTxt: 'Java'
 			},
 			{
-				altTxt: 'MARC 21',
-				link: './images/techStacks/marc21.png'
+				// Icon retrieved from https://worldvectorlogo.com/logo/postgresql
+				link: './images/techStacks/postgresql.svg',
+				altTxt: 'PostgreSQL'
 			},
 			{
-				altTxt: 'DSPACE',
-				link: './images/techStacks/dspace.png'
+				// Icon retrieved from https://www.loc.gov/marc/bibliographic/
+				link: './images/techStacks/marc21.png',
+				altTxt: 'MARC 21'
+			},
+			{
+				// Icon retrieved from https://duraspace.org/dspace/
+				link: './images/techStacks/dspace.png',
+				altTxt: 'DSPACE'
 			}
 		]
 	}
