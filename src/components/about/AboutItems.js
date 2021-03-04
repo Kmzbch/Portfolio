@@ -8,59 +8,59 @@ export const Languages = [
 		link: './images/techStacks/c-sharp.svg'
 	},
 	{
-		altTxt: 'Python',
-		link: './images/techStacks/python.png'
+		altTxt: 'JavaScript',
+		link: './images/techStacks/javascript.svg'
+	},
+	{
+		altTxt: 'TypeScript',
+		link: './images/techStacks/typescript.svg'
+	},
+	{
+		altTxt: 'HTML5',
+		link: './images/techStacks/html5.svg'
+	},
+	{
+		altTxt: 'SASS',
+		link: './images/techStacks/sass.svg'
+	},
+	{
+		altTxt: 'CSS3',
+		link: './images/techStacks/css3.svg'
+	},
+	{
+		altTxt: 'Perl',
+		link: './images/techStacks/perl.svg'
 	},
 	{
 		altTxt: 'PHP',
 		link: './images/techStacks/php.svg'
 	},
 	{
-		altTxt: 'JavaScript',
-		link: './images/techStacks/javascript.png'
-	},
-	{
-		altTxt: 'TypeScript',
-		link: './images/techStacks/typescript.png'
-	},
-	{
-		altTxt: 'HTML',
-		link: './images/techStacks/html.png'
-	},
-	{
-		altTxt: 'SASS',
-		link: './images/techStacks/sass.png'
-	},
-	{
-		altTxt: 'CSS',
-		link: './images/techStacks/css.png'
-	},
-	{
-		altTxt: 'SQL',
-		link: './images/techStacks/sql.png'
+		altTxt: 'Python',
+		link: './images/techStacks/python.svg'
 	}
 ];
 
 export const FrameworksAndLibraries = [
 	{
-		altTxt: 'Spring',
-		link: './images/techStacks/spring.svg'
-	},
-	{
-		altTxt: 'Node.js',
-		link: './images/techStacks/node-js.png'
-	},
-	{
-		altTxt: 'React (Native)',
-		link: './images/techStacks/react.png'
-	},
-	{
 		altTxt: 'Angular',
-		link: './images/techStacks/angular.png'
+		link: './images/techStacks/angular.svg'
 	},
 	{
 		altTxt: 'ASP.NET',
 		link: './images/techStacks/asp-net.png'
+	},
+	{
+		altTxt: 'Spring',
+		link: './images/techStacks/spring.svg'
+	},
+	{
+		altTxt: 'React',
+		link: './images/techStacks/react.svg'
+	},
+	{
+		altTxt: 'Node.js',
+		link: './images/techStacks/nodejs.svg'
 	},
 	{
 		altTxt: 'Junit5',
@@ -72,25 +72,13 @@ export const FrameworksAndLibraries = [
 	},
 	{
 		altTxt: 'CreateJS',
-		link: './images/techStacks/create-js.png'
+		link: './images/techStacks/createjs.svg'
 	}
 ];
 
 export const DbmsAndServers = [
 	{
-		altTxt: 'Firebase',
-		link: './images/techStacks/firebase.png'
-	},
-	{
-		altTxt: 'Microsoft Azure',
-		link: './images/techStacks/azure.png'
-	},
-	{
-		altTxt: 'Amazon Web Service',
-		link: './images/techStacks/aws.png'
-	},
-	{
-		altTxt: 'Microsoft SQL Server',
+		altTxt: 'SQL Server',
 		link: './images/techStacks/mssql.png'
 	},
 	{
@@ -99,26 +87,34 @@ export const DbmsAndServers = [
 	},
 	{
 		altTxt: 'MySQL',
-		link: './images/techStacks/mysql.png'
+		link: './images/techStacks/mysql.svg'
+	},
+	{
+		altTxt: 'Firebase',
+		link: './images/techStacks/firebase.svg'
+	},
+	{
+		altTxt: 'Microsoft Azure',
+		link: './images/techStacks/azure.svg'
+	},
+	{
+		altTxt: 'Amazon Web Service',
+		link: './images/techStacks/aws.svg'
 	},
 	{
 		altTxt: 'MongoDB',
-		link: './images/techStacks/mongodb.png'
+		link: './images/techStacks/mongodb.svg'
 	},
 	{
 		altTxt: 'DynamoDB',
-		link: './images/techStacks/dynamodb.png'
-	},
-	{
-		altTxt: 'J2EE',
-		link: './images/techStacks/j2ee.png'
+		link: './images/techStacks/dynamodb.svg'
 	}
 ];
 
 export const DesignAndManagements = [
 	{
 		altTxt: 'Git',
-		link: './images/techStacks/git.png'
+		link: './images/techStacks/git.svg'
 	},
 	{
 		altTxt: 'GitHub',
@@ -142,7 +138,7 @@ export const DesignAndManagements = [
 	},
 	{
 		altTxt: 'Trello',
-		link: './images/techStacks/trello.png'
+		link: './images/techStacks/trello.svg'
 	},
 	{
 		altTxt: 'Adobe XD',

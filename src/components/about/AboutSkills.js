@@ -21,8 +21,8 @@ import {
 export default class AboutSkills extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { showComponent: true };
 	}
+
 	render() {
 		return (
 			<div>

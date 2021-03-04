@@ -10,11 +10,6 @@
 	pointer-events: none;
 }
 
-/* Common Styles */
-.tech-stack-image {
-	height: 3.5rem;
-}
-
 .header {
 	font-family: "Raleway";
 	font-size: 40px;
@@ -40,8 +35,13 @@
 .divider.pink {
 	border-color: #df777b;
 }
+
 .divider.yellow {
 	border-color: #fbe77d;
+}
+
+.white {
+	color: white;
 }
 
 .center {
@@ -50,30 +50,16 @@
 	margin-right: auto;
 }
 
+.line-wrap {
+	overflow: hidden;
+}
+
 .hidden {
 	display: none;
 }
 
 .disabled {
 	pointer-events: none;
-}
-
-.pink {
-	color: #df777b;
-}
-.green {
-	color: #40bdae;
-}
-.yellow {
-	color: #fbe77d;
-}
-
-.white {
-	color: white;
-}
-
-.line-wrap {
-	overflow: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
