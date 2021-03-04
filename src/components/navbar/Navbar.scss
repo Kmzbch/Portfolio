@@ -34,7 +34,7 @@
 
 	.nav-links:hover {
 		// background-color: #293242;
-		color: #fed96c;
+		color: white;
 		text-decoration: none;
 	}
 
@@ -45,7 +45,7 @@
 		height: 4px;
 		left: 50%;
 		position: absolute;
-		background: #fed96c;
+		background: white;
 		// transition: width 0.3s ease 0s, left 0.3s ease 0s;
 		width: 0;
 	}
@@ -54,6 +54,24 @@
 		width: 100%;
 		left: 0;
 	}
+
+	.active {
+		color: #fed96c;
+		pointer-events: none;
+		transition: 0.2s;
+	}
+
+	// .active-menu:after {
+	// 	bottom: 0;
+	// 	content: "";
+	// 	display: block;
+	// 	height: 4px;
+	// 	position: absolute;
+	// 	background: #fed96c;
+	// 	transition: 0.2s;
+	// 	width: 100%;
+	// 	left: 0;
+	// }
 
 	// logo
 	.logo {

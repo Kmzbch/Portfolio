@@ -9,6 +9,8 @@ import NavbarItems from './NavbarItems';
 
 export default class extends Component {
 	render() {
+		const { currentScreen } = this.props.currentScreen;
+
 		return (
 			<div className={'navbar'}>
 				<div className={'nav-container'}>
@@ -23,7 +25,13 @@ export default class extends Component {
 								return (
 									<ListItem
 										button
-										className={'nav-links'}
+										className={
+											currentScreen === item.title.toLowerCase() ? (
+												'nav-links active active-menu'
+											) : (
+												'nav-links'
+											)
+										}
 										key={item.title}
 										component={HashLink}
 										to={item.url}
