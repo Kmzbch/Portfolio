@@ -14,14 +14,21 @@ export default class Home extends Component {
 		return (
 			<div id="home" className={'page home'}>
 				<div className={'content'}>
-					<Typography
-						variant="h2"
+					<div
 						style={{
 							paddingTop: '30vh',
 							fontFamily: 'Raleway, Sans Serif'
 						}}
 					>
-						Hi, I'm{' '}
+						<Typography
+							variant="h2"
+							style={{
+								whiteSpace: 'pre-line',
+								display: 'inline'
+							}}
+						>
+							Hi, I'm{' '}
+						</Typography>
 						<Typography
 							variant="h2"
 							style={{
@@ -35,7 +42,7 @@ export default class Home extends Component {
 						<Typography variant="h3" style={{ opacity: '.6' }}>
 							Software Developer
 						</Typography>
-					</Typography>
+					</div>
 
 					<Button
 						className={'view-button'}

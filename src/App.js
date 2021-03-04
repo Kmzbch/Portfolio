@@ -1,16 +1,14 @@
 import React from 'react';
-import './App.css';
-import { makeStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
 import Navbar from './components/navbar/Navbar';
-import { Component, useState, useEffect } from 'react';
+import { Component } from 'react';
+import './App.css';
 
 class App extends Component {
 	state = {

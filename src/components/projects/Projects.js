@@ -20,7 +20,7 @@ export default class Projects extends Component {
 
 					{ProjectItems.map((item, index) => {
 						return (
-							<Paper className="panel">
+							<Paper className="panel" key={item.title}>
 								<Grid container spacing={2} justify="center">
 									<Grid item className="sub-panel left" xs={6} sm={6}>
 										<Typography className="project-title" variant="h3">

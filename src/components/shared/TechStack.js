@@ -1,20 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function TechStack(props) {
-	return (
-		<div className={'tech-stack-wrapper'}>
-			<div>
-				<img className={'tech-stack-image'} src={props.src} title={props.title} alt={'Logo of ' + props.alt} />
-				<div
-					className="middle-wrapper translate middle"
-					style={{
-						borderTop: '1px solid #DDD',
-						borderRadius: '0'
-					}}
-				>
-					<div className={'tech-stack-description'}>{props.alt}</div>
+class TechStack extends Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<div className={'tech-stack-wrapper'}>
+				<div>
+					<img
+						className={'tech-stack-image'}
+						src={this.props.src}
+						title={this.props.title}
+						alt={'Logo of ' + this.props.alt}
+					/>
+					<div
+						className="middle-wrapper translate middle"
+						style={{
+							borderTop: '1px solid #DDD',
+							borderRadius: '0'
+						}}
+					>
+						<div className={'tech-stack-description'}>{this.props.alt}</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	);
+		);
+	}
 }
+
+export default TechStack;

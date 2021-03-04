@@ -47,7 +47,12 @@ export default class Resume extends Component {
 										<div className="resume-tech-stack">
 											{item.techStacks.map((item, index) => {
 												return (
-													<TechStack src={item.link} title={item.altTxt} alt={item.altTxt} />
+													<TechStack
+														key={item.link}
+														src={item.link}
+														title={item.altTxt}
+														alt={item.altTxt}
+													/>
 												);
 											})}
 										</div>

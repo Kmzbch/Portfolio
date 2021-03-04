@@ -8,7 +8,6 @@ import { Languages, FrameworksAndLibraries, DbmsAndServers, DesignAndManagements
 export default class AboutTech extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { showComponent: true };
 	}
 
 	render() {
@@ -25,7 +24,7 @@ export default class AboutTech extends Component {
 							Languages
 						</Typography>
 						{Languages.map((item, index) => {
-							return <TechStack src={item.link} title={item.altTxt} alt={item.altTxt} />;
+							return <TechStack key={item.link} src={item.link} title={item.altTxt} alt={item.altTxt} />;
 						})}
 					</Grid>
 
@@ -46,7 +45,7 @@ export default class AboutTech extends Component {
 							Frameworks & Libraries
 						</Typography>
 						{FrameworksAndLibraries.map((item, index) => {
-							return <TechStack src={item.link} title={item.altTxt} alt={item.altTxt} />;
+							return <TechStack key={item.link} src={item.link} title={item.altTxt} alt={item.altTxt} />;
 						})}
 					</Grid>
 					<Grid item xs={6} sm={6} className="image-panel">
@@ -62,7 +61,7 @@ export default class AboutTech extends Component {
 							DBM & Servers
 						</Typography>
 						{DbmsAndServers.map((item, index) => {
-							return <TechStack src={item.link} title={item.altTxt} alt={item.altTxt} />;
+							return <TechStack key={item.link} src={item.link} title={item.altTxt} alt={item.altTxt} />;
 						})}
 					</Grid>
 					<Grid item xs={5} sm={5} className="image-panel">
@@ -78,7 +77,7 @@ export default class AboutTech extends Component {
 							Design & Managements
 						</Typography>
 						{DesignAndManagements.map((item, index) => {
-							return <TechStack src={item.link} title={item.altTxt} alt={item.altTxt} />;
+							return <TechStack key={item.link} src={item.link} title={item.altTxt} alt={item.altTxt} />;
 						})}
 					</Grid>
 					<Grid item xs={6} sm={6} className="image-panel">
