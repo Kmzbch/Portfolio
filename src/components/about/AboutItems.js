@@ -73,6 +73,11 @@ export const FrameworksAndLibraries = [
 		altTxt: 'React'
 	},
 	{
+		// Icon retrieved from https://icon-icons.com/icon/jquery-original-logo/146446
+		link: './images/techStacks/jquery.svg',
+		altTxt: 'jQuery'
+	},
+	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/nodejs-icon
 		link: './images/techStacks/nodejs.svg',
 		altTxt: 'Node.js'
