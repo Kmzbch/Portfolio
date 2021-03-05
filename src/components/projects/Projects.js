@@ -22,7 +22,7 @@ export default class Projects extends Component {
 						return (
 							<Paper className="panel" key={item.title}>
 								<Grid container spacing={2} justify="center">
-									<Grid item className="sub-panel left" xs={6} sm={6}>
+									<Grid item className="sub-panel left" xs={12} sm={12} md={6}>
 										<Typography className="project-title" variant="h3">
 											{item.title}
 										</Typography>
@@ -54,7 +54,7 @@ export default class Projects extends Component {
 											</Button>
 										</Grid>
 									</Grid>
-									<Grid item className="sub-panel right" xs={6} sm={6}>
+									<Grid item className="sub-panel right" xs={12} sm={12} md={6}>
 										<img
 											className="project-image"
 											src={item.imageLink}

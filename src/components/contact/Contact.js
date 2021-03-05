@@ -73,7 +73,7 @@ export default class Contact extends Component {
 					</Typography>
 
 					<Grid className="panel" container spacing={2}>
-						<Grid item xs={6} sm={6}>
+						<Grid item sm={12} md={6}>
 							<div className="contact-items">
 								<List>
 									{ContactItems.map((item, index) => {
@@ -106,7 +106,7 @@ export default class Contact extends Component {
 								</List>
 							</div>
 						</Grid>
-						<Grid item xs={6} sm={6}>
+						<Grid item sm={12} md={6}>
 							<div className="contact-form">
 								<form onSubmit={this.submitForm} action={this.emailServiceApi} method="POST">
 									<TextField

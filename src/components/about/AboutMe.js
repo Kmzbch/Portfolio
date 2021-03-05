@@ -28,7 +28,7 @@ export default class AboutMe extends Component {
 					</Typography>
 					<Typography style={{ fontSize: '1.1em', margin: '2vh auto' }}>
 						In Canada, I have gained experience through multiple projects of enterprise web application
-						using various technologies, including but not limited to ASP.NET, Angular, SQL Server stack. my
+						using various technologies, including but not limited to ASP.NET, Angular, SQL Server stack. My
 						current focus are microservices and RESTful APIs but I am open to work both the front-end and
 						back-end.
 					</Typography>

@@ -7,8 +7,8 @@ import {
 	DirectionsRunOutlined,
 	PeopleOutlined,
 	SearchOutlined,
-	SettingsOutlined,
-	StorageOutlined
+	StorageOutlined,
+	TrendingUpOutlined
 } from '@material-ui/icons';
 
 export default class AboutSkills extends Component {
@@ -19,7 +19,7 @@ export default class AboutSkills extends Component {
 	render() {
 		return (
 			<Grid className="about-skills" container spacing={3} justify="center" direction="row">
-				<Typography variant="h4">Skills & Qualifications</Typography>
+				<Typography variant="h4">My Skills & Qualifications</Typography>
 
 				<Grid
 					container
@@ -30,7 +30,7 @@ export default class AboutSkills extends Component {
 				>
 					<Grid className="skill-item">
 						<DesktopWindowsOutlined className="specialties" />
-						<Typography variant="h6">Full-stack Development</Typography>
+						<Typography variant="h6">Full-Stack Development</Typography>
 						<Typography className="skill-description" inline>
 							Implement, test and refactor
 						</Typography>
@@ -41,20 +41,24 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item">
 						<CodeOutlined className="specialties" />
 						<Typography variant="h6">Scripting</Typography>
-						<Typography className="skill-description" inline />
 						<Typography className="skill-description" inline>
-							proven
+							Build scripts for workflow automation/streamlining
 						</Typography>
 					</Grid>
 					<Grid className="skill-item">
-						<BusinessOutlined className="specialties" />
-						<Typography variant="h6">On-site Work</Typography>
-						<Typography className="skill-description">client support</Typography>
+						<StorageOutlined className="specialties" />
+						<Typography variant="h6">Server</Typography>
+						<Typography className="skill-description">
+							Experienced and knowledgable with LAMP stack
+						</Typography>
+						<Typography className="skill-description" />
 					</Grid>
 					<Grid className="skill-item">
-						<StorageOutlined className="specialties" />
-						<Typography variant="h6">LAMP</Typography>
-						<Typography className="skill-description">test test test test test test </Typography>
+						<BusinessOutlined className="specialties" />
+						<Typography variant="h6">On-Site IT Support</Typography>
+						<Typography className="skill-description">Communicate with clients to</Typography>
+						<Typography className="skill-description">offer assistance</Typography>
+						<Typography className="skill-description" />
 					</Grid>
 				</Grid>
 				<Grid
@@ -68,7 +72,7 @@ export default class AboutSkills extends Component {
 						<SearchOutlined className="soft-skills" />
 						<Typography variant="h6">Attention to Detail</Typography>
 						<Typography className="skill-description" inline>
-							Analyze for problem-solving
+							Analyze for a solution
 						</Typography>
 						<Typography className="skill-description" inline>
 							from different perspectives
@@ -78,7 +82,7 @@ export default class AboutSkills extends Component {
 						<DirectionsRunOutlined className="soft-skills" />
 						<Typography variant="h6">Tenacity</Typography>
 						<Typography className="skill-description" inline>
-							Carry through within
+							Carry things through within
 						</Typography>
 						<Typography className="skill-description" inline>
 							a limited timeframe
@@ -87,20 +91,20 @@ export default class AboutSkills extends Component {
 
 					<Grid className="skill-item">
 						<PeopleOutlined className="soft-skills" />
-						<Typography variant="h6">Collaborative</Typography>
+						<Typography variant="h6">Collaboration</Typography>
 						<Typography className="skill-description" inline>
 							Work well collaboratively with a team for the best results
 						</Typography>
 					</Grid>
 
 					<Grid className="skill-item">
-						<SettingsOutlined className="soft-skills" />
+						<TrendingUpOutlined className="soft-skills" />
 						<Typography variant="h6">Adaptability</Typography>
 						<Typography className="skill-description" inline>
-							Constantly learn new{' '}
+							Grow the skill set to
 						</Typography>
 						<Typography className="skill-description" inline>
-							technologies
+							adapt to the changing needs
 						</Typography>
 					</Grid>
 				</Grid>
