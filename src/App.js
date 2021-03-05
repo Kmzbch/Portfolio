@@ -17,7 +17,7 @@ class App extends Component {
 
 	componentDidMount() {
 		document.addEventListener('scroll', () => {
-			const margin = 100;
+			const margin = 50;
 
 			const home = document.querySelector('#home');
 			const about = document.querySelector('#about');
