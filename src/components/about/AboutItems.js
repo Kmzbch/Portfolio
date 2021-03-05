@@ -25,14 +25,14 @@ export const Languages = [
 		altTxt: 'HTML5'
 	},
 	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/sass-1
-		link: './images/techStacks/sass.svg',
-		altTxt: 'SASS'
-	},
-	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/css3
 		link: './images/techStacks/css3.svg',
 		altTxt: 'CSS3'
+	},
+	{
+		// Icon retrieved from https://worldvectorlogo.com/logo/sass-1
+		link: './images/techStacks/sass.svg',
+		altTxt: 'SASS'
 	},
 	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/perl-programming-language
@@ -106,11 +106,6 @@ export const DbmsAndServers = [
 		altTxt: 'SQL Server'
 	},
 	{
-		// Icon retrieved from https://sybyl.com/wp-content/uploads/2019/11/Oracle-Logo-For-Website.png
-		link: './images/techStacks/oracle.png',
-		altTxt: 'Oracle'
-	},
-	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/mysql-6
 		link: './images/techStacks/mysql.svg',
 		altTxt: 'MySQL'
@@ -119,6 +114,16 @@ export const DbmsAndServers = [
 		// Icon retrieved from https://worldvectorlogo.com/logo/firebase-1
 		link: './images/techStacks/firebase.svg',
 		altTxt: 'Firebase'
+	},
+	{
+		// Icon retrieved from https://sybyl.com/wp-content/uploads/2019/11/Oracle-Logo-For-Website.png
+		link: './images/techStacks/oracle.png',
+		altTxt: 'Oracle'
+	},
+	{
+		// Icon retrieved from https://worldvectorlogo.com/logo/postgresql
+		link: './images/techStacks/postgresql.svg',
+		altTxt: 'PostgreSQL'
 	},
 	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/azure-1
@@ -134,12 +139,12 @@ export const DbmsAndServers = [
 		// Icon retrieved from https://worldvectorlogo.com/logo/mongodb-icon-1
 		link: './images/techStacks/mongodb.svg',
 		altTxt: 'MongoDB'
-	},
-	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/aws-dynamodb
-		link: './images/techStacks/dynamodb.svg',
-		altTxt: 'DynamoDB'
 	}
+	// {
+	// 	// Icon retrieved from https://worldvectorlogo.com/logo/aws-dynamodb
+	// 	link: './images/techStacks/dynamodb.svg',
+	// 	altTxt: 'DynamoDB'
+	// }
 ];
 
 export const DesignAndManagements = [
@@ -182,5 +187,10 @@ export const DesignAndManagements = [
 		// Icon retrieved from https://worldvectorlogo.com/logo/adobe-xd
 		link: './images/techStacks/adobexd.svg',
 		altTxt: 'Adobe XD'
+	},
+	{
+		// Icon retrieved from https://worldvectorlogo.com/logo/photoshop-cc
+		link: './images/techStacks/photoshop.svg',
+		altTxt: 'Adobe Photoshop'
 	}
 ];

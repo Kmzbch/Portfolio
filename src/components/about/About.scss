@@ -23,11 +23,27 @@
 
 	.profile {
 		text-align: center;
+		margin: 8vh auto;
 	}
 
 	.profile-image {
-		width: 20vw;
-		clip-path: circle(35% at 50% 50%);
+		width: 18vw;
+		margin-bottom: 2vh;
+		// border: solid 3px #3f4e67;
+		// clip-path: circle(35% at 50% 50%);
+	}
+
+	.profile-location-icon {
+		vertical-align: middle;
+		font-size: 1.3em;
+		padding-bottom: 3px;
+		margin-right: 3px;
+	}
+
+	.profile-location {
+		margin-left: -20px;
+		// font-size: 1.2em;
+		// font-weight: bold;
 	}
 
 	.about-skills {
@@ -46,7 +62,7 @@
 	.skill-item {
 		color: #3f4e67;
 		text-align: center;
-		width: 175px;
+		width: 25%;
 	}
 
 	.specialties {

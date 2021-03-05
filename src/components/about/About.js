@@ -18,9 +18,9 @@ export default class About extends Component {
 
 					<hr className="divider pink center" />
 
-					<Typography className="caption" variant="h5">
-						Have a question or want to work together?
-					</Typography>
+					{/* <Typography className="caption" variant="h5">
+						Let's find out who he is.
+					</Typography> */}
 
 					<AboutMe />
 					<AboutSkills />

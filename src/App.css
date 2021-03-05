@@ -28,10 +28,12 @@
 
 .divider.pink {
 	border-color: #df777b;
+	background-color: #df777b;
 }
 
 .divider.yellow {
 	border-color: #fbe77d;
+	background-color: #fbe77d;
 }
 
 .white {
