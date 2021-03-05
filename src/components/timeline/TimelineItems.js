@@ -200,8 +200,8 @@ const TimelineItems = [
 				altTxt: 'Red Hat'
 			},
 			{
-				// Icon retrieved from https://worldvectorlogo.com/logo/apache-13
-				link: './images/techStacks/apache.svg',
+				// The Apache Software Foundation, Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>, via Wikimedia Commons
+				link: './images/techStacks/apache.png',
 				altTxt: 'Apache'
 			},
 			{
