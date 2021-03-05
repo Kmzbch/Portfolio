@@ -17,6 +17,8 @@ class App extends Component {
 
 	componentDidMount() {
 		document.addEventListener('scroll', () => {
+			const margin = 100;
+
 			const home = document.querySelector('#home');
 			const about = document.querySelector('#about');
 			const project = document.querySelector('#project');
@@ -29,23 +31,23 @@ class App extends Component {
 			const timelinePos = ReactDOM.findDOMNode(timeline).getBoundingClientRect();
 			const contactPos = ReactDOM.findDOMNode(contact).getBoundingClientRect();
 
-			if (homePos.y < 0 && aboutPos.y - 100 >= 0) {
+			if (homePos.y < 0 && aboutPos.y - margin >= 0) {
 				if (this.state.currentScreen !== 'home') {
 					this.setState({ currentScreen: 'home' });
 				}
-			} else if (aboutPos.y - 100 < 0 && projectPos.y - 100 >= 0) {
+			} else if (aboutPos.y - margin < 0 && projectPos.y - margin >= 0) {
 				if (this.state.currentScreen !== 'about') {
 					this.setState({ currentScreen: 'about' });
 				}
-			} else if (projectPos.y - 100 < 0 && timelinePos.y - 100 >= 0) {
+			} else if (projectPos.y - margin < 0 && timelinePos.y - margin >= 0) {
 				if (this.state.currentScreen !== 'projects') {
 					this.setState({ currentScreen: 'projects' });
 				}
-			} else if (timelinePos.y - 100 < 0 && contactPos.y - 100 >= 0) {
+			} else if (timelinePos.y - margin < 0 && contactPos.y - margin >= 0) {
 				if (this.state.currentScreen !== 'timeline') {
 					this.setState({ currentScreen: 'timeline' });
 				}
-			} else if (contactPos.y - 100 <= 0) {
+			} else if (contactPos.y - margin <= 0) {
 				if (this.state.currentScreen !== 'contact') {
 					this.setState({ currentScreen: 'contact' });
 				}
