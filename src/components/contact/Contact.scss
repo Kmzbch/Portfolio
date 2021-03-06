@@ -96,22 +96,6 @@
 		font-weight: bold;
 	}
 
-	@media only screen and (max-width: 480px) {
-		.contact-links {
-			color: $neutral;
-			font-family: "Raleway";
-			font-Weight: 'bold !important';
-			font-size: 1em;
-			margin-left: 5px;
-			margin-right: 0;
-			transition: 0.2s;
-		}
-
-		.contact-icon {
-			font-size: 30px;
-			color: $icon;
-		}
-	}
 	@media only screen and (max-width: 1000px) {
 		.caption {
 			font-size: 1.3em;
@@ -132,6 +116,23 @@
 
 		.form-input {
 			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		.contact-links {
+			color: $neutral;
+			font-family: "Raleway";
+			font-Weight: 'bold !important';
+			font-size: 1em;
+			margin-left: 5px;
+			margin-right: 0;
+			transition: 0.2s;
+		}
+
+		.contact-icon {
+			font-size: 30px;
+			color: $icon;
 		}
 	}
 }

@@ -13,13 +13,13 @@ export default class Home extends Component {
 		return (
 			<div id="home" className={'page home'}>
 				<div className={'content'}>
-					<Typography variant="h2" component="span">
+					<Typography variant="h2" className="greeting" component="span">
 						Hi, I'm{' '}
 					</Typography>
-					<Typography variant="h2" component="span" className="highlight">
+					<Typography variant="h2" className="greeting highlight" component="span" noWrap>
 						Kei Mizubuchi
 					</Typography>
-					<Typography variant="h3" style={{ opacity: '.6' }}>
+					<Typography variant="h3" className="greeting jobtitle" noWrap>
 						Software Developer
 					</Typography>
 
