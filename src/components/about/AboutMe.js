@@ -11,7 +11,7 @@ export default class AboutMe extends Component {
 	render() {
 		return (
 			<Grid className="about-me" container spacing={3} justify="center">
-				<Grid item xs={7} sm={7}>
+				<Grid className="description" item sm={12} md={7}>
 					<Typography className="profile-header" variant="h4">
 						Profile
 					</Typography>
@@ -33,7 +33,7 @@ export default class AboutMe extends Component {
 						back-end.
 					</Typography>
 				</Grid>
-				<Grid className="profile" item xs={5} sm={5}>
+				<Grid className="profile" item sm={12} md={5}>
 					<img className="profile-image" src="./images/about/profile2.png" alt="profile" />
 					<Typography variant="h4">Kei Mizubuchi</Typography>
 					<Typography

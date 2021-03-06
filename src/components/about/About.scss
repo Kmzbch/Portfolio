@@ -100,6 +100,7 @@
 	}
 
 	.about-tech-image {
+		opacity: .8;
 		display: inline-block;
 		vertical-align: middle;
 		width: 30vw;
@@ -108,6 +109,30 @@
 	}
 
 	@media only screen and (max-width: 1000px) {
+		.about-me {
+			width: 95%;
+			flex-direction: column-reverse;
+		}
+
+		.profile-header {
+			text-align: center;
+			margin: 0 0 5vh 0;
+		}
+
+		.profile-image {
+			width: 40vw;
+		}
+
+		.profile {
+			padding-left: 0;
+			height: auto;
+		}
+
+		.description {
+			height: auto;
+			text-align: left;
+		}
+
 		.content {
 			text-align: center;
 		}
@@ -119,6 +144,7 @@
 
 		.sub-panel {
 			width: 100%;
+			flex-direction: column-reverse;
 		}
 
 		.tech-panel {
@@ -146,6 +172,9 @@
 	@media only screen and (max-width: 480px) {
 		.about-skills {
 			width: 100%;
+		}
+		.profile-image {
+			width: 70%;
 		}
 	}
 }
