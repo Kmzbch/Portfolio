@@ -1,11 +1,50 @@
 import React, { Component } from 'react';
-import { Typography } from '@material-ui/core';
 import { List, ListItem, ListItemText } from '@material-ui/core';
+import { CloseOutlined, MenuOutlined } from '@material-ui/icons';
 import { HashLink } from 'react-router-hash-link';
 import NavbarItems from './NavbarItems';
 import './Navbar.scss';
 
 export default class extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			active: false,
+			windowWidth: 0,
+			windowHeight: 0
+		};
+	}
+
+	componentDidMount() {
+		this.updateWindowDimensions();
+		window.addEventListener('resize', this.updateWindowDimensions);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.updateWindowDimensions);
+	}
+
+	updateWindowDimensions = () => {
+		this.setState({
+			windowWidth: window.innerWidth,
+			windowHeight: window.innerHeight
+		});
+
+		if (this.state.active && this.state.windowWidth >= 1000) {
+			this.toggleMenuIcon();
+		}
+	};
+
+	toggleMenuIcon = () => {
+		this.setState({ active: !this.state.active });
+	};
+
+	linkClicked = () => {
+		if (this.state.active) {
+			this.toggleMenuIcon();
+		}
+	};
+
 	render() {
 		const { currentScreen } = this.props.currentScreen;
 
@@ -13,12 +52,22 @@ export default class extends Component {
 			<div className="navbar">
 				<div className="nav-container">
 					<div className="logo">
-						<Typography className="logo-link" variant="h4" component={HashLink} smooth to="#home">
+						<HashLink className="logo-link" smooth to="#home" onClick={this.linkClicked}>
 							KEI MIZUBUCHI
-						</Typography>
+						</HashLink>
 					</div>
 
-					<div className="menu">
+					{this.state.active ? (
+						<div className={'menu-icon opened'} onClick={this.toggleMenuIcon}>
+							<CloseOutlined fontSize="large" />
+						</div>
+					) : (
+						<div className={'menu-icon'} onClick={this.toggleMenuIcon}>
+							<MenuOutlined fontSize="large" />
+						</div>
+					)}
+
+					<div className={this.state.active ? 'menu opened' : 'menu'}>
 						<List className="menu-list">
 							{NavbarItems.map((item, index) => {
 								return (
@@ -34,6 +83,7 @@ export default class extends Component {
 										key={item.title}
 										component={HashLink}
 										to={item.url}
+										onClick={this.linkClicked}
 									>
 										<ListItemText primary={item.title} />
 									</ListItem>
