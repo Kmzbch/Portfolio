@@ -104,12 +104,14 @@
 			top: 8vh;
 			border-bottom: 2px solid $accent;
 			opacity: 0;
-			transition: .45s;
+			transition: .10s;
+			pointer-events: none;
 		}
 
 		.menu.opened {
 			opacity: 0.9;
 			background: $primary;
+			pointer-events: auto;
 		}
 
 		.menu-list {

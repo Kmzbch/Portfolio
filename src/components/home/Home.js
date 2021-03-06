@@ -11,8 +11,8 @@ export default class Home extends Component {
 
 	render() {
 		return (
-			<div id="home" className={'page home'}>
-				<div className={'content'}>
+			<div id="home" className="page home">
+				<div className="content">
 					<Typography variant="h2" className="greeting" component="span">
 						Hi, I'm{' '}
 					</Typography>

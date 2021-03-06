@@ -13,14 +13,12 @@
 
 	.content {
 		width: 100%;
-		height: 100vh;
+		height: 65vh;
 		z-index: 100;
 		text-align: center;
-		font-size: 30px;
-		margin: auto auto;
+		padding-top: 35vh;
+		margin: auto;
 		color: $neutral;
-		padding-top: 30vh;
-		font-family: Raleway, Sans Serif;
 	}
 
 	.highlight {
@@ -28,10 +26,9 @@
 	}
 
 	.view-button {
-		// font-family: Raleway;
 		min-width: 200px;
 		height: 50px;
-		font-size: 18px;
+		font-size: 1.2em;
 		margin: 5vh 0;
 		color: $neutral;
 		border: 2px $neutral solid;
