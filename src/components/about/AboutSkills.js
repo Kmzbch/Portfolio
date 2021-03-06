@@ -19,7 +19,9 @@ export default class AboutSkills extends Component {
 	render() {
 		return (
 			<Grid className="about-skills" container spacing={3} justify="center" direction="row">
-				<Typography variant="h4">My Skills & Qualifications</Typography>
+				<Typography variant="h4" className="center">
+					My Skills & Qualifications
+				</Typography>
 
 				<Grid
 					container
@@ -28,7 +30,7 @@ export default class AboutSkills extends Component {
 						margin: '5vh 0'
 					}}
 				>
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<DesktopWindowsOutlined className="specialties" />
 						<Typography variant="h6">Full-Stack Development</Typography>
 						<Typography className="skill-description" inline>
@@ -38,22 +40,20 @@ export default class AboutSkills extends Component {
 							front-end and/or back-end
 						</Typography>
 					</Grid>
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<CodeOutlined className="specialties" />
 						<Typography variant="h6">Scripting</Typography>
 						<Typography className="skill-description" inline>
 							Build scripts for workflow automation/streamlining
 						</Typography>
 					</Grid>
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<StorageOutlined className="specialties" />
 						<Typography variant="h6">Server</Typography>
-						<Typography className="skill-description">
-							Experienced and knowledgable with LAMP stack
-						</Typography>
-						<Typography className="skill-description" />
+						<Typography className="skill-description">Experienced and knowledgable</Typography>
+						<Typography className="skill-description">with LAMP stack</Typography>
 					</Grid>
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<BusinessOutlined className="specialties" />
 						<Typography variant="h6">On-Site IT Support</Typography>
 						<Typography className="skill-description">Communicate with clients to</Typography>
@@ -68,7 +68,7 @@ export default class AboutSkills extends Component {
 					container
 					justify="space-around"
 				>
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<SearchOutlined className="soft-skills" />
 						<Typography variant="h6">Attention to Detail</Typography>
 						<Typography className="skill-description" inline>
@@ -78,7 +78,7 @@ export default class AboutSkills extends Component {
 							from different perspectives
 						</Typography>
 					</Grid>
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<DirectionsRunOutlined className="soft-skills" />
 						<Typography variant="h6">Tenacity</Typography>
 						<Typography className="skill-description" inline>
@@ -89,15 +89,18 @@ export default class AboutSkills extends Component {
 						</Typography>
 					</Grid>
 
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<PeopleOutlined className="soft-skills" />
 						<Typography variant="h6">Collaboration</Typography>
 						<Typography className="skill-description" inline>
-							Work well collaboratively with a team for the best results
+							Work well collaboratively with a team
+						</Typography>
+						<Typography className="skill-description" inline>
+							for the best results
 						</Typography>
 					</Grid>
 
-					<Grid className="skill-item">
+					<Grid className="skill-item" xs={12} sm={6} md={3}>
 						<TrendingUpOutlined className="soft-skills" />
 						<Typography variant="h6">Adaptability</Typography>
 						<Typography className="skill-description" inline>
