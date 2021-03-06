@@ -33,7 +33,7 @@ export default class AboutMe extends Component {
 						back-end.
 					</Typography>
 				</Grid>
-				<Grid className="profile" xs={5} sm={5}>
+				<Grid className="profile" item xs={5} sm={5}>
 					<img className="profile-image" src="./images/about/profile2.png" alt="profile" />
 					<Typography variant="h4">Kei Mizubuchi</Typography>
 					<Typography

@@ -30,30 +30,26 @@ export default class AboutSkills extends Component {
 						margin: '5vh 0'
 					}}
 				>
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<DesktopWindowsOutlined className="specialties" />
 						<Typography variant="h6">Full-Stack Development</Typography>
-						<Typography className="skill-description" inline>
-							Implement, test and refactor
-						</Typography>
-						<Typography className="skill-description" inline>
-							front-end and/or back-end
-						</Typography>
+						<Typography className="skill-description">Implement, test and refactor</Typography>
+						<Typography className="skill-description">front-end and/or back-end</Typography>
 					</Grid>
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<CodeOutlined className="specialties" />
 						<Typography variant="h6">Scripting</Typography>
-						<Typography className="skill-description" inline>
+						<Typography className="skill-description">
 							Build scripts for workflow automation/streamlining
 						</Typography>
 					</Grid>
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<StorageOutlined className="specialties" />
 						<Typography variant="h6">Server</Typography>
 						<Typography className="skill-description">Experienced and knowledgable</Typography>
 						<Typography className="skill-description">with LAMP stack</Typography>
 					</Grid>
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<BusinessOutlined className="specialties" />
 						<Typography variant="h6">On-Site IT Support</Typography>
 						<Typography className="skill-description">Communicate with clients to</Typography>
@@ -68,47 +64,31 @@ export default class AboutSkills extends Component {
 					container
 					justify="space-around"
 				>
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<SearchOutlined className="soft-skills" />
 						<Typography variant="h6">Attention to Detail</Typography>
-						<Typography className="skill-description" inline>
-							Analyze for a solution
-						</Typography>
-						<Typography className="skill-description" inline>
-							from different perspectives
-						</Typography>
+						<Typography className="skill-description">Analyze for a solution</Typography>
+						<Typography className="skill-description">from different perspectives</Typography>
 					</Grid>
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<DirectionsRunOutlined className="soft-skills" />
 						<Typography variant="h6">Tenacity</Typography>
-						<Typography className="skill-description" inline>
-							Carry things through within
-						</Typography>
-						<Typography className="skill-description" inline>
-							a limited timeframe
-						</Typography>
+						<Typography className="skill-description">Carry things through within</Typography>
+						<Typography className="skill-description">a limited timeframe</Typography>
 					</Grid>
 
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<PeopleOutlined className="soft-skills" />
 						<Typography variant="h6">Collaboration</Typography>
-						<Typography className="skill-description" inline>
-							Work well collaboratively with a team
-						</Typography>
-						<Typography className="skill-description" inline>
-							for the best results
-						</Typography>
+						<Typography className="skill-description">Work well collaboratively with a team</Typography>
+						<Typography className="skill-description">for the best results</Typography>
 					</Grid>
 
-					<Grid className="skill-item" xs={12} sm={6} md={3}>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<TrendingUpOutlined className="soft-skills" />
 						<Typography variant="h6">Adaptability</Typography>
-						<Typography className="skill-description" inline>
-							Grow the skill set to
-						</Typography>
-						<Typography className="skill-description" inline>
-							adapt to the changing needs
-						</Typography>
+						<Typography className="skill-description">Grow the skill set to</Typography>
+						<Typography className="skill-description">adapt to the changing needs</Typography>
 					</Grid>
 				</Grid>
 			</Grid>

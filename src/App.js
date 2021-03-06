@@ -18,7 +18,7 @@ class App extends Component {
 
 	componentDidMount() {
 		console.log("Welcome to Kei's portfolio!");
-		console.log('This portfolio is build with React.');
+		console.log('This portfolio is built with React.');
 
 		// set document title
 		document.title = "Kei's Portfolio";
