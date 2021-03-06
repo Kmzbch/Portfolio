@@ -80,8 +80,10 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<PeopleOutlined className="soft-skills" />
 						<Typography variant="h6">Collaboration</Typography>
-						<Typography className="skill-description">Work well collaboratively with a team</Typography>
-						<Typography className="skill-description">for the best results</Typography>
+						<Typography className="skill-description">
+							Work well collaboratively with a team for the best results
+						</Typography>
+						<Typography className="skill-description" />
 					</Grid>
 
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
