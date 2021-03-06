@@ -30,7 +30,7 @@ export default class AboutTech extends Component {
 				</Typography>
 
 				<Grid className="sub-panel" container spacing={2} direction="row">
-					<Grid item xs={7} sm={7}>
+					<Grid item sm={12} md={7}>
 						<Typography className="sub-header" variant="h4">
 							Languages
 						</Typography>
@@ -38,13 +38,13 @@ export default class AboutTech extends Component {
 							return <TechStack key={item.link} src={item.link} title={item.altTxt} alt={item.altTxt} />;
 						})}
 					</Grid>
-					<Grid item xs={5} sm={5} className="image-panel">
+					<Grid item sm={12} md={5} className="image-panel">
 						<img className="about-tech-image" src={this.language} alt={'Keyboard'} />
 					</Grid>
 				</Grid>
 
 				<Grid className="sub-panel" container spacing={2} direction="row-reverse">
-					<Grid item xs={6} sm={6}>
+					<Grid item sm={12} md={6}>
 						<Typography className="sub-header" variant="h4">
 							Frameworks & Libraries
 						</Typography>
@@ -56,13 +56,13 @@ export default class AboutTech extends Component {
 							})}
 						</div>
 					</Grid>
-					<Grid item xs={6} sm={6} className="image-panel">
+					<Grid item sm={12} md={6} className="image-panel">
 						<img className="about-tech-image" src={this.library} alt={'Books'} />
 					</Grid>
 				</Grid>
 
 				<Grid className="sub-panel" container spacing={2} direction="row">
-					<Grid item xs={7} sm={7}>
+					<Grid item sm={12} md={7}>
 						<Typography className="sub-header" variant="h4">
 							DBM & Servers
 						</Typography>
@@ -70,13 +70,13 @@ export default class AboutTech extends Component {
 							return <TechStack key={item.link} src={item.link} title={item.altTxt} alt={item.altTxt} />;
 						})}
 					</Grid>
-					<Grid item xs={5} sm={5} className="image-panel">
+					<Grid item sm={12} md={5} className="image-panel">
 						<img className="about-tech-image" src={this.dbm} alt={'Books'} />
 					</Grid>
 				</Grid>
 
 				<Grid className="sub-panel" container spacing={2} direction="row-reverse">
-					<Grid item xs={6} sm={6}>
+					<Grid item sm={12} md={6}>
 						<Typography className="sub-header" variant="h4">
 							Design & Managements
 						</Typography>
@@ -88,7 +88,7 @@ export default class AboutTech extends Component {
 							})}
 						</div>
 					</Grid>
-					<Grid className="image-panel" item xs={6} sm={6}>
+					<Grid item sm={12} md={6} className="image-panel">
 						<img className="about-tech-image" src={this.design} alt={'Desk'} />
 					</Grid>
 				</Grid>
