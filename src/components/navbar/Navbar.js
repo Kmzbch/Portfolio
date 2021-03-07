@@ -52,7 +52,7 @@ export default class extends Component {
 			<div className="navbar">
 				<div className="nav-container">
 					<div className="logo">
-						<HashLink className="logo-link" smooth to="#home" onClick={this.linkClicked}>
+						<HashLink className="logo-link" to="#home" onClick={this.linkClicked}>
 							KEI MIZUBUCHI
 						</HashLink>
 					</div>
