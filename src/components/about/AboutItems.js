@@ -78,11 +78,6 @@ export const FrameworksAndLibraries = [
 		altTxt: 'jQuery'
 	},
 	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/nodejs-icon
-		link: './images/techStacks/nodejs.svg',
-		altTxt: 'Node.js'
-	},
-	{
 		// Icon retrieved from https://junit.org/junit5/assets/img/junit5-logo.png
 		link: './images/techStacks/junit5.png',
 		altTxt: 'Junit5'
@@ -93,10 +88,26 @@ export const FrameworksAndLibraries = [
 		altTxt: 'REST-assured'
 	},
 	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/createjs
-		link: './images/techStacks/createjs.svg',
-		altTxt: 'CreateJS'
+		// Icon retrieved from https://worldvectorlogo.com/logo/nodejs-icon
+		link: './images/techStacks/nodejs.svg',
+		altTxt: 'Node.js'
+	},
+	{
+		// Icon retrieved from https://media.zeemly.com/zeemly/product/expressjs.png
+		link: './images/techStacks/expressjs.png',
+		altTxt: 'Express.js'
+	},
+	{
+		// Icon retrieved from https://worldvectorlogo.com/logo/bootstrap-4
+		link: './images/techStacks/bootstrap.svg',
+		altTxt: 'Bootstrap'
 	}
+
+	// {
+	// 	// Icon retrieved from https://worldvectorlogo.com/logo/createjs
+	// 	link: './images/techStacks/createjs.svg',
+	// 	altTxt: 'CreateJS'
+	// }
 ];
 
 export const DbmsAndServers = [
@@ -121,9 +132,19 @@ export const DbmsAndServers = [
 		altTxt: 'Oracle'
 	},
 	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/postgresql
-		link: './images/techStacks/postgresql.svg',
-		altTxt: 'PostgreSQL'
+		// Icon retrieved from https://worldvectorlogo.com/logo/mongodb-icon-1
+		link: './images/techStacks/mongodb.svg',
+		altTxt: 'MongoDB'
+	},
+	// {
+	// 	// Icon retrieved from https://worldvectorlogo.com/logo/postgresql
+	// 	link: './images/techStacks/postgresql.svg',
+	// 	altTxt: 'PostgreSQL'
+	// },
+	{
+		// Icon retrieved from https://worldvectorlogo.com/logo/linux-tux
+		link: './images/techStacks/linux.svg',
+		altTxt: 'Linux'
 	},
 	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/azure-1
@@ -134,11 +155,6 @@ export const DbmsAndServers = [
 		// Icon retrieved from https://worldvectorlogo.com/logo/aws-2
 		link: './images/techStacks/aws.svg',
 		altTxt: 'Amazon Web Service'
-	},
-	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/mongodb-icon-1
-		link: './images/techStacks/mongodb.svg',
-		altTxt: 'MongoDB'
 	}
 	// {
 	// 	// Icon retrieved from https://worldvectorlogo.com/logo/aws-dynamodb
@@ -168,11 +184,11 @@ export const DesignAndManagements = [
 		link: './images/techStacks/visio.png',
 		altTxt: 'Visio'
 	},
-	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/jira-1
-		link: './images/techStacks/jira.svg',
-		altTxt: 'Jira'
-	},
+	// {
+	// 	// Icon retrieved from https://worldvectorlogo.com/logo/jira-1
+	// 	link: './images/techStacks/jira.svg',
+	// 	altTxt: 'Jira'
+	// },
 	{
 		// Icon retrieved from https://www.atlassian.com/software/confluence
 		link: './images/techStacks/confluence.png',
@@ -191,6 +207,6 @@ export const DesignAndManagements = [
 	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/photoshop-cc
 		link: './images/techStacks/photoshop.svg',
-		altTxt: 'Adobe Photoshop'
+		altTxt: 'Photoshop'
 	}
 ];

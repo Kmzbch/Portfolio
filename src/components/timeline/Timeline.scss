@@ -147,7 +147,6 @@
 
 		.timeline-event {
 			position: relative;
-			// margin-left: -2.4em;
 		}
 
 		.timeline-event-item {
@@ -155,9 +154,40 @@
 			position: relative;
 			top: -1.875em;
 			left: 0;
-
-			// left: 2rem;
 			width: 90%;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		.panel {
+			position: relative;
+			width: 80%;
+			padding: 0;
+			margin: 4em auto;
+			list-style: none;
+			&:before {
+				display: none;
+			}
+		}
+
+		.timeline-event-icon {
+			display: none;
+		}
+
+		.timeline-event {
+			position: relative;
+			margin-left: -2.4em;
+		}
+
+		.timeline-event-item {
+			padding: 2rem;
+			position: relative;
+			top: -1.875em;
+			width: 90%;
+			.timeline-duties {
+				width: 350px;
+				margin-left: -1.4em;
+			}
 		}
 	}
 }

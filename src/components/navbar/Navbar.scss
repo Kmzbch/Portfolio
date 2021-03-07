@@ -20,6 +20,10 @@
 	.logo {
 		display: inline-block;
 		margin-left: 3vw;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 
 	.logo-link {
@@ -41,6 +45,10 @@
 		span {
 			// font-family: "Raleway";
 			font-size: 1.1em;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 		}
 	}
 
@@ -143,6 +151,20 @@
 			position: relative;
 			margin-left: auto;
 			margin-right: 5vw;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		.logo-link {
+			font-size: 2em;
+			color: $neutral;
+			text-decoration: none;
+			transition: 0.3s;
+		}
+
+		.logo-link:hover {
+			color: $neutral;
+			cursor: pointer;
 		}
 	}
 }

@@ -28,7 +28,6 @@ export default class Home extends Component {
 						size="large"
 						variant="outlined"
 						href="#about"
-						smmoo
 						endIcon={<ArrowForwardOutlined className="endicon" />}
 					>
 						Explore my work

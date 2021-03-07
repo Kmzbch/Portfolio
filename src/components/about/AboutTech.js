@@ -78,7 +78,7 @@ export default class AboutTech extends Component {
 				<Grid className="sub-panel" container spacing={2} direction="row-reverse">
 					<Grid item sm={12} md={6}>
 						<Typography className="sub-header" variant="h4">
-							Design & Managements
+							Design & Management
 						</Typography>
 						<div className="tech-panel">
 							{DesignAndManagements.map((item, index) => {

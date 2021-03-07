@@ -49,18 +49,6 @@
 		opacity: .6;
 	}
 
-	@media (hover: hover) {
-		a:hover {
-			color: red;
-		}
-	}
-
-	@media (hover: none) {
-		a:hover {
-			color: inherit;
-		}
-	}
-
 	@media only screen and (max-width: 480px) {
 		.view-button {
 			.endicon {
