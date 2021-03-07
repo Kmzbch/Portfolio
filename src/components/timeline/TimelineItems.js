@@ -117,6 +117,40 @@ const TimelineItems = [
 			}
 		]
 	},
+	// {
+	// 	dateRange: 'MAY. 2019 - SEP. 2019',
+	// 	title: 'Volunteer Bugfix Developer',
+	// 	company: 'Centennial College',
+	// 	duties: [
+	// 		'Acted in a chat room application project that allows students to vote and offer feedback about related topics posted in the room.',
+	// 		'Analyzed the original source code, thoroughly tested the functionalities and reported and/or fixed the bug',
+	// 		'Implemented additional functionalities with ASP.NET Core, Angular 7 and SQL Server stack and dealt with missing requirements in the original application',
+	// 		'Led the latter part of the project to completion by taking initiative and updating the team'
+	// 	],
+	// 	techStacks: [
+	// 		{
+	// 			// Icon retrieved from https://worldvectorlogo.com/logo/angular-icon-1
+	// 			link: './images/techStacks/angular.svg',
+	// 			altTxt: 'Angular'
+	// 		},
+	// 		{
+	// 			// Icon retrieved from https://worldvectorlogo.com/logo/c--4
+	// 			link: './images/techStacks/c-sharp.svg',
+	// 			altTxt: 'C#'
+	// 		},
+	// 		{
+	// 			// Icon retrieved from https://www.pngegg.com/en/png-dbugy
+	// 			link: './images/techStacks/aspnetcore.png',
+	// 			altTxt: 'ASP.NET'
+	// 		},
+	// 		{
+	// 			// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
+	// 			link: './images/techStacks/mssql.png',
+	// 			altTxt: 'SQL Server'
+	// 		}
+	// 	]
+	// },
+
 	{
 		dateRange: 'JAN. 2019 - APR. 2019',
 		title: 'Co-op Application Developer',

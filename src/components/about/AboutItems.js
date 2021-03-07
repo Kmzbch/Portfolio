@@ -88,20 +88,20 @@ export const FrameworksAndLibraries = [
 		altTxt: 'REST-assured'
 	},
 	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/nodejs-icon
-		link: './images/techStacks/nodejs.svg',
-		altTxt: 'Node.js'
-	},
-	{
 		// Icon retrieved from https://media.zeemly.com/zeemly/product/expressjs.png
 		link: './images/techStacks/expressjs.png',
 		altTxt: 'Express.js'
 	},
 	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/bootstrap-4
-		link: './images/techStacks/bootstrap.svg',
-		altTxt: 'Bootstrap'
+		// Icon retrieved from https://worldvectorlogo.com/logo/nodejs-icon
+		link: './images/techStacks/nodejs.svg',
+		altTxt: 'Node.js'
 	}
+	// {
+	// 	// Icon retrieved from https://worldvectorlogo.com/logo/bootstrap-4
+	// 	link: './images/techStacks/bootstrap.svg',
+	// 	altTxt: 'Bootstrap'
+	// }
 
 	// {
 	// 	// Icon retrieved from https://worldvectorlogo.com/logo/createjs
@@ -122,14 +122,14 @@ export const DbmsAndServers = [
 		altTxt: 'MySQL'
 	},
 	{
-		// Icon retrieved from https://worldvectorlogo.com/logo/firebase-1
-		link: './images/techStacks/firebase.svg',
-		altTxt: 'Firebase'
-	},
-	{
 		// Icon retrieved from https://sybyl.com/wp-content/uploads/2019/11/Oracle-Logo-For-Website.png
 		link: './images/techStacks/oracle.png',
 		altTxt: 'Oracle'
+	},
+	{
+		// Icon retrieved from https://worldvectorlogo.com/logo/firebase-1
+		link: './images/techStacks/firebase.svg',
+		altTxt: 'Firebase'
 	},
 	{
 		// Icon retrieved from https://worldvectorlogo.com/logo/mongodb-icon-1
