@@ -4,9 +4,9 @@ const TimelineItems = [
 		title: 'Back-end Developer',
 		company: 'Centennial College: WIMTACH',
 		duties: [
-			'Implemented RESTful APIs of Java EMR back-end application with Spring Boot',
+			'Implemented REST APIs of Java EMR application back-end with Spring Boot working with complex models and MSSQL queries',
+			"Replaced Hibernate/JPQL queries with SQL Server queries to increase routers' performance",
 			'Built and maintained an automated test suite with JUnit and REST Assured',
-			'Replaced Hibernate/JPQL queries with SQL Server native queries for application migration',
 			'Resolved technical issues arising during development in an Agile manner',
 			'Maintained the internal test tracking list and Confluence & Swagger API documentation'
 		],
