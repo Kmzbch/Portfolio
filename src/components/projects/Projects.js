@@ -20,12 +20,28 @@ export default class Projects extends Component {
 
 					{ProjectItems.map((item, index) => {
 						return (
-							<Paper className="panel" key={item.title}>
+							<Paper
+								className={item.projectType === 'personal' ? 'panel personal' : 'panel'}
+								key={item.title}
+							>
 								<Grid container spacing={2} justify="center">
 									<Grid item className="sub-panel left" xs={12} sm={12} md={6}>
 										<Typography className="project-title" variant="h3">
 											{item.title}
 										</Typography>
+
+										<div
+											variant="h3"
+											className={
+												item.projectType === 'personal' ? (
+													'project-type personal'
+												) : (
+													'project-type'
+												)
+											}
+										>
+											{item.projectType + ' project'}
+										</div>
 
 										<Typography className="project-description">{item.description}</Typography>
 

@@ -42,7 +42,37 @@
 	.project-title {
 		color: $header;
 		font-size: 2.7em;
+		// margin-bottom: 2rem;
+		margin-bottom: 0.2em;
+	}
+
+	// .project-type::before {
+	// 	content: '#';
+	// 	color: $header;
+	// 	// opacity: 0.6;
+	// }
+
+	.project-type {
+		color: $header;
+		opacity: 0.5;
+		// border: solid 1px $secondary;
+		font-size: 1.3em;
+		font-weight: bold;
+		// background-color: $secondary;
+		border-radius: 3px;
+		display: inline-block;
+		padding: 0.25em 0 0.2em 0;
 		margin-bottom: 2rem;
+		text-transform: capitalize;
+	}
+
+	// .project-type.personal {
+	// 	// background-color: #fbe77d;
+	// 	color: $primary;
+	// }
+
+	.panel.personal {
+		border-left: 5px solid #fbe77d !important;
 	}
 
 	.project-description {
