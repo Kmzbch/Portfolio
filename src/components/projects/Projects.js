@@ -45,30 +45,70 @@ export default class Projects extends Component {
 
 										<Typography className="project-description">{item.description}</Typography>
 
-										<Grid container direction="column">
-											<Button
-												className="view-button"
-												size="large"
-												variant="outlined"
-												color="secondary"
-												startIcon={<DesktopWindowsIcon />}
-												href={item.projectLink}
-												target="_blank"
-											>
-												View App
-											</Button>
-											<Button
-												className="view-button"
-												size="large"
-												variant="outlined"
-												color="secondary"
-												startIcon={<GitHubIcon />}
-												href={item.githubLink}
-												target="_blank"
-											>
-												View Code
-											</Button>
-										</Grid>
+										{item.details === '' ? (
+											<div />
+										) : (
+											<Typography className="project-description" component="span">
+												{item.details}
+											</Typography>
+										)}
+
+										{item.projectLink === '' ? (
+											<Grid container direction="column">
+												<Button
+													className="view-button"
+													size="large"
+													variant="outlined"
+													color="secondary"
+													startIcon={<GitHubIcon />}
+													href={item.githubLink}
+													target="_blank"
+												>
+													View Code
+												</Button>
+
+												<Button
+													style={{
+														opacity: '0',
+														pointerEvents: 'none'
+													}}
+													className="view-button"
+													size="large"
+													variant="outlined"
+													color="secondary"
+													startIcon={<DesktopWindowsIcon />}
+													href={item.projectLink}
+													target="_blank"
+												>
+													View App
+												</Button>
+											</Grid>
+										) : (
+											<Grid container direction="column">
+												<Button
+													className="view-button"
+													size="large"
+													variant="outlined"
+													color="secondary"
+													startIcon={<DesktopWindowsIcon />}
+													href={item.projectLink}
+													target="_blank"
+												>
+													View App
+												</Button>
+												<Button
+													className="view-button"
+													size="large"
+													variant="outlined"
+													color="secondary"
+													startIcon={<GitHubIcon />}
+													href={item.githubLink}
+													target="_blank"
+												>
+													View Code
+												</Button>
+											</Grid>
+										)}
 									</Grid>
 									<Grid item className="sub-panel right" xs={12} sm={12} md={6}>
 										<img
