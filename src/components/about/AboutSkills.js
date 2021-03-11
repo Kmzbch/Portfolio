@@ -24,11 +24,10 @@ export default class AboutSkills extends Component {
 		gsap.from([ aboutSkills ], {
 			delay: 0.5,
 			duration: 0.8,
-			ease: 'ease.out',
-			// transformOrigin: 'center',
-			// scaleX: 0.7,
-			// scaleY: 0.7,
-			y: 100,
+			ease: 'back.out',
+			transformOrigin: 'center',
+			scaleX: 0.8,
+			scaleY: 0.8,
 			opacity: 0,
 			scrollTrigger: {
 				trigger: [ aboutSkills ],
