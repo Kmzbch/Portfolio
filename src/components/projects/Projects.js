@@ -2,12 +2,52 @@ import React, { Component } from 'react';
 import { Typography, Paper, Grid, Button } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import gsap from 'gsap';
 import ProjectItems from './ProjectItems';
 import './Projects.scss';
 
 export default class Projects extends Component {
 	constructor(props) {
 		super(props);
+	}
+
+	componentDidMount() {
+		const header = document.querySelector('.project .header');
+		const divider = document.querySelector('.project .divider');
+
+		const panels = document.querySelectorAll('.project .panel');
+
+		gsap.from([ header, divider ], {
+			delay: 0.5,
+			duration: 0.8,
+			ease: 'ease.out',
+			x: 100,
+			opacity: 0,
+			stagger: {
+				amount: 0.15
+			},
+			scrollTrigger: {
+				trigger: '.project .header',
+				start: 'top 75%'
+			}
+		});
+
+		for (let i = 0; i < panels.length; i++) {
+			gsap.from([ panels[i] ], {
+				delay: 0.5,
+				duration: 0.8,
+				ease: 'ease.out',
+				y: 50,
+				opacity: 0,
+				stagger: {
+					amount: 0.15
+				},
+				scrollTrigger: {
+					trigger: [ panels[i] ],
+					start: 'top 75%'
+				}
+			});
+		}
 	}
 
 	render() {
@@ -48,6 +88,10 @@ export default class Projects extends Component {
 										{item.details === '' ? (
 											<div />
 										) : (
+											// <details className="project-description">
+											// 	<summary>View Details</summary>
+											// 	{item.details}
+											// </details>
 											<Typography className="project-description" component="span">
 												{item.details}
 											</Typography>

@@ -1,11 +1,51 @@
 import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
-import { LocationCity, LocationOn, LocationOnOutlined, MapOutlined, School, SchoolOutlined } from '@material-ui/icons';
+import { LocationOnOutlined } from '@material-ui/icons';
+import gsap from 'gsap';
+
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 export default class AboutMe extends Component {
 	constructor(props) {
 		super(props);
+	}
+
+	componentDidMount() {
+		const aboutMe = document.querySelector('.description');
+		const profileHeader = document.querySelector('.profile-header');
+		const profile = document.querySelector('.profile');
+
+		gsap.from([ profileHeader, aboutMe ], {
+			delay: 0.5,
+			duration: 0.8,
+			ease: 'ease.out',
+			x: -100,
+			opacity: 0,
+			stagger: {
+				amount: 0.15
+			},
+			scrollTrigger: {
+				trigger: [ aboutMe, profileHeader ],
+				start: 'top 75%'
+			}
+		});
+
+		gsap.from([ profile ], {
+			delay: 0.5,
+			duration: 0.8,
+			ease: 'ease.out',
+			y: 50,
+			opacity: 0,
+			stagger: {
+				amount: 0.15
+			},
+			scrollTrigger: {
+				trigger: [ profile ],
+				start: 'top 75%'
+			}
+		});
 	}
 
 	render() {

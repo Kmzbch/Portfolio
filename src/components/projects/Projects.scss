@@ -72,7 +72,7 @@
 	// }
 
 	.panel.personal {
-		border-left: 5px solid #fbe77d !important;
+		border-left: 5px solid #fbe77d;
 	}
 
 	.project-description {
@@ -104,6 +104,11 @@
 			border-bottom: 5px solid $secondary;
 
 			min-height: auto;
+		}
+
+		.panel.personal {
+			border-left: none;
+			border-bottom: 5px solid #fbe77d !important;
 		}
 
 		.sub-panel {

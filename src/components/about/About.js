@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Typography } from '@material-ui/core';
+import gsap from 'gsap';
 import AboutMe from './AboutMe';
 import AboutTech from './AboutTech';
 import AboutSkills from './AboutSkills';
 import './About.scss';
-
-// import { TweenMax, TimelineMax, gsap } from 'gsap';
 
 export default class About extends Component {
 	constructor(props) {
@@ -13,26 +11,23 @@ export default class About extends Component {
 	}
 
 	componentDidMount() {
-		// let header = document.querySelector('.header');
-		// let divider = document.querySelector('.divider');
-		// let tm = new TimelineMax();
-		// gsap.from([ header ], {
-		// 	delay: 0.5,
-		// 	duration: 0.8,
-		// 	ease: 'ease.out',
-		// 	x: -100,
-		// 	// y: 200,
-		// 	opacity: 0,
-		// 	stagger: {
-		// 		amount: 0.15
-		// 	},
-		// 	scrollTrigger: {
-		// 		trigger: [ header ],
-		// 		start: 'top 50%',
-		// 		end: 'bottom 5%',
-		// 		toggleActions: 'restart reverse restart reverse'
-		// 	}
-		// });
+		const header = document.querySelector('.about .header');
+		const divider = document.querySelector('.about .divider');
+
+		gsap.from([ header, divider ], {
+			delay: 0.5,
+			duration: 0.8,
+			ease: 'ease.out',
+			x: -100,
+			opacity: 0,
+			stagger: {
+				amount: 0.15
+			},
+			scrollTrigger: {
+				trigger: [ header ],
+				start: 'top 75%'
+			}
+		});
 	}
 
 	render() {

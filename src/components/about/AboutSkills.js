@@ -11,9 +11,30 @@ import {
 	TrendingUpOutlined
 } from '@material-ui/icons';
 
+import gsap from 'gsap';
+
 export default class AboutSkills extends Component {
 	constructor(props) {
 		super(props);
+	}
+
+	componentDidMount() {
+		const aboutSkills = document.querySelector('.about-skills');
+
+		gsap.from([ aboutSkills ], {
+			delay: 0.5,
+			duration: 0.8,
+			ease: 'ease.out',
+			// transformOrigin: 'center',
+			// scaleX: 0.7,
+			// scaleY: 0.7,
+			y: 100,
+			opacity: 0,
+			scrollTrigger: {
+				trigger: [ aboutSkills ],
+				start: 'top 75%'
+			}
+		});
 	}
 
 	render() {

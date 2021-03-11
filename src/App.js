@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -70,8 +72,10 @@ class App extends Component {
 		// set document title
 		document.title = "Kei's Portfolio";
 
-		// add onScroll event for Navbar active menu
-		document.addEventListener('scroll', this.monitorCurrentScreen);
+		// // add onScroll event for Navbar active menu
+		// document.addEventListener('scroll', this.monitorCurrentScreen);
+
+		gsap.registerPlugin(ScrollTrigger);
 	}
 
 	render() {
