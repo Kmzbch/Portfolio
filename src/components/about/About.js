@@ -14,6 +14,14 @@ export default class About extends Component {
 		const header = document.querySelector('.about .header');
 		const divider = document.querySelector('.about .divider');
 
+		// const about = document.querySelector('#about');
+		// gsap.from([ about ], {
+		// 	delay: 4.8,
+		// 	duration: 0.8,
+		// 	display: 'none',
+		// 	opacity: 0
+		// });
+
 		gsap.from([ header, divider ], {
 			delay: 0.5,
 			duration: 0.8,

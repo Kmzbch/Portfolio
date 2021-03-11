@@ -218,9 +218,12 @@ const TimelineItems = [
 			'Performed proactive maintenance, troubleshooting, backup and update of LAMP servers of a university library management system',
 			'Built, maintained, and refactored ETL pipelines using Perl 5 & Shell scripts to process Marc 21 bibliographic records into a variety of data formats',
 			'Implemented two-language (EN/JP) support for library digital archive search and an external website while handling character encoding issues',
-			'Automated/Streamlined library staff’s workflow by introducing digital tools and/or scripting such as visualization of circulation statistics into web pages',
-			'Offered library solutions by conducting installation and configuration of open-source Java CMS for scholarly digital content on LAMP servers',
-			'Implemented, modified, optimized, and tested institutional websites in PHP and MySQL'
+			'Analysed and refactored existing interanal scripts/modules or escalates problems to other IT staff',
+			'Automated/Streamlined library staff’s business procedures by introducing digital tools and/or scripting such as visualization of circulation statistics into web pages',
+			'Conducted installation and configuration of open-source Java CMS for scholarly digital content',
+			'Reported web access information and project status to the library staff on a monthly basis',
+			'Implemented, modified, optimized, and tested institutional websites in PHP and MySQL',
+			'Performed other related duties as assigned'
 		],
 		techStacks: [
 			{

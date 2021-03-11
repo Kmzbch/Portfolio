@@ -73,7 +73,7 @@ class App extends Component {
 		document.title = "Kei's Portfolio";
 
 		// // add onScroll event for Navbar active menu
-		// document.addEventListener('scroll', this.monitorCurrentScreen);
+		document.addEventListener('scroll', this.monitorCurrentScreen);
 
 		gsap.registerPlugin(ScrollTrigger);
 	}
