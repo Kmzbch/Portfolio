@@ -44,7 +44,7 @@ export default class Projects extends Component {
 				},
 				scrollTrigger: {
 					trigger: [ panels[i] ],
-					start: 'top 75%'
+					start: 'top 85%'
 				}
 			});
 		}

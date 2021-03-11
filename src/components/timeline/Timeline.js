@@ -79,7 +79,7 @@ export default class Timeline extends Component {
 				},
 				scrollTrigger: {
 					trigger: techStackImages,
-					start: 'top 75%'
+					start: 'top 100%'
 				}
 			});
 		}
