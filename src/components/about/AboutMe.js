@@ -16,21 +16,22 @@ export default class AboutMe extends Component {
 						Profile
 					</Typography>
 					<Typography style={{ fontSize: '1.1em', margin: '2vh auto' }}>
-						I am a software engineer who completed a Software Engineering Technology Advanced Diploma
-						program at Centennial College. I am currently seeking a software engineering/full-stack
-						developer position where reliability is valued.
+						I am a software developer who completed a Software Engineering Diploma program at Centennial
+						College. I am currently seeking a software engineering/full-stack developer position where
+						reliability is valued.
 					</Typography>
 					<Typography style={{ fontSize: '1.1em', margin: '2vh auto' }}>
-						Previously, I worked at a university library in Japan as an On-site IT Support Programmer, where
-						I performed maintenance, troubleshooting, system update and software installation &
-						configuration of LAMP stack servers. I also worked in scripting to closely help the internal
-						team and library staff such as large scale bibliographic record conversion.
+						I have over five years of work experience in a university library as an On-Site IT Support
+						Programmer, in which I performed maintenance, troubleshooting, system backup and upgrade of
+						integrated library management system on LAMP servers. I closely communicated with the internal
+						team and library staff and helped them out with streamlining their business processes by
+						scripting in Shell script / Perl such as large-scale bibliographic record conversion.
 					</Typography>
 					<Typography style={{ fontSize: '1.1em', margin: '2vh auto' }}>
-						In Canada, I have gained experience through multiple projects of enterprise web application
-						using various technologies, including but not limited to ASP.NET, Angular, SQL Server stack. My
-						current focus are microservices and RESTful APIs but I am open to work both the front-end and
-						back-end.
+						In most recent positions in Canda, I have accumulated further experience in web application
+						development with various modern technologies, including but not limited to ASP.NET Core,
+						Angular, SQL Server stacks. My current focus are microservices and RESTful APIs but I am open to
+						work both the front-end and back-end.
 					</Typography>
 				</Grid>
 				<Grid className="profile" item sm={12} md={5}>

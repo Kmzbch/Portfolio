@@ -34,7 +34,7 @@ export default class AboutSkills extends Component {
 						<DesktopWindowsOutlined className="specialties" />
 						<Typography variant="h6">Full-Stack Development</Typography>
 						<Typography className="skill-description">Implement, test and refactor</Typography>
-						<Typography className="skill-description">front-end and/or back-end</Typography>
+						<Typography className="skill-description">in front-end and/or back-end</Typography>
 					</Grid>
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<CodeOutlined className="specialties" />
@@ -52,8 +52,10 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<BusinessOutlined className="specialties" />
 						<Typography variant="h6">On-Site IT Support</Typography>
-						<Typography className="skill-description">Communicate with clients to</Typography>
-						<Typography className="skill-description">offer assistance</Typography>
+						<Typography className="skill-description" />
+						<Typography className="skill-description">
+							Communicate with clients to offer assistance
+						</Typography>
 						<Typography className="skill-description" />
 					</Grid>
 				</Grid>
@@ -68,7 +70,7 @@ export default class AboutSkills extends Component {
 						<SearchOutlined className="soft-skills" />
 						<Typography variant="h6">Attention to Detail</Typography>
 						<Typography className="skill-description">Analyze for a solution</Typography>
-						<Typography className="skill-description">from different perspectives</Typography>
+						<Typography className="skill-description">and further improvement</Typography>
 					</Grid>
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<DirectionsRunOutlined className="soft-skills" />
@@ -81,7 +83,7 @@ export default class AboutSkills extends Component {
 						<PeopleOutlined className="soft-skills" />
 						<Typography variant="h6">Collaboration</Typography>
 						<Typography className="skill-description">
-							Work well collaboratively with a team for the best results
+							Enjoy team collaboration as well as working independently
 						</Typography>
 						<Typography className="skill-description" />
 					</Grid>
