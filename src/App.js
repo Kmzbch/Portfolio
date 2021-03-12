@@ -34,31 +34,33 @@ class App extends Component {
 		const contactPos = ReactDOM.findDOMNode(contact).getBoundingClientRect();
 		const footerPos = ReactDOM.findDOMNode(footer).getBoundingClientRect();
 
-		if (homePos.y < 0 && aboutPos.y - margin >= 0) {
-			if (this.state.currentScreen !== 'home') {
-				this.setState({ currentScreen: 'home' });
-				document.title = "Home - Kei's Portfolio";
-			}
-		} else if (aboutPos.y - margin < 0 && projectPos.y - margin >= 0) {
-			if (this.state.currentScreen !== 'about') {
-				this.setState({ currentScreen: 'about' });
-				document.title = "About - Kei's Portfolio";
-			}
-		} else if (projectPos.y - margin < 0 && timelinePos.y - margin >= 0) {
-			if (this.state.currentScreen !== 'projects') {
-				this.setState({ currentScreen: 'projects' });
-				document.title = "Projects - Kei's Portfolio";
+		if (contactPos.y - margin <= 0) {
+			if (this.state.currentScreen !== 'contact') {
+				this.setState({ currentScreen: 'contact' });
+				document.title = "Contact - Kei's Portfolio";
 			}
 		} else if (timelinePos.y - margin < 0 && contactPos.y - margin >= 0) {
 			if (this.state.currentScreen !== 'timeline') {
 				this.setState({ currentScreen: 'timeline' });
 				document.title = "Timeline - Kei's Portfolio";
 			}
-		} else if (contactPos.y - margin <= 0) {
-			if (this.state.currentScreen !== 'contact') {
-				this.setState({ currentScreen: 'contact' });
-				document.title = "Contact - Kei's Portfolio";
+		} else if (projectPos.y - margin < 0 && timelinePos.y - margin >= 0) {
+			if (this.state.currentScreen !== 'projects') {
+				this.setState({ currentScreen: 'projects' });
+				document.title = "Projects - Kei's Portfolio";
 			}
+		} else if (aboutPos.y - margin < 0 && projectPos.y - margin >= 0) {
+			if (this.state.currentScreen !== 'about') {
+				this.setState({ currentScreen: 'about' });
+				document.title = "About - Kei's Portfolio";
+			}
+		} else if (homePos.y < 0 && aboutPos.y - margin >= 0) {
+			if (this.state.currentScreen !== 'home') {
+				this.setState({ currentScreen: 'home' });
+				document.title = "Home - Kei's Portfolio";
+			}
+		} else {
+			this.setState({ currentScreen: 'default' });
 		}
 	};
 
@@ -72,10 +74,10 @@ class App extends Component {
 
 		document.title = "Kei's Portfolio";
 
-		this.monitorCurrentScreen();
-		setInterval(this.monitorCurrentScreen, 300);
-
 		setTimeout(() => {
+			this.monitorCurrentScreen();
+			setInterval(this.monitorCurrentScreen, 750);
+
 			const animeMan = new AnimationManager();
 			animeMan.initializeAnimation(this.state.currentScreen);
 		}, 300);
@@ -84,7 +86,7 @@ class App extends Component {
 	render() {
 		return (
 			<Router basename={process.env.PUBLIC_URL}>
-				<Navbar currentScreen={this.state} />
+				<Navbar currentScreen={this.state.currentScreen} />
 				<Home />
 				<About />
 				<Projects />

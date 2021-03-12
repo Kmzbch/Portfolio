@@ -3,7 +3,7 @@ body,
 .main,
 .page {
 	overflow-x: hidden;
-	/* scroll-behavior: smooth; */
+	scroll-behavior: smooth;
 	font-style: normal;
 }
 
