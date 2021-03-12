@@ -1,8 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Component } from 'react';
 import ReactDOM from 'react-dom';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -10,7 +9,7 @@ import Projects from './components/projects/Projects';
 import Timeline from './components/timeline/Timeline';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import { Component } from 'react';
+import AnimationManager from './components/shared/manager/AnimationManager';
 import './App.css';
 
 class App extends Component {
@@ -62,20 +61,22 @@ class App extends Component {
 	};
 
 	componentWillUnmount() {
-		document.removeEventListener('scroll', this.monitorCurrentScreen);
+		clearInterval(this.monitorCurrentScreen);
 	}
 
 	componentDidMount() {
 		console.log("Welcome to Kei's portfolio!");
 		console.log('This portfolio is built with React.');
 
-		// set document title
 		document.title = "Kei's Portfolio";
 
-		// // add onScroll event for Navbar active menu
-		document.addEventListener('scroll', this.monitorCurrentScreen);
+		this.monitorCurrentScreen();
+		setInterval(this.monitorCurrentScreen, 1500);
 
-		gsap.registerPlugin(ScrollTrigger);
+		setTimeout(() => {
+			const animeMan = new AnimationManager();
+			animeMan.initializeAnimation(this.state.currentScreen);
+		}, 10);
 	}
 
 	render() {

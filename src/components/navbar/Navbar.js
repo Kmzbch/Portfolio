@@ -4,6 +4,7 @@ import { CloseOutlined, MenuOutlined } from '@material-ui/icons';
 import { HashLink } from 'react-router-hash-link';
 import NavbarItems from './NavbarItems';
 import './Navbar.scss';
+// import { Link } from 'react-scroll';
 
 export default class extends Component {
 	constructor(props) {
@@ -52,7 +53,7 @@ export default class extends Component {
 			<div className="navbar">
 				<div className="nav-container">
 					<div className="logo">
-						<HashLink className="logo-link" to="#home" onClick={this.linkClicked}>
+						<HashLink className="logo-link" to="#home" smooth={true} onClick={this.linkClicked}>
 							KEI MIZUBUCHI
 						</HashLink>
 					</div>
@@ -82,7 +83,9 @@ export default class extends Component {
 										}
 										key={item.title}
 										component={HashLink}
-										to={item.url}
+										smooth={true}
+										duration={1000}
+										to={'#' + item.url}
 										onClick={this.linkClicked}
 									>
 										<ListItemText primary={item.title} />

@@ -11,31 +11,22 @@ export default class About extends Component {
 	}
 
 	componentDidMount() {
-		const header = document.querySelector('.about .header');
-		const divider = document.querySelector('.about .divider');
-
-		// const about = document.querySelector('#about');
-		// gsap.from([ about ], {
-		// 	delay: 4.8,
+		// const header = document.querySelector('.about .header');
+		// const divider = document.querySelector('.about .divider');
+		// gsap.from([ header, divider ], {
+		// 	delay: 0.5,
 		// 	duration: 0.8,
-		// 	display: 'none',
-		// 	opacity: 0
+		// 	ease: 'ease.out',
+		// 	x: -100,
+		// 	opacity: 0,
+		// 	stagger: {
+		// 		amount: 0.15
+		// 	},
+		// 	scrollTrigger: {
+		// 		trigger: [ header ],
+		// 		start: 'top 75%'
+		// 	}
 		// });
-
-		gsap.from([ header, divider ], {
-			delay: 0.5,
-			duration: 0.8,
-			ease: 'ease.out',
-			x: -100,
-			opacity: 0,
-			stagger: {
-				amount: 0.15
-			},
-			scrollTrigger: {
-				trigger: [ header ],
-				start: 'top 75%'
-			}
-		});
 	}
 
 	render() {

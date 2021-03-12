@@ -15,74 +15,7 @@ export default class Contact extends Component {
 		super(props);
 	}
 
-	componentDidMount() {
-		const header = document.querySelector('.contact .header');
-		const divider = document.querySelector('.contact .divider');
-		const caption = document.querySelector('.contact .caption');
-
-		gsap.from([ header, divider, caption ], {
-			delay: 0.5,
-			duration: 0.8,
-			ease: 'ease.out',
-			x: -100,
-			opacity: 0,
-			stagger: {
-				amount: 0.15
-			},
-			scrollTrigger: {
-				trigger: [ header ],
-				start: 'top center'
-			}
-		});
-
-		const contactItems = document.querySelector('.contact .contact-items');
-		const contactLinks = document.querySelectorAll('.contact .contact-links');
-		const contactForm = document.querySelector('.contact-form');
-
-		gsap.from(contactItems, {
-			delay: 0.5,
-			duration: 0.8,
-			ease: 'ease.out',
-			x: -50,
-			opacity: 0,
-			stagger: {
-				amount: 0.5
-			},
-			scrollTrigger: {
-				trigger: contactItems,
-				start: 'top center'
-			}
-		});
-
-		gsap.from(contactLinks, {
-			delay: 0.5,
-			duration: 0.8,
-			ease: 'ease.out',
-			opacity: 0,
-			stagger: {
-				amount: 0.5
-			},
-			scrollTrigger: {
-				trigger: contactLinks,
-				start: 'top center'
-			}
-		});
-
-		gsap.from([ contactForm ], {
-			delay: 0.5,
-			duration: 0.8,
-			ease: 'ease.out',
-			y: 50,
-			opacity: 0,
-			stagger: {
-				amount: 0.15
-			},
-			scrollTrigger: {
-				trigger: [ contactForm ],
-				start: 'top center'
-			}
-		});
-	}
+	componentDidMount() {}
 
 	resetFormMessage = (ev) => {
 		const formMessage = document.querySelector('.form-message');

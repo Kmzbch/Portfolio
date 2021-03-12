@@ -1,6 +1,7 @@
 const Footer = ({}) => {
 	return (
 		<div
+			id="footer"
 			className="footer"
 			style={{
 				position: 'relative',

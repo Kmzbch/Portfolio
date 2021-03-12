@@ -3,7 +3,7 @@ import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import { Languages, FrameworksAndLibraries, DbmsAndServers, DesignAndManagements } from './AboutItems';
 import gsap from 'gsap';
-import TechStack from '../shared/techstack/TechStack';
+import TechStack from '../shared/components/techstack/TechStack';
 import './About.scss';
 
 export default class AboutTech extends Component {
@@ -21,67 +21,6 @@ export default class AboutTech extends Component {
 
 	constructor(props) {
 		super(props);
-	}
-
-	componentDidMount() {
-		const aboutTechCaption = document.querySelectorAll('.about-tech .caption');
-		const aboutTechImages = document.querySelectorAll('.about-tech .sub-panel');
-
-		gsap.from([ aboutTechCaption ], {
-			delay: 0.5,
-			duration: 0.8,
-			ease: 'ease.out',
-			y: 50,
-			opacity: 0,
-			stagger: {
-				amount: 0.15
-			},
-			scrollTrigger: {
-				trigger: [ aboutTechCaption ],
-				start: 'top 75%'
-			}
-		});
-
-		let movementVal = 0;
-
-		for (let i = 0; i < aboutTechImages.length; i++) {
-			if (i % 2 === 0) {
-				movementVal = -50;
-			} else {
-				movementVal = 50;
-			}
-
-			gsap.from([ aboutTechImages[i] ], {
-				delay: 0.5,
-				duration: 0.8,
-				ease: 'ease.out',
-				x: movementVal,
-				opacity: 0,
-				stagger: {
-					amount: 0.15
-				},
-				scrollTrigger: {
-					trigger: [ aboutTechImages[i] ],
-					start: 'top 75%'
-				}
-			});
-
-			const techStackImages = aboutTechImages[i].querySelectorAll('.tech-stack-image');
-			gsap.from(techStackImages, {
-				delay: 1.5,
-				duration: 0.6,
-				ease: 'ease.out',
-				y: 50,
-				opacity: 0,
-				stagger: {
-					amount: 0.5
-				},
-				scrollTrigger: {
-					trigger: techStackImages,
-					start: 'top 75%'
-				}
-			});
-		}
 	}
 
 	render() {
