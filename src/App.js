@@ -14,7 +14,7 @@ import './App.css';
 
 class App extends Component {
 	state = {
-		currentScreen: 'home'
+		currentScreen: 'default'
 	};
 
 	monitorCurrentScreen = () => {
@@ -25,12 +25,14 @@ class App extends Component {
 		const project = document.querySelector('#project');
 		const timeline = document.querySelector('#timeline');
 		const contact = document.querySelector('#contact');
+		const footer = document.querySelector('#footer');
 
 		const homePos = ReactDOM.findDOMNode(home).getBoundingClientRect();
 		const aboutPos = ReactDOM.findDOMNode(about).getBoundingClientRect();
 		const projectPos = ReactDOM.findDOMNode(project).getBoundingClientRect();
 		const timelinePos = ReactDOM.findDOMNode(timeline).getBoundingClientRect();
 		const contactPos = ReactDOM.findDOMNode(contact).getBoundingClientRect();
+		const footerPos = ReactDOM.findDOMNode(footer).getBoundingClientRect();
 
 		if (homePos.y < 0 && aboutPos.y - margin >= 0) {
 			if (this.state.currentScreen !== 'home') {
@@ -57,9 +59,6 @@ class App extends Component {
 				this.setState({ currentScreen: 'contact' });
 				document.title = "Contact - Kei's Portfolio";
 			}
-		} else {
-			document.title = "Home - Kei's Portfolio";
-			this.setState({ currentScreen: 'home' });
 		}
 	};
 
@@ -79,7 +78,7 @@ class App extends Component {
 		setTimeout(() => {
 			const animeMan = new AnimationManager();
 			animeMan.initializeAnimation(this.state.currentScreen);
-		}, 10);
+		}, 300);
 	}
 
 	render() {

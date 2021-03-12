@@ -9,9 +9,15 @@ export default class AnimationManager {
 	initializeAnimation(currentScreen) {
 		let delay = 0.75;
 
-		if (currentScreen === 'home') {
+		if (currentScreen === 'default') {
 			this.setHomeAnimation();
 			delay = 7.5;
+		} else {
+			const html = document.querySelector('html');
+			// use Home for splash screen
+			gsap.to(html, {
+				opacity: 1
+			});
 		}
 
 		this.setNavbarAnimation(delay);
@@ -47,6 +53,7 @@ export default class AnimationManager {
 
 		// use Home for splash screen
 		gsap.to(html, {
+			opacity: 1,
 			overflowY: 'hidden'
 		});
 
