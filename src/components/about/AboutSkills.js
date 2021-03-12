@@ -46,9 +46,8 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<BusinessOutlined className="specialties" />
 						<Typography variant="h6">On-Site IT Support</Typography>
-						<Typography className="skill-description">
-							Resolve issues and offer help in a client-centered approach
-						</Typography>
+						<Typography className="skill-description">Provide issue resolution</Typography>
+						<Typography className="skill-description">in a client-centered approach</Typography>
 					</Grid>
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<StorageOutlined className="specialties" />
