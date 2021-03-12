@@ -223,7 +223,7 @@ const TimelineItems = [
 			'Conducted installation and configuration of open-source Java CMS for scholarly digital content',
 			'Reported web access information and project status to the library staff on a monthly basis',
 			'Implemented, modified, optimized, and tested institutional websites in PHP and MySQL',
-			'Performed other related duties as assigned'
+			'Performed other related duties as required'
 		],
 		techStacks: [
 			{

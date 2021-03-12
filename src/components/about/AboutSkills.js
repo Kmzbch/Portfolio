@@ -33,7 +33,7 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<DesktopWindowsOutlined className="specialties" />
 						<Typography variant="h6">Full-Stack Development</Typography>
-						<Typography className="skill-description">Implement, test and refactor</Typography>
+						<Typography className="skill-description">Design, code, and test</Typography>
 						<Typography className="skill-description">in front-end and/or back-end</Typography>
 					</Grid>
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
@@ -44,19 +44,16 @@ export default class AboutSkills extends Component {
 						</Typography>
 					</Grid>
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
-						<StorageOutlined className="specialties" />
-						<Typography variant="h6">Server</Typography>
-						<Typography className="skill-description">Experienced and knowledgable</Typography>
-						<Typography className="skill-description">with LAMP stack</Typography>
-					</Grid>
-					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<BusinessOutlined className="specialties" />
 						<Typography variant="h6">On-Site IT Support</Typography>
-						<Typography className="skill-description" />
 						<Typography className="skill-description">
-							Communicate with clients to offer assistance
+							Resolve issues and offer help in a client-centered approach
 						</Typography>
-						<Typography className="skill-description" />
+					</Grid>
+					<Grid className="skill-item" item xs={12} sm={6} md={3}>
+						<StorageOutlined className="specialties" />
+						<Typography variant="h6">Linux Server</Typography>
+						<Typography className="skill-description">Experienced in working with LAMP servers</Typography>
 					</Grid>
 				</Grid>
 				<Grid
@@ -69,7 +66,7 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<SearchOutlined className="soft-skills" />
 						<Typography variant="h6">Attention to Detail</Typography>
-						<Typography className="skill-description">Analyze for a solution</Typography>
+						<Typography className="skill-description">Analyze for solutions</Typography>
 						<Typography className="skill-description">and further improvement</Typography>
 					</Grid>
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
@@ -85,14 +82,13 @@ export default class AboutSkills extends Component {
 						<Typography className="skill-description">
 							Enjoy team collaboration as well as working independently
 						</Typography>
-						<Typography className="skill-description" />
 					</Grid>
 
 					<Grid className="skill-item" item xs={12} sm={6} md={3}>
 						<TrendingUpOutlined className="soft-skills" />
 						<Typography variant="h6">Adaptability</Typography>
-						<Typography className="skill-description">Grow the skill set to</Typography>
-						<Typography className="skill-description">adapt to the changing needs</Typography>
+						<Typography className="skill-description">Grow skill sets to</Typography>
+						<Typography className="skill-description">adapt to changing needs</Typography>
 					</Grid>
 				</Grid>
 			</Grid>
