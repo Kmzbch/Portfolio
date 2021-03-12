@@ -11,45 +11,6 @@ export default class Projects extends Component {
 		super(props);
 	}
 
-	// componentDidMount() {
-	// 	const header = document.querySelector('.project .header');
-	// 	const divider = document.querySelector('.project .divider');
-
-	// 	const panels = document.querySelectorAll('.project .panel');
-
-	// 	gsap.from([ header, divider ], {
-	// 		delay: 0.5,
-	// 		duration: 0.8,
-	// 		ease: 'ease.out',
-	// 		x: 100,
-	// 		opacity: 0,
-	// 		stagger: {
-	// 			amount: 0.15
-	// 		},
-	// 		scrollTrigger: {
-	// 			trigger: '.project .header',
-	// 			start: 'top 75%'
-	// 		}
-	// 	});
-
-	// 	for (let i = 0; i < panels.length; i++) {
-	// 		gsap.from([ panels[i] ], {
-	// 			delay: 0.5,
-	// 			duration: 0.8,
-	// 			ease: 'ease.out',
-	// 			y: 50,
-	// 			opacity: 0,
-	// 			stagger: {
-	// 				amount: 0.15
-	// 			},
-	// 			scrollTrigger: {
-	// 				trigger: [ panels[i] ],
-	// 				start: 'top 85%'
-	// 			}
-	// 		});
-	// 	}
-	// }
-
 	render() {
 		return (
 			<div id="project" className="page project">

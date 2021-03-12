@@ -57,6 +57,9 @@ class App extends Component {
 				this.setState({ currentScreen: 'contact' });
 				document.title = "Contact - Kei's Portfolio";
 			}
+		} else {
+			document.title = "Home - Kei's Portfolio";
+			this.setState({ currentScreen: 'home' });
 		}
 	};
 
@@ -71,7 +74,7 @@ class App extends Component {
 		document.title = "Kei's Portfolio";
 
 		this.monitorCurrentScreen();
-		setInterval(this.monitorCurrentScreen, 1500);
+		setInterval(this.monitorCurrentScreen, 300);
 
 		setTimeout(() => {
 			const animeMan = new AnimationManager();

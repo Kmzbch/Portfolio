@@ -241,8 +241,10 @@ export default class AnimationManager {
 			gsap.from([ panels[i] ], {
 				delay: 0.5,
 				duration: 0.8,
-				ease: 'ease.out',
+				ease: 'back.out',
 				y: 50,
+				scaleX: 0.9,
+				scaleY: 0.9,
 				opacity: 0,
 				stagger: {
 					amount: 0.15
