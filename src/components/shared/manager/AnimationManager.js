@@ -34,13 +34,18 @@ export default class AnimationManager {
 
 		const html = document.querySelector('html');
 
-		tl.from(navbar, {
-			delay: delay,
-			duration: 0.75,
-			top: -100,
-			ease: 'ease.out',
-			opacity: 0
-		});
+		tl
+			.from(navbar, {
+				delay: delay,
+				duration: 0.75,
+				top: -100,
+				ease: 'ease.out',
+				opacity: 0
+			})
+			.to(html, {
+				delay: 1,
+				overflowY: 'auto'
+			});
 	}
 
 	setHomeAnimation() {
@@ -88,9 +93,6 @@ export default class AnimationManager {
 				ease: 'back.out',
 
 				opacity: 0
-			})
-			.to(html, 0.5, {
-				overflowY: 'auto'
 			});
 	}
 
