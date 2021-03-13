@@ -274,6 +274,21 @@ export default class AnimationManager {
 
 		const timelineEvents = document.querySelectorAll('.timeline .timeline-event');
 
+		const timelineEventIcons = document.querySelectorAll('.timeline .timeline-event-icon');
+		// transform: rotate(220deg);
+		// transition: all 0.3s ease-in-out 0s;
+
+		console.log(timelineEventIcons);
+		for (let i = 0; i < timelineEventIcons.length; i++) {
+			gsap.from([ timelineEventIcons[i] ], 0.7, {
+				rotation: -680,
+				scrollTrigger: {
+					trigger: [ timelineEventIcons[i] ],
+					start: 'top 75%'
+				}
+			});
+		}
+
 		gsap.from([ header, divider ], {
 			delay: 0.5,
 			duration: 0.8,
