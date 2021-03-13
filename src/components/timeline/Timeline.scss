@@ -2,6 +2,7 @@
 	$primary: #dce1eb;
 	$secondary: #3f4e67;
 	$accent: #ee707d;
+	$accent2: #b82b32;
 	$color-6: #fbe77d;
 	$neutral: #f7f7f7;
 
@@ -29,7 +30,7 @@
 		margin: 4em auto;
 		list-style: none;
 		&:before {
-			background-color: $secondary;
+			background-color: $accent;
 			content: " ";
 			margin-left: -1px;
 			position: absolute;
@@ -47,7 +48,7 @@
 	.timeline-event-icon {
 		transform: rotate(45deg);
 		background-color: $color-6;
-		outline: 5px solid $accent;
+		outline: 5px solid $accent2;
 		display: block;
 		margin: 0.5em 0.5em 0.5em -0.5em;
 		position: absolute;
@@ -122,7 +123,7 @@
 			margin: 4em auto;
 			list-style: none;
 			&:before {
-				background-color: $secondary;
+				background-color: $accent;
 				content: " ";
 				margin-left: -2em;
 				position: absolute;
@@ -136,7 +137,7 @@
 		.timeline-event-icon {
 			transform: rotate(45deg);
 			background-color: $color-6;
-			outline: 5px solid $accent;
+			outline: 5px solid $accent2;
 			display: block;
 			margin: 0.5em 0.5em 0.5em -2.4em;
 			position: absolute;
