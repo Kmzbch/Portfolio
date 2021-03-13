@@ -275,10 +275,7 @@ export default class AnimationManager {
 		const timelineEvents = document.querySelectorAll('.timeline .timeline-event');
 
 		const timelineEventIcons = document.querySelectorAll('.timeline .timeline-event-icon');
-		// transform: rotate(220deg);
-		// transition: all 0.3s ease-in-out 0s;
 
-		console.log(timelineEventIcons);
 		for (let i = 0; i < timelineEventIcons.length; i++) {
 			gsap.from([ timelineEventIcons[i] ], 0.7, {
 				rotation: -680,
@@ -371,7 +368,7 @@ export default class AnimationManager {
 			},
 			scrollTrigger: {
 				trigger: [ header ],
-				start: 'top center'
+				start: 'top 75%'
 			}
 		});
 
@@ -390,7 +387,7 @@ export default class AnimationManager {
 			},
 			scrollTrigger: {
 				trigger: contactItems,
-				start: 'top 100%'
+				start: 'top 75%'
 			}
 		});
 
@@ -404,7 +401,7 @@ export default class AnimationManager {
 			},
 			scrollTrigger: {
 				trigger: contactLinks,
-				start: 'top 100%'
+				start: 'top 75%'
 			}
 		});
 
@@ -419,7 +416,7 @@ export default class AnimationManager {
 			},
 			scrollTrigger: {
 				trigger: [ contactForm ],
-				start: 'top 100%'
+				start: 'top 75%'
 			}
 		});
 	}
