@@ -85,7 +85,7 @@ export default class Projects extends Component {
 													href={item.projectLink}
 													target="_blank"
 												>
-													View App
+													View Demo
 												</Button>
 											</Grid>
 										) : (
@@ -99,7 +99,7 @@ export default class Projects extends Component {
 													href={item.projectLink}
 													target="_blank"
 												>
-													View App
+													View Demo
 												</Button>
 												<Button
 													className="view-button"
