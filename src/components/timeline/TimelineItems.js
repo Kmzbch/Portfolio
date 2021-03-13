@@ -4,11 +4,12 @@ const TimelineItems = [
 		title: 'Back-end Developer',
 		company: 'Centennial College: WIMTACH',
 		duties: [
-			'Implemented REST APIs of Java EMR application back-end with Spring Boot working with complex models and MSSQL queries',
+			'Implemented REST APIs of Java Electronic Medical Record application back-end with Spring Boot working with complex models',
 			"Replaced Hibernate/JPQL queries with SQL Server queries to increase routers' performance",
-			'Built and maintained an automated test suite with JUnit and REST Assured',
-			'Resolved technical issues arising during development in an Agile manner',
-			'Maintained the internal test tracking list and Confluence & Swagger API documentation'
+			'Built and enhanced an automated integration test suite with JUnit and REST Assured',
+			'Maintained the internal test tracking list and Confluence & Swagger API documentation',
+			'Participated in daily standup meetings and discussed solutions/implementation with the developers',
+			'Resolved technical issues arising during development in an Agile manner'
 		],
 		techStacks: [
 			{
@@ -74,16 +75,17 @@ const TimelineItems = [
 		title: 'Co-op Application Developer',
 		company: 'CIBC: Personal Banking Products Technology',
 		duties: [
-			'Optimized and conducted API testing for Spring MVC banking middleware with SOAP UI',
-			'Created and modified Shell Scripts for archiving access log and assisting with the API testing',
+			'Conducted and optimized API/web services testing of Spring MVC banking middleware with SOAP UI',
+			'Created/modified Shell Scripts for archiving access log and assisting with the API testing',
+			'Performed interface testing of the web portal and documented test reports',
 			'Conducted audit on VCS of the team to provide recommendation on migration options in collaboration with a senior developer',
 			'Assisted senior developers in creating technical documents and examination of server information'
 		],
 		techStacks: [
 			{
-				// Icon retrieved from https://worldvectorlogo.com/logo/java-4
-				link: './images/techStacks/java.svg',
-				altTxt: 'Java'
+				// Icon retrieved from https://worldvectorlogo.com/logo/jee-2
+				link: './images/techStacks/j2ee.svg',
+				altTxt: 'J2EE'
 			},
 			{
 				// Icon retrieved from https://worldvectorlogo.com/logo/spring-3
@@ -99,6 +101,11 @@ const TimelineItems = [
 				// Icon retrieved from https://www.soapui.org/open-source/features/
 				link: './images/techStacks/soapui.png',
 				altTxt: 'SOAP UI'
+			},
+			{
+				// Icon retrieved from https://commons.wikimedia.org/wiki/File:Text-xml.svg
+				link: './images/techStacks/xml.png',
+				altTxt: 'XML'
 			},
 			{
 				// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
@@ -156,11 +163,12 @@ const TimelineItems = [
 		title: 'Co-op Application Developer',
 		company: 'CIBC: Treasury & Risk Management Technology',
 		duties: [
-			'Acted in a wealth management web application development',
+			'Acted in a web-based wealth management application development',
 			'Implemented both the front-end and back-end of the application with ASP.NET Core, Angular 5, Kendo UI, and Entity Framework 4.5',
-			'Examined technical specifications and architecture of a legacy Java EE application for its migration',
-			'Collaborated with the developer team and BA/QA with Team Foundation Server and Git',
-			'Conducted research and made presentation on biometric ID verification systems with a team of four'
+			'Investigated technical specifications and architecture of a legacy J2EE application for its migration',
+			'Collaboratively worked with the developer team and BA/QA in a Azure DevOps Server & Git environment',
+			'Conducted research on biometric ID verification systems and made recommendation with a team of four',
+			'Performed other related tasks as assigned'
 		],
 		techStacks: [
 			{
