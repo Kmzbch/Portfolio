@@ -150,6 +150,7 @@ export default class AnimationManager {
 		});
 
 		const aboutSkills = document.querySelector('.about-skills');
+		const skillItems = document.querySelectorAll('.skill-item');
 
 		gsap.from([ aboutSkills ], {
 			delay: 0.5,
@@ -161,6 +162,24 @@ export default class AnimationManager {
 			opacity: 0,
 			scrollTrigger: {
 				trigger: [ aboutSkills ],
+				start: 'top 75%'
+			}
+		});
+		gsap.from(skillItems, {
+			delay: 0.7,
+			duration: 0.6,
+			// ease: 'ease.inout',
+			ease: 'back.out',
+			scaleX: 0.9,
+			scaleY: 0.9,
+
+			y: 50,
+			opacity: 0,
+			stagger: {
+				amount: 0.5
+			},
+			scrollTrigger: {
+				trigger: skillItems,
 				start: 'top 75%'
 			}
 		});
@@ -247,6 +266,7 @@ export default class AnimationManager {
 		});
 
 		for (let i = 0; i < panels.length; i++) {
+			const subPanelLeft = panels[i].querySelector('.sub-panel.left');
 			gsap.from([ panels[i] ], {
 				delay: 0.5,
 				duration: 0.8,
@@ -263,6 +283,19 @@ export default class AnimationManager {
 					start: 'top 85%'
 				}
 			});
+			// gsap.from(subPanelLeft.children, {
+			// 	delay: 2,
+			// 	duration: 0.8,
+			// 	ease: 'ease.out',
+			// 	opacity: 0,
+			// 	stagger: {
+			// 		amount: 0.7
+			// 	},
+			// 	scrollTrigger: {
+			// 		trigger: subPanelLeft,
+			// 		start: 'top 85%'
+			// 	}
+			// });
 		}
 	}
 
@@ -330,6 +363,22 @@ export default class AnimationManager {
 				},
 				scrollTrigger: {
 					trigger: [ timelineEvents[i] ],
+					start: 'top 75%'
+				}
+			});
+
+			const duties = timelineEvents[i].querySelector('.timeline-duties');
+			gsap.from(duties.children, {
+				delay: 3,
+				duration: 1,
+				ease: 'power3.out',
+				x: 100,
+				opacity: 0,
+				stagger: {
+					amount: 0.5
+				},
+				scrollTrigger: {
+					trigger: [ duties ],
 					start: 'top 75%'
 				}
 			});
