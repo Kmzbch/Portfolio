@@ -252,8 +252,8 @@ export default class AnimationManager {
 				duration: 0.8,
 				ease: 'back.out',
 				y: 50,
-				scaleX: 0.9,
-				scaleY: 0.9,
+				// scaleX: 0.9,
+				// scaleY: 0.9,
 				opacity: 0,
 				stagger: {
 					amount: 0.15
