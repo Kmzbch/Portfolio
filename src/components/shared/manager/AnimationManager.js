@@ -166,7 +166,7 @@ export default class AnimationManager {
 			}
 		});
 		gsap.from(skillItems, {
-			delay: 0.7,
+			delay: 2,
 			duration: 0.6,
 			// ease: 'ease.inout',
 			ease: 'back.out',
@@ -270,7 +270,7 @@ export default class AnimationManager {
 			gsap.from([ panels[i] ], {
 				delay: 0.5,
 				duration: 0.8,
-				ease: 'back.out',
+				ease: 'ease.out',
 				y: 50,
 				// scaleX: 0.9,
 				// scaleY: 0.9,
@@ -283,19 +283,20 @@ export default class AnimationManager {
 					start: 'top 85%'
 				}
 			});
-			// gsap.from(subPanelLeft.children, {
-			// 	delay: 2,
-			// 	duration: 0.8,
-			// 	ease: 'ease.out',
-			// 	opacity: 0,
-			// 	stagger: {
-			// 		amount: 0.7
-			// 	},
-			// 	scrollTrigger: {
-			// 		trigger: subPanelLeft,
-			// 		start: 'top 85%'
-			// 	}
-			// });
+			gsap.from(subPanelLeft.children, {
+				delay: 2,
+				duration: 0.5,
+				ease: 'ease.out',
+				y: 50,
+				opacity: 0,
+				stagger: {
+					amount: 0.5
+				},
+				scrollTrigger: {
+					trigger: subPanelLeft,
+					start: 'top 85%'
+				}
+			});
 		}
 	}
 
