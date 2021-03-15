@@ -83,7 +83,6 @@ export default class extends Component {
 										key={item.title}
 										component={HashLink}
 										smooth={true}
-										duration={1000}
 										to={'#' + item.url}
 										onClick={this.linkClicked}
 									>

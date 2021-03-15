@@ -1,6 +1,5 @@
 import React from 'react';
 import { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
@@ -25,14 +24,12 @@ class App extends Component {
 		const project = document.querySelector('#project');
 		const timeline = document.querySelector('#timeline');
 		const contact = document.querySelector('#contact');
-		const footer = document.querySelector('#footer');
 
-		const homePos = ReactDOM.findDOMNode(home).getBoundingClientRect();
-		const aboutPos = ReactDOM.findDOMNode(about).getBoundingClientRect();
-		const projectPos = ReactDOM.findDOMNode(project).getBoundingClientRect();
-		const timelinePos = ReactDOM.findDOMNode(timeline).getBoundingClientRect();
-		const contactPos = ReactDOM.findDOMNode(contact).getBoundingClientRect();
-		const footerPos = ReactDOM.findDOMNode(footer).getBoundingClientRect();
+		const homePos = home.getBoundingClientRect();
+		const aboutPos = about.getBoundingClientRect();
+		const projectPos = project.getBoundingClientRect();
+		const timelinePos = timeline.getBoundingClientRect();
+		const contactPos = contact.getBoundingClientRect();
 
 		if (contactPos.y - margin <= 0) {
 			if (this.state.currentScreen !== 'contact') {
