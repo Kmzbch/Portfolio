@@ -11,9 +11,7 @@
 	.content {
 		width: 100%;
 		height: 100%;
-		// min-height: 100vh;
 		min-height: 91vh;
-
 		background-color: $primary;
 		padding-top: 15vh 0;
 		z-index: 100;
@@ -29,28 +27,26 @@
 		width: 80%;
 	}
 
-	.contact-items {
+	.contact-list {
 		width: 80%;
 		margin: 0 auto;
 	}
 
-	.contact-links {
+	.contact-link {
 		color: $neutral;
 		font-family: "Raleway";
-		font-Weight: 'bold !important';
-		margin-left: 20px;
+		margin-left: 1em;
 		margin-right: 0;
 		transition: 0.2s;
 	}
 
-	.contact-links:hover {
+	.contact-link:hover {
 		color: $accent;
 		text-decoration: none;
-		transition: 0.2s;
 	}
 
 	.contact-icon {
-		font-size: 50px;
+		font-size: 3.12em;
 		color: $icon;
 	}
 
@@ -60,7 +56,7 @@
 
 	.form-input {
 		width: 80%;
-		margin: 0.7rem 0;
+		margin: 0.7em 0;
 		border-radius: 5px;
 		background-color: $neutral;
 		color: $primary-variant;
@@ -75,12 +71,17 @@
 		font-weight: bold;
 	}
 
+	.form-button[disabled] {
+		display: none;
+	}
+
 	.form-button:hover {
 		background-color: $accent;
 		color: $primary-variant;
 	}
 
 	.form-message {
+		margin-top: 1em;
 		color: $neutral;
 		font-size: 1.2em;
 		font-weight: bold;
@@ -103,7 +104,7 @@
 			font-size: 1.3em;
 		}
 
-		.contact-items {
+		.contact-list {
 			width: 80vw;
 			height: auto;
 			display: block;
@@ -122,7 +123,7 @@
 	}
 
 	@media only screen and (max-width: 480px) {
-		.contact-links {
+		.contact-link {
 			color: $neutral;
 			font-family: "Raleway";
 			font-Weight: 'bold !important';

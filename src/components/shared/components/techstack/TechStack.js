@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './TechStack.scss';
 
 export default class TechStack extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		return (
 			<div className="tech-stack-wrapper">

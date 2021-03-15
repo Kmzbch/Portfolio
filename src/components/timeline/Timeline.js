@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
 import { List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core';
-import gsap from 'gsap';
 import TimelineItems from './TimelineItems';
 import TechStack from '../shared/components/techstack/TechStack';
 import './Timeline.scss';
 
 export default class Timeline extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	componentDidMount() {}
-
 	render() {
 		return (
 			<div id="timeline" className="page timeline">
@@ -37,7 +30,7 @@ export default class Timeline extends Component {
 											{item.company}
 										</Typography>
 
-										<List className="timeline-duties">
+										<List className="timeline-duty-list">
 											{item.duties.map((subItem, subIndex) => {
 												return (
 													<ListItem key={subIndex}>

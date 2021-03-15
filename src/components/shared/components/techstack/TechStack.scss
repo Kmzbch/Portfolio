@@ -2,7 +2,7 @@
 	position: relative;
 	display: inline-block;
 	text-align: center;
-	margin: .5rem;
+	margin: .5em;
 	border-radius: 5px;
 	background-color: #fafafa;
 
@@ -12,14 +12,15 @@
 		color: #000000;
 		border-top: 1px solid #dddddd;
 		border-radius: 0;
-		transition: 0.2s;
+		transition: .2s;
 	}
+
 	.tech-stack-image {
-		padding: .6rem;
-		height: 3.5rem;
+		padding: .6em;
+		height: 3.5em;
 	}
 
 	.tech-stack-description {
-		padding: .3rem;
+		padding: .3em;
 	}
 }

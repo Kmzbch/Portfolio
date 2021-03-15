@@ -29,10 +29,8 @@ export default class AnimationManager {
 
 	setNavbarAnimation(delay = 0.75) {
 		const navbar = document.querySelector('.nav-container');
-
-		const tl = new TimelineMax();
-
 		const html = document.querySelector('html');
+		const tl = new TimelineMax();
 
 		tl
 			.from(navbar, {
@@ -50,11 +48,10 @@ export default class AnimationManager {
 
 	setHomeAnimation() {
 		const home = document.querySelector('#home');
-		const greetings = document.querySelectorAll('.greeting');
-		const viewButton = document.querySelector('.home .view-button');
-		const tl = new TimelineMax();
-
+		const greetings = home.querySelector('.greeting').children;
+		const viewButton = home.querySelector('.view-button');
 		const html = document.querySelector('html');
+		const tl = new TimelineMax();
 
 		// use Home for splash screen
 		gsap.to(html, {
@@ -91,14 +88,21 @@ export default class AnimationManager {
 				duration: 1,
 				y: 75,
 				ease: 'back.out',
-
 				opacity: 0
 			});
 	}
 
 	setAboutAnimation() {
-		const header = document.querySelector('.about .header');
-		const divider = document.querySelector('.about .divider');
+		const about = document.querySelector('#about');
+		const header = about.querySelector('.header');
+		const divider = about.querySelector('.divider');
+		const aboutMe = about.querySelector('.description');
+		const profileHeader = about.querySelector('.profile-header');
+		const profile = about.querySelector('.profile');
+		const aboutSkills = about.querySelector('.about-skills');
+		const skillItems = about.querySelectorAll('.skill-item');
+		const aboutTechCaption = about.querySelectorAll('.about-tech .caption');
+		const aboutTechImages = about.querySelectorAll('.about-tech .sub-panel');
 
 		gsap.from([ header, divider ], {
 			delay: 0.5,
@@ -114,10 +118,6 @@ export default class AnimationManager {
 				start: 'top 75%'
 			}
 		});
-
-		const aboutMe = document.querySelector('.description');
-		const profileHeader = document.querySelector('.profile-header');
-		const profile = document.querySelector('.profile');
 
 		gsap.from([ profileHeader, aboutMe ], {
 			delay: 0.5,
@@ -149,9 +149,6 @@ export default class AnimationManager {
 			}
 		});
 
-		const aboutSkills = document.querySelector('.about-skills');
-		const skillItems = document.querySelectorAll('.skill-item');
-
 		gsap.from([ aboutSkills ], {
 			delay: 0.5,
 			duration: 0.8,
@@ -165,14 +162,13 @@ export default class AnimationManager {
 				start: 'top 75%'
 			}
 		});
+
 		gsap.from(skillItems, {
 			delay: 2,
 			duration: 0.6,
-			// ease: 'ease.inout',
 			ease: 'back.out',
 			scaleX: 0.9,
 			scaleY: 0.9,
-
 			y: 50,
 			opacity: 0,
 			stagger: {
@@ -183,9 +179,6 @@ export default class AnimationManager {
 				start: 'top 75%'
 			}
 		});
-
-		const aboutTechCaption = document.querySelectorAll('.about-tech .caption');
-		const aboutTechImages = document.querySelectorAll('.about-tech .sub-panel');
 
 		gsap.from([ aboutTechCaption ], {
 			delay: 0.5,
@@ -227,6 +220,7 @@ export default class AnimationManager {
 			});
 
 			const techStackImages = aboutTechImages[i].querySelectorAll('.tech-stack-image');
+
 			gsap.from(techStackImages, {
 				delay: 1.5,
 				duration: 0.6,
@@ -245,10 +239,10 @@ export default class AnimationManager {
 	}
 
 	setProjectAnimation() {
-		const header = document.querySelector('.project .header');
-		const divider = document.querySelector('.project .divider');
-
-		const panels = document.querySelectorAll('.project .panel');
+		const project = document.querySelector('#project');
+		const header = project.querySelector('.header');
+		const divider = project.querySelector('.divider');
+		const panels = project.querySelectorAll('.panel');
 
 		gsap.from([ header, divider ], {
 			delay: 0.5,
@@ -260,20 +254,20 @@ export default class AnimationManager {
 				amount: 0.15
 			},
 			scrollTrigger: {
-				trigger: '.project .header',
+				trigger: [ header ],
 				start: 'top 75%'
 			}
 		});
 
 		for (let i = 0; i < panels.length; i++) {
 			const subPanelLeft = panels[i].querySelector('.sub-panel.left');
+			const subPanelLeftContent = subPanelLeft.children;
+
 			gsap.from([ panels[i] ], {
 				delay: 0.5,
 				duration: 0.8,
 				ease: 'ease.out',
 				y: 50,
-				// scaleX: 0.9,
-				// scaleY: 0.9,
 				opacity: 0,
 				stagger: {
 					amount: 0.15
@@ -283,7 +277,8 @@ export default class AnimationManager {
 					start: 'top 85%'
 				}
 			});
-			gsap.from(subPanelLeft.children, {
+
+			gsap.from(subPanelLeftContent, {
 				delay: 2,
 				duration: 0.5,
 				ease: 'ease.out',
@@ -301,24 +296,12 @@ export default class AnimationManager {
 	}
 
 	setTimelineAnimation() {
-		const header = document.querySelector('.timeline .header');
-		const divider = document.querySelector('.timeline .divider');
-
-		const panel = document.querySelectorAll('.timeline .panel');
-
-		const timelineEvents = document.querySelectorAll('.timeline .timeline-event');
-
-		const timelineEventIcons = document.querySelectorAll('.timeline .timeline-event-icon');
-
-		for (let i = 0; i < timelineEventIcons.length; i++) {
-			gsap.from([ timelineEventIcons[i] ], 0.7, {
-				rotation: -680,
-				scrollTrigger: {
-					trigger: [ timelineEventIcons[i] ],
-					start: 'top 75%'
-				}
-			});
-		}
+		const timeline = document.querySelector('#timeline');
+		const header = timeline.querySelector('.header');
+		const divider = timeline.querySelector('.divider');
+		const panel = timeline.querySelectorAll('.panel');
+		const timelineEventIcons = timeline.querySelectorAll('.timeline-event-icon');
+		const timelineEvents = timeline.querySelectorAll('.timeline-event');
 
 		gsap.from([ header, divider ], {
 			delay: 0.5,
@@ -330,7 +313,7 @@ export default class AnimationManager {
 				amount: 0.15
 			},
 			scrollTrigger: {
-				trigger: '.timeline .header',
+				trigger: [ header ],
 				start: 'top 75%'
 			}
 		});
@@ -349,13 +332,23 @@ export default class AnimationManager {
 			}
 		});
 
+		for (let i = 0; i < timelineEventIcons.length; i++) {
+			gsap.from([ timelineEventIcons[i] ], 0.7, {
+				rotation: -680,
+				scrollTrigger: {
+					trigger: [ timelineEventIcons[i] ],
+					start: 'top 75%'
+				}
+			});
+		}
+
 		for (let i = 0; i < timelineEvents.length; i++) {
+			const dutyList = timelineEvents[i].querySelector('.timeline-duty-list');
+			const techStackImages = timelineEvents[i].querySelectorAll('.tech-stack-image');
+
 			gsap.from([ timelineEvents[i] ], {
 				delay: 0.5,
 				duration: 0.8,
-				// ease: 'Linear.easeNone',
-				// scaleY: 0.8,
-
 				ease: 'ease.out',
 				y: 50,
 				opacity: 0,
@@ -368,8 +361,7 @@ export default class AnimationManager {
 				}
 			});
 
-			const duties = timelineEvents[i].querySelector('.timeline-duties');
-			gsap.from(duties.children, {
+			gsap.from(dutyList.children, {
 				delay: 3,
 				duration: 1,
 				ease: 'power3.out',
@@ -379,12 +371,11 @@ export default class AnimationManager {
 					amount: 0.5
 				},
 				scrollTrigger: {
-					trigger: [ duties ],
+					trigger: [ dutyList ],
 					start: 'top 75%'
 				}
 			});
 
-			const techStackImages = timelineEvents[i].querySelectorAll('.tech-stack-image');
 			gsap.from(techStackImages, {
 				delay: 1.5,
 				duration: 0.6,
@@ -403,9 +394,13 @@ export default class AnimationManager {
 	}
 
 	setContactAnimation() {
-		const header = document.querySelector('.contact .header');
-		const divider = document.querySelector('.contact .divider');
-		const caption = document.querySelector('.contact .caption');
+		const contact = document.querySelector('#contact');
+		const header = contact.querySelector('.header');
+		const divider = contact.querySelector('.divider');
+		const caption = contact.querySelector('.caption');
+		const contactList = contact.querySelector('.contact-list');
+		const contactLinks = contact.querySelectorAll('.contact-link');
+		const contactForm = contact.querySelector('.contact-form');
 
 		gsap.from([ header, divider, caption ], {
 			delay: 0.5,
@@ -422,11 +417,7 @@ export default class AnimationManager {
 			}
 		});
 
-		const contactItems = document.querySelector('.contact .contact-items');
-		const contactLinks = document.querySelectorAll('.contact .contact-links');
-		const contactForm = document.querySelector('.contact-form');
-
-		gsap.from(contactItems, {
+		gsap.from(contactList, {
 			delay: 0.5,
 			duration: 0.8,
 			ease: 'ease.out',
@@ -436,7 +427,7 @@ export default class AnimationManager {
 				amount: 0.5
 			},
 			scrollTrigger: {
-				trigger: contactItems,
+				trigger: contactList,
 				start: 'top 75%'
 			}
 		});

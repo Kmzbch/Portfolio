@@ -48,10 +48,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
+/* 
 .hidden {
 	display: none;
-}
+} */
 
 .disabled {
 	pointer-events: none;
