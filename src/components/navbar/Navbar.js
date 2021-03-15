@@ -4,8 +4,6 @@ import { CloseOutlined, MenuOutlined } from '@material-ui/icons';
 import { HashLink } from 'react-router-hash-link';
 import NavbarItems from './NavbarItems';
 import './Navbar.scss';
-// import { Link } from 'react-scroll';
-import { gsap, TimelineMax } from 'gsap';
 
 export default class extends Component {
 	constructor(props) {
