@@ -24,42 +24,22 @@ export default class Contact extends Component {
 				hasError: false
 			});
 		}
-
-		// const formMessage = document.querySelector('.form-message');
-		// const formButton = document.querySelector('.form-button');
-		// const formMessageError = document.querySelector('.form-message-error');
-
-		// ReactDOM.findDOMNode(formButton).classList.remove('hidden');
-
-		// if (!formMessage.classList.contains('hidden')) {
-		// 	ReactDOM.findDOMNode(formMessage).classList.add('hidden');
-		// }
-		// if (!formMessageError.classList.contains('hidden')) {
-		// 	ReactDOM.findDOMNode(formMessageError).classList.add('hidden');
-		// }
 	};
 
 	submitForm = (e) => {
 		e.preventDefault();
-
 		const form = e.target;
 		const data = new FormData(form);
 		const xhr = new XMLHttpRequest();
-
 		xhr.open(form.method, form.action);
 		xhr.setRequestHeader('Accept', 'application/json');
 		xhr.onreadystatechange = () => {
-			// const formMessage = document.querySelector('.form-message');
-			// const formButton = document.querySelector('.form-button');
-			// const formMessageError = document.querySelector('.form-message-error');
-
 			if (xhr.readyState !== XMLHttpRequest.DONE) {
 				this.setState({
 					inEditing: false,
 					messageSent: false,
 					hasError: true
 				});
-
 				return;
 			}
 
@@ -69,22 +49,15 @@ export default class Contact extends Component {
 					messageSent: true,
 					hasError: false
 				});
-
 				form.reset();
-				// ReactDOM.findDOMNode(formMessage).classList.remove('hidden');
-				// ReactDOM.findDOMNode(formButton).classList.add('hidden');
-				// ReactDOM.findDOMNode(formMessageError).classList.add('hidden');
 			} else {
 				this.setState({
 					inEditing: false,
 					messageSent: false,
 					hasError: true
 				});
-
-				// ReactDOM.findDOMNode(formMessageError).classList.remove('hidden');
 			}
 		};
-
 		xhr.send(data);
 	};
 

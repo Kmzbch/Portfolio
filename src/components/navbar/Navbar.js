@@ -9,38 +9,36 @@ export default class extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			active: false,
-			windowWidth: 0,
-			windowHeight: 0
+			menuOpened: false,
+			windowWidth: 0
 		};
 	}
 
 	componentDidMount() {
-		this.updateWindowDimensions();
-		window.addEventListener('resize', this.updateWindowDimensions);
+		this.updateWindowWidth();
+		window.addEventListener('resize', this.updateWindowWidth);
 	}
 
 	componentWillUnmount() {
-		window.removeEventListener('resize', this.updateWindowDimensions);
+		window.removeEventListener('resize', this.updateWindowWidth);
 	}
 
-	updateWindowDimensions = () => {
+	updateWindowWidth = () => {
 		this.setState({
-			windowWidth: window.innerWidth,
-			windowHeight: window.innerHeight
+			windowWidth: window.innerWidth
 		});
 
-		if (this.state.active && this.state.windowWidth >= 1000) {
+		if (this.state.menuOpened && this.state.windowWidth >= 1000) {
 			this.toggleMenuIcon();
 		}
 	};
 
 	toggleMenuIcon = () => {
-		this.setState({ active: !this.state.active });
+		this.setState({ menuOpened: !this.state.menuOpened });
 	};
 
 	linkClicked = () => {
-		if (this.state.active) {
+		if (this.state.menuOpened) {
 			this.toggleMenuIcon();
 		}
 	};
@@ -57,7 +55,7 @@ export default class extends Component {
 						</HashLink>
 					</div>
 
-					{this.state.active ? (
+					{this.state.menuOpened ? (
 						<div className={'menu-icon opened'} onClick={this.toggleMenuIcon}>
 							<CloseOutlined fontSize="large" />
 						</div>
@@ -67,7 +65,7 @@ export default class extends Component {
 						</div>
 					)}
 
-					<div className={this.state.active ? 'menu opened' : 'menu'}>
+					<div className={this.state.menuOpened ? 'menu opened' : 'menu'}>
 						<List className="menu-list">
 							{NavbarItems.map((item, index) => {
 								return (
