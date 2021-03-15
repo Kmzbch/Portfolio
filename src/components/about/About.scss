@@ -31,7 +31,7 @@
 		margin-bottom: 2vh;
 	}
 
-	.profile-location-icon {
+	.location-icon {
 		vertical-align: middle;
 		font-size: 1.3em;
 		padding-bottom: 3px;
@@ -82,11 +82,11 @@
 		margin: 3vh auto;
 	}
 
-	.sub-panel {
+	.panel {
 		margin: 5vh auto;
 	}
 
-	.sub-header {
+	.panel-header {
 		color: #3f4e67;
 		margin: 3vh 0;
 	}
@@ -142,7 +142,7 @@
 			margin: 1rem auto;
 		}
 
-		.sub-panel {
+		.panel {
 			width: 100%;
 			flex-direction: column-reverse;
 		}

@@ -1,4 +1,4 @@
-import { gsap, TimelineMax } from 'gsap';
+import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export default class AnimationManager {
@@ -30,7 +30,7 @@ export default class AnimationManager {
 	setNavbarAnimation(delay = 0.75) {
 		const navbar = document.querySelector('.nav-container');
 		const html = document.querySelector('html');
-		const tl = new TimelineMax();
+		const tl = gsap.timeline();
 
 		tl
 			.from(navbar, {
@@ -51,7 +51,7 @@ export default class AnimationManager {
 		const greetings = home.querySelector('.greeting').children;
 		const viewButton = home.querySelector('.view-button');
 		const html = document.querySelector('html');
-		const tl = new TimelineMax();
+		const tl = gsap.timeline();
 
 		// use Home for splash screen
 		gsap.to(html, {
@@ -96,13 +96,13 @@ export default class AnimationManager {
 		const about = document.querySelector('#about');
 		const header = about.querySelector('.header');
 		const divider = about.querySelector('.divider');
-		const aboutMe = about.querySelector('.description');
+		const profileDescription = about.querySelector('.description');
 		const profileHeader = about.querySelector('.profile-header');
 		const profile = about.querySelector('.profile');
 		const aboutSkills = about.querySelector('.about-skills');
 		const skillItems = about.querySelectorAll('.skill-item');
 		const aboutTechCaption = about.querySelectorAll('.about-tech .caption');
-		const aboutTechImages = about.querySelectorAll('.about-tech .sub-panel');
+		const aboutTechPanels = about.querySelectorAll('.about-tech .panel');
 
 		gsap.from([ header, divider ], {
 			delay: 0.5,
@@ -119,7 +119,7 @@ export default class AnimationManager {
 			}
 		});
 
-		gsap.from([ profileHeader, aboutMe ], {
+		gsap.from([ profileHeader, profileDescription ], {
 			delay: 0.5,
 			duration: 0.8,
 			ease: 'ease.out',
@@ -129,7 +129,7 @@ export default class AnimationManager {
 				amount: 0.15
 			},
 			scrollTrigger: {
-				trigger: [ aboutMe, profileHeader ],
+				trigger: [ profileDescription, profileHeader ],
 				start: 'top 75%'
 			}
 		});
@@ -197,14 +197,14 @@ export default class AnimationManager {
 
 		let movementVal = 0;
 
-		for (let i = 0; i < aboutTechImages.length; i++) {
+		for (let i = 0; i < aboutTechPanels.length; i++) {
 			if (i % 2 === 0) {
 				movementVal = 50;
 			} else {
 				movementVal = -50;
 			}
 
-			gsap.from([ aboutTechImages[i] ], {
+			gsap.from([ aboutTechPanels[i] ], {
 				delay: 0.5,
 				duration: 0.8,
 				ease: 'ease.out',
@@ -214,12 +214,12 @@ export default class AnimationManager {
 					amount: 0.15
 				},
 				scrollTrigger: {
-					trigger: [ aboutTechImages[i] ],
+					trigger: [ aboutTechPanels[i] ],
 					start: 'top 75%'
 				}
 			});
 
-			const techStackImages = aboutTechImages[i].querySelectorAll('.tech-stack-image');
+			const techStackImages = aboutTechPanels[i].querySelectorAll('.tech-stack-image');
 
 			gsap.from(techStackImages, {
 				delay: 1.5,

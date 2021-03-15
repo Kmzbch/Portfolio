@@ -12,10 +12,6 @@ import {
 } from '@material-ui/icons';
 
 export default class AboutSkills extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		return (
 			<Grid className="about-skills" container spacing={3} justify="center" direction="row">

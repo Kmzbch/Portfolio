@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
-import { Typography } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import { Languages, FrameworksAndLibraries, DbmsAndServers, DesignAndManagements } from './AboutItems';
-import gsap from 'gsap';
+import { Typography, Grid } from '@material-ui/core';
+import {
+	LanguageImage,
+	LibraryImage,
+	DBMImage,
+	DesignImage,
+	Languages,
+	FrameworksAndLibraries,
+	DbmsAndServers,
+	DesignAndManagements
+} from './AboutItems';
 import TechStack from '../shared/components/techstack/TechStack';
 import './About.scss';
 
 export default class AboutTech extends Component {
-	// Image retrieved from https://unsplash.com/photos/szrJ3wjzOMg
-	language = './images/about/language.jpg';
-
-	// Image retrieved from https://unsplash.com/photos/2JIvboGLeho
-	library = './images/about/library.jpg';
-
-	// Image retrieved from https://unsplash.com/photos/0PPKxWtYh0g
-	dbm = './images/about/dbm.jpg';
-
-	// Image retrieved from https://unsplash.com/photos/zoCDWPuiRuA
-	design = './images/about/design.jpg';
-
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
 		return (
 			<Grid className="about-tech" container spacing={2} justify="center">
@@ -30,7 +21,7 @@ export default class AboutTech extends Component {
 					What can I offer?
 				</Typography>
 
-				<Grid className="sub-panel" container spacing={2} direction="row">
+				<Grid className="panel" container spacing={2} direction="row">
 					<Grid item sm={12} md={7}>
 						<Typography className="sub-header" variant="h4">
 							Languages
@@ -40,11 +31,11 @@ export default class AboutTech extends Component {
 						})}
 					</Grid>
 					<Grid item sm={12} md={5} className="image-panel">
-						<img className="about-tech-image" src={this.language} alt={'Keyboard'} />
+						<img className="about-tech-image" src={LanguageImage.link} alt={LanguageImage.link.altTxt} />
 					</Grid>
 				</Grid>
 
-				<Grid className="sub-panel" container spacing={2} direction="row-reverse">
+				<Grid className="panel" container spacing={2} direction="row-reverse">
 					<Grid item sm={12} md={6}>
 						<Typography className="sub-header" variant="h4">
 							Frameworks & Libraries
@@ -58,11 +49,11 @@ export default class AboutTech extends Component {
 						</div>
 					</Grid>
 					<Grid item sm={12} md={6} className="image-panel">
-						<img className="about-tech-image" src={this.library} alt={'Books'} />
+						<img className="about-tech-image" src={LibraryImage.link} alt={LibraryImage.altTxt} />
 					</Grid>
 				</Grid>
 
-				<Grid className="sub-panel" container spacing={2} direction="row">
+				<Grid className="panel" container spacing={2} direction="row">
 					<Grid item sm={12} md={7}>
 						<Typography className="sub-header" variant="h4">
 							DBM & Servers
@@ -72,13 +63,13 @@ export default class AboutTech extends Component {
 						})}
 					</Grid>
 					<Grid item sm={12} md={5} className="image-panel">
-						<img className="about-tech-image" src={this.dbm} alt={'Books'} />
+						<img className="about-tech-image" src={DBMImage.link} alt={DBMImage.altTxt} />
 					</Grid>
 				</Grid>
 
-				<Grid className="sub-panel" container spacing={2} direction="row-reverse">
+				<Grid className="panel" container spacing={2} direction="row-reverse">
 					<Grid item sm={12} md={6}>
-						<Typography className="sub-header" variant="h4">
+						<Typography className="panel-header" variant="h4">
 							Design & Management
 						</Typography>
 						<div className="tech-panel">
@@ -90,7 +81,7 @@ export default class AboutTech extends Component {
 						</div>
 					</Grid>
 					<Grid item sm={12} md={6} className="image-panel">
-						<img className="about-tech-image" src={this.design} alt={'Desk'} />
+						<img className="about-tech-image" src={DesignImage.link} alt={DesignImage.path} />
 					</Grid>
 				</Grid>
 			</Grid>
