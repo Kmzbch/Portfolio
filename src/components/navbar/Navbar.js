@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { List, ListItem, ListItemText } from '@material-ui/core';
 import { CloseOutlined, MenuOutlined } from '@material-ui/icons';
 import { HashLink } from 'react-router-hash-link';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { fetchCurrentPage } from '../../redux/actions';
 import NavbarItems from './NavbarItems';
 import './Navbar.scss';
 
-export default class extends Component {
+class Navbar extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -15,6 +18,8 @@ export default class extends Component {
 	}
 
 	componentDidMount() {
+		this.props.fetchCurrentPage();
+
 		this.updateWindowWidth();
 		window.addEventListener('resize', this.updateWindowWidth);
 	}
@@ -44,8 +49,6 @@ export default class extends Component {
 	};
 
 	render() {
-		const { currentScreen } = this.props;
-
 		return (
 			<div className="navbar">
 				<div className="nav-container">
@@ -72,7 +75,7 @@ export default class extends Component {
 									<ListItem
 										button
 										className={
-											currentScreen === item.title.toLowerCase() ? (
+											this.props.storage.currentPage === item.title.toLowerCase() ? (
 												'nav-links active active-menu'
 											) : (
 												'nav-links'
@@ -95,3 +98,14 @@ export default class extends Component {
 		);
 	}
 }
+
+Navbar.propTypes = {
+	fetchCurrentPage: PropTypes.func.isRequired,
+	storage: PropTypes.object
+};
+
+const mapStateToProps = (state) => ({
+	storage: state.storage
+});
+
+export default connect(mapStateToProps, { fetchCurrentPage })(Navbar);

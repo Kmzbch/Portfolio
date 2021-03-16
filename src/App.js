@@ -1,6 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { fetchCurrentPage, setCurrentPage } from './redux/actions';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
@@ -12,11 +15,7 @@ import AnimationManager from './components/shared/manager/AnimationManager';
 import './App.css';
 
 class App extends Component {
-	state = {
-		currentScreen: 'default'
-	};
-
-	monitorCurrentScreen = () => {
+	monitorCurrentPage = () => {
 		const margin = 50;
 
 		const home = document.querySelector('#home');
@@ -31,59 +30,63 @@ class App extends Component {
 		const timelinePos = timeline.getBoundingClientRect();
 		const contactPos = contact.getBoundingClientRect();
 
+		this.props.fetchCurrentPage();
+
+		const current = this.props.storage.currentPage;
+
 		if (contactPos.y - margin <= 0) {
-			if (this.state.currentScreen !== 'contact') {
-				this.setState({ currentScreen: 'contact' });
+			if (current !== 'contact') {
+				this.props.setCurrentPage('contact');
 				document.title = "Contact - Kei's Portfolio";
 			}
 		} else if (timelinePos.y - margin < 0 && contactPos.y - margin >= 0) {
-			if (this.state.currentScreen !== 'timeline') {
-				this.setState({ currentScreen: 'timeline' });
+			if (current !== 'timeline') {
+				this.props.setCurrentPage('timeline');
 				document.title = "Timeline - Kei's Portfolio";
 			}
 		} else if (projectPos.y - margin < 0 && timelinePos.y - margin >= 0) {
-			if (this.state.currentScreen !== 'projects') {
-				this.setState({ currentScreen: 'projects' });
+			if (current !== 'projects') {
+				this.props.setCurrentPage('projects');
 				document.title = "Projects - Kei's Portfolio";
 			}
 		} else if (aboutPos.y - margin < 0 && projectPos.y - margin >= 0) {
-			if (this.state.currentScreen !== 'about') {
-				this.setState({ currentScreen: 'about' });
+			if (current !== 'about') {
+				this.props.setCurrentPage('about');
 				document.title = "About - Kei's Portfolio";
 			}
 		} else if (homePos.y < 0 && aboutPos.y - margin >= 0) {
-			if (this.state.currentScreen !== 'home') {
-				this.setState({ currentScreen: 'home' });
+			if (current !== 'home') {
+				this.props.setCurrentPage('home');
 				document.title = "Home - Kei's Portfolio";
 			}
 		} else {
-			this.setState({ currentScreen: 'default' });
+			this.props.setCurrentPage('default');
 		}
 	};
 
 	componentWillUnmount() {
-		clearInterval(this.monitorCurrentScreen);
+		clearInterval(this.monitorCurrentPage);
 	}
 
 	componentDidMount() {
 		console.log("Welcome to Kei's portfolio!");
-		console.log('This portfolio is built with React.');
+		console.log('This portfolio is built with React and Redux');
 
 		document.title = "Kei's Portfolio";
 
 		setTimeout(() => {
-			this.monitorCurrentScreen();
-			setInterval(this.monitorCurrentScreen, 750);
+			this.monitorCurrentPage();
+			setInterval(this.monitorCurrentPage, 750);
 
-			const animeMan = new AnimationManager();
-			animeMan.initializeAnimation(this.state.currentScreen);
+			const animeManager = new AnimationManager();
+			animeManager.initializeAnimation(this.props.storage.currentPage);
 		}, 300);
 	}
 
 	render() {
 		return (
 			<Router basename={process.env.PUBLIC_URL}>
-				<Navbar currentScreen={this.state.currentScreen} />
+				<Navbar />
 				<Home />
 				<About />
 				<Projects />
@@ -95,4 +98,16 @@ class App extends Component {
 	}
 }
 
-export default App;
+// export default App;
+
+App.propTypes = {
+	fetchCurrentPage: PropTypes.func.isRequired,
+	setCurrentPage: PropTypes.func.isRequired,
+	storage: PropTypes.object
+};
+
+const mapStateToProps = (state) => ({
+	storage: state.storage
+});
+
+export default connect(mapStateToProps, { fetchCurrentPage, setCurrentPage })(App);
