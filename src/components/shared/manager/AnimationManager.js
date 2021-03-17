@@ -100,7 +100,11 @@ export default class AnimationManager {
 		const profileHeader = about.querySelector('.profile-header');
 		const profile = about.querySelector('.profile');
 		const aboutSkills = about.querySelector('.about-skills');
-		const skillItems = about.querySelectorAll('.skill-item');
+		// const skillItems = about.querySelectorAll('.skill-item');
+
+		const specialties = about.querySelectorAll('.skill-item.specialties');
+		const softSkills = about.querySelectorAll('.skill-item.soft-skills');
+
 		const aboutTechCaption = about.querySelectorAll('.about-tech .caption');
 		const aboutTechPanels = about.querySelectorAll('.about-tech .panel');
 
@@ -170,7 +174,26 @@ export default class AnimationManager {
 			}
 		});
 
-		gsap.from(skillItems, {
+		// gsap.from(skillItems, {
+		// 	delay: 2,
+		// 	duration: 0.6,
+		// 	ease: 'back.out',
+		// 	scaleX: 0.9,
+		// 	scaleY: 0.9,
+		// 	y: 50,
+		// 	opacity: 0,
+		// 	z: 0.1,
+
+		// 	stagger: {
+		// 		amount: 0.5
+		// 	},
+		// 	scrollTrigger: {
+		// 		trigger: skillItems,
+		// 		start: 'top 75%'
+		// 	}
+		// });
+
+		gsap.from(specialties, {
 			delay: 2,
 			duration: 0.6,
 			ease: 'back.out',
@@ -184,7 +207,26 @@ export default class AnimationManager {
 				amount: 0.5
 			},
 			scrollTrigger: {
-				trigger: skillItems,
+				trigger: specialties,
+				start: 'top 75%'
+			}
+		});
+
+		gsap.from(softSkills, {
+			delay: 2,
+			duration: 0.6,
+			ease: 'back.out',
+			scaleX: 0.9,
+			scaleY: 0.9,
+			y: 50,
+			opacity: 0,
+			z: 0.1,
+
+			stagger: {
+				amount: 0.5
+			},
+			scrollTrigger: {
+				trigger: softSkills,
 				start: 'top 75%'
 			}
 		});
