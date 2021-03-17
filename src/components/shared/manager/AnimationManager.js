@@ -109,6 +109,7 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			x: -100,
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -124,6 +125,8 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			x: -100,
+			z: 0.1,
+
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -139,6 +142,8 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			y: 50,
+			z: 0.1,
+
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -156,6 +161,8 @@ export default class AnimationManager {
 			transformOrigin: 'center',
 			scaleX: 0.8,
 			scaleY: 0.8,
+			z: 0.1,
+
 			opacity: 0,
 			scrollTrigger: {
 				trigger: [ aboutSkills ],
@@ -171,6 +178,8 @@ export default class AnimationManager {
 			scaleY: 0.9,
 			y: 50,
 			opacity: 0,
+			z: 0.1,
+
 			stagger: {
 				amount: 0.5
 			},
@@ -185,6 +194,8 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			y: 50,
+			z: 0.1,
+
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -209,6 +220,8 @@ export default class AnimationManager {
 				duration: 0.8,
 				ease: 'ease.out',
 				x: movementVal,
+				z: 0.1,
+
 				opacity: 0,
 				stagger: {
 					amount: 0.15
@@ -226,6 +239,8 @@ export default class AnimationManager {
 				duration: 0.6,
 				ease: 'ease.out',
 				y: 50,
+				z: 0.1,
+
 				opacity: 0,
 				stagger: {
 					amount: 0.5
@@ -249,6 +264,7 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			x: 100,
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -268,6 +284,7 @@ export default class AnimationManager {
 				duration: 0.8,
 				ease: 'ease.out',
 				y: 50,
+				z: 0.1,
 				opacity: 0,
 				stagger: {
 					amount: 0.15
@@ -283,6 +300,7 @@ export default class AnimationManager {
 				duration: 0.5,
 				ease: 'ease.out',
 				y: 50,
+				z: 0.1,
 				opacity: 0,
 				stagger: {
 					amount: 0.5
@@ -308,6 +326,7 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			x: -100,
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -322,6 +341,7 @@ export default class AnimationManager {
 			delay: 0.5,
 			duration: 0.8,
 			ease: 'ease.out',
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -335,6 +355,7 @@ export default class AnimationManager {
 		for (let i = 0; i < timelineEventIcons.length; i++) {
 			gsap.from([ timelineEventIcons[i] ], 0.7, {
 				rotation: -680,
+				z: 0.1,
 				scrollTrigger: {
 					trigger: [ timelineEventIcons[i] ],
 					start: 'top 75%'
@@ -351,6 +372,7 @@ export default class AnimationManager {
 				duration: 0.8,
 				ease: 'ease.out',
 				y: 50,
+				z: 0.1,
 				opacity: 0,
 				stagger: {
 					amount: 0.15
@@ -366,6 +388,7 @@ export default class AnimationManager {
 				duration: 1,
 				ease: 'power3.out',
 				x: 100,
+				z: 0.1,
 				opacity: 0,
 				stagger: {
 					amount: 0.5
@@ -381,6 +404,7 @@ export default class AnimationManager {
 				duration: 0.6,
 				ease: 'ease.out',
 				y: 50,
+				z: 0.1,
 				opacity: 0,
 				stagger: {
 					amount: 0.3
@@ -407,6 +431,7 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			x: -100,
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.15
@@ -422,6 +447,7 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			x: -50,
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.5
@@ -436,6 +462,7 @@ export default class AnimationManager {
 			delay: 0.5,
 			duration: 0.8,
 			ease: 'ease.out',
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.5
@@ -451,6 +478,7 @@ export default class AnimationManager {
 			duration: 0.8,
 			ease: 'ease.out',
 			y: 50,
+			z: 0.1,
 			opacity: 0,
 			stagger: {
 				amount: 0.15

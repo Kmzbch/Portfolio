@@ -33,7 +33,7 @@ class Navbar extends Component {
 			windowWidth: window.innerWidth
 		});
 
-		if (this.state.menuOpened && this.state.windowWidth >= 1000) {
+		if (this.state.menuOpened && this.state.windowWidth >= 960) {
 			this.toggleMenuIcon();
 		}
 	};

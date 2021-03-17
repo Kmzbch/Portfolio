@@ -15,49 +15,45 @@ import AnimationManager from './components/shared/manager/AnimationManager';
 import './App.css';
 
 class App extends Component {
+	homePos = 0;
+	aboutPos = 0;
+	projectPos = 0;
+	timelinePos = 0;
+	contactPos = 0;
+
 	monitorCurrentPage = () => {
+		const current = this.props.storage.currentPage;
+		const currentPos = window.scrollY;
 		const margin = 50;
-
-		const home = document.querySelector('#home');
-		const about = document.querySelector('#about');
-		const project = document.querySelector('#project');
-		const timeline = document.querySelector('#timeline');
-		const contact = document.querySelector('#contact');
-
-		const homePos = home.getBoundingClientRect();
-		const aboutPos = about.getBoundingClientRect();
-		const projectPos = project.getBoundingClientRect();
-		const timelinePos = timeline.getBoundingClientRect();
-		const contactPos = contact.getBoundingClientRect();
 
 		this.props.fetchCurrentPage();
 
-		const current = this.props.storage.currentPage;
-
-		if (contactPos.y - margin <= 0) {
-			if (current !== 'contact') {
-				this.props.setCurrentPage('contact');
-				document.title = "Contact - Kei's Portfolio";
+		if (currentPos === 0) {
+			// this.props.setCurrentPage('default');
+		} else if (currentPos < this.homePos - margin) {
+			if (current !== 'home') {
+				this.props.setCurrentPage('home');
+				document.title = "Home - Kei's Portfolio";
 			}
-		} else if (timelinePos.y - margin < 0 && contactPos.y - margin >= 0) {
-			if (current !== 'timeline') {
-				this.props.setCurrentPage('timeline');
-				document.title = "Timeline - Kei's Portfolio";
-			}
-		} else if (projectPos.y - margin < 0 && timelinePos.y - margin >= 0) {
-			if (current !== 'projects') {
-				this.props.setCurrentPage('projects');
-				document.title = "Projects - Kei's Portfolio";
-			}
-		} else if (aboutPos.y - margin < 0 && projectPos.y - margin >= 0) {
+		} else if (currentPos < this.aboutPos - margin) {
 			if (current !== 'about') {
 				this.props.setCurrentPage('about');
 				document.title = "About - Kei's Portfolio";
 			}
-		} else if (homePos.y < 0 && aboutPos.y - margin >= 0) {
-			if (current !== 'home') {
-				this.props.setCurrentPage('home');
-				document.title = "Home - Kei's Portfolio";
+		} else if (currentPos < this.projectPos - margin) {
+			if (current !== 'projects') {
+				this.props.setCurrentPage('projects');
+				document.title = "Projects - Kei's Portfolio";
+			}
+		} else if (currentPos < this.timelinePos - margin) {
+			if (current !== 'timeline') {
+				this.props.setCurrentPage('timeline');
+				document.title = "Timeline - Kei's Portfolio";
+			}
+		} else if (currentPos < this.contactPos - margin) {
+			if (current !== 'contact') {
+				this.props.setCurrentPage('contact');
+				document.title = "Contact - Kei's Portfolio";
 			}
 		} else {
 			this.props.setCurrentPage('default');
@@ -74,12 +70,17 @@ class App extends Component {
 
 		document.title = "Kei's Portfolio";
 
+		this.homePos = document.querySelector('#home').clientHeight;
+		this.aboutPos = this.homePos + document.querySelector('#about').clientHeight;
+		this.projectPos = this.aboutPos + document.querySelector('#project').clientHeight;
+		this.timelinePos = this.projectPos + document.querySelector('#timeline').clientHeight;
+		this.contactPos = this.timelinePos + document.querySelector('#contact').clientHeight;
+
 		setTimeout(() => {
 			this.monitorCurrentPage();
-			setInterval(this.monitorCurrentPage, 750);
-
 			const animeManager = new AnimationManager();
 			animeManager.initializeAnimation(this.props.storage.currentPage);
+			setInterval(this.monitorCurrentPage, 1000);
 		}, 300);
 	}
 
