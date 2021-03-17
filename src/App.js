@@ -29,7 +29,9 @@ class App extends Component {
 		this.props.fetchCurrentPage();
 
 		if (currentPos === 0) {
-			// this.props.setCurrentPage('default');
+			if (current !== 'default') {
+				this.props.setCurrentPage('default');
+			}
 		} else if (currentPos < this.homePos - margin) {
 			if (current !== 'home') {
 				this.props.setCurrentPage('home');
@@ -56,7 +58,9 @@ class App extends Component {
 				document.title = "Contact - Kei's Portfolio";
 			}
 		} else {
-			this.props.setCurrentPage('default');
+			if (current !== 'default') {
+				this.props.setCurrentPage('default');
+			}
 		}
 	};
 
@@ -80,7 +84,7 @@ class App extends Component {
 			this.monitorCurrentPage();
 			const animeManager = new AnimationManager();
 			animeManager.initializeAnimation(this.props.storage.currentPage);
-			setInterval(this.monitorCurrentPage, 1000);
+			setInterval(this.monitorCurrentPage, 750);
 		}, 300);
 	}
 
