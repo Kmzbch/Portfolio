@@ -35,9 +35,8 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item specialties" item xs={12} sm={6} md={3}>
 						<CodeOutlined className="specialty-icon" />
 						<Typography variant="h6">Scripting</Typography>
-						<Typography className="skill-description">
-							Build scripts for workflow automation/streamlining
-						</Typography>
+						<Typography className="skill-description">Build scripts for workflow</Typography>
+						<Typography className="skill-description">automation/streamlining</Typography>
 					</Grid>
 					<Grid className="skill-item specialties" item xs={12} sm={6} md={3}>
 						<BusinessOutlined className="specialty-icon" />
@@ -48,7 +47,8 @@ export default class AboutSkills extends Component {
 					<Grid className="skill-item specialties" item xs={12} sm={6} md={3}>
 						<StorageOutlined className="specialty-icon" />
 						<Typography variant="h6">Linux Server</Typography>
-						<Typography className="skill-description">Experienced in working with LAMP servers</Typography>
+						<Typography className="skill-description">Experienced in working with</Typography>
+						<Typography className="skill-description">LAMP servers</Typography>
 					</Grid>
 				</Grid>
 				<Grid

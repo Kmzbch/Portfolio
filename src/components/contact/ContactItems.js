@@ -11,7 +11,7 @@ const ContactItems = [
 		})()
 	},
 	{
-		link: 'https://www.linkedin.com/in/kmzbch/',
+		link: 'https://www.linkedin.com/in/kmzbch',
 		icon: (() => {
 			return <LinkedInIcon className="contact-icon" />;
 		})()
