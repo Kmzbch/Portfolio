@@ -3,9 +3,9 @@ export const ProfileImagePath = './images/about/profile.png';
 export const ProfileContent =
 	'I am a software developer who completed a Software Engineering Diploma program at Centennial College. I am currently seeking a software engineering position where reliability is valued.' +
 	'\n' +
-	'I have five-year work experience in a university library as an On-Site IT Support Programmer, in which I performed maintenance, troubleshooting, system update of library management system on LAMP servers. Closely collaborating with the library staff and the team, I streamlined their business processes by scripting such as bibliographic record conversion.' +
+	'I have five-year work experience in a university library as an On-Site IT Support Programmer, in which I performed maintenance, troubleshooting, system integration of library management system on LAMP servers. Closely interacting with the library staff and the team, I streamlined their business processes with technologies such as bibliographic record conversion.' +
 	'\n' +
-	'In my most recent positions in Canda, I have accumulated further experience in web development with various modern technologies, including but not limited to ASP.NET Core, Angular, SQL Server stacks. My current focus is RESTful APIs but I am willing to work on both front-end and back-end.';
+	'In my most recent positions in Canada, I have accumulated further experience in web development with various modern technologies, including but not limited to ASP.NET Core, Angular, SQL Server stacks. My current focus is RESTful APIs but I am willing to work on both front-end and back-end.';
 
 export const LanguageImage = {
 	// Image retrieved from https://unsplash.com/photos/szrJ3wjzOMg
