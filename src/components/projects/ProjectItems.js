@@ -30,7 +30,8 @@ const ProjectItems = [
 		title: 'Staktekst',
 		projectType: 'personal',
 		description: 'Chrome extension for web search, text-clipping, and note-taking',
-		details: '',
+		details:
+			"This tool was developed to fulfil my own needs for English learning.\nHere's a brief article about my approach. https://scrapbox.io/scrapbox-live-demo/Staktekst",
 		imageLink: './images/projects/staktekst.png',
 		projectLink: 'https://chrome.google.com/webstore/detail/staktekst/ecnhgpnligcapbfpaoklofmigomdjhkb/en',
 		githubLink: 'https://github.com/Kmzbch/staktekst.git'

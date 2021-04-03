@@ -116,7 +116,24 @@
 		margin: 1em 0.3em .1em 0.3em;
 	}
 
-	@media only screen and (max-width: 1000px) {
+	@media only screen and (min-width: 960px) {
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 45px 100vw 0 0;
+			border-color: transparent $secondary transparent transparent;
+		}
+		.content {
+			padding-bottom: 15vh;
+		}
+	}
+
+	@media only screen and (max-width: 960px) {
 		.panel {
 			position: relative;
 			width: 80%;

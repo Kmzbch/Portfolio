@@ -110,10 +110,10 @@ export default class Contact extends Component {
 								<form onSubmit={this.submitForm} action={emailServiceApi} method="POST">
 									<TextField
 										className="form-input"
-										id="email"
-										type="email"
-										name="email"
-										label="Email"
+										id="name"
+										type="text"
+										name="name"
+										label="Name"
 										variant="filled"
 										size="small"
 										onFocus={this.resetFormMessage}
@@ -121,10 +121,10 @@ export default class Contact extends Component {
 									/>
 									<TextField
 										className="form-input"
-										id="name"
-										type="text"
-										name="name"
-										label="Name"
+										id="email"
+										type="email"
+										name="email"
+										label="Email"
 										variant="filled"
 										size="small"
 										onFocus={this.resetFormMessage}

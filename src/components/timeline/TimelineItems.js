@@ -4,11 +4,11 @@ const TimelineItems = [
 		title: 'Back-end Developer',
 		company: 'Centennial College: WIMTACH',
 		duties: [
-			'Implemented REST APIs of Java Electronic Medical Record application back-end with Spring Boot working with complex models',
-			"Replaced Hibernate/JPQL queries with SQL Server queries to increase routers' performance",
-			'Built and enhanced an automated integration test suite with JUnit and REST Assured',
-			'Maintained the internal test tracking list and Confluence & Swagger API documentation',
-			'Participated in daily standup meetings and discussed solutions/implementation with the developers',
+			'Built RESTful APIs and related modules of Java Electronic Medical Record web application with Spring Boot to replace Flash-based legacy system',
+			'Translated Hibernate queries into SQL Server data access helpers to ensure code reusability and router’s performance',
+			'Built automated unit/integration test suite with JUnit & REST Assured ',
+			'Maintained Swagger & Confluence API documentation and test tracking lists',
+			'Attended the Daily Scrum and discussed a solution with the dev team',
 			'Resolved technical issues arising during development in an Agile manner'
 		],
 		techStacks: [
@@ -92,11 +92,11 @@ const TimelineItems = [
 				link: './images/techStacks/spring.svg',
 				altTxt: 'Spring'
 			},
-			{
-				// Icon retrieved from https://worldvectorlogo.com/logo/struts
-				link: './images/techStacks/struts.svg',
-				altTxt: 'Struts'
-			},
+			// {
+			// 	// Icon retrieved from https://worldvectorlogo.com/logo/struts
+			// 	link: './images/techStacks/struts.svg',
+			// 	altTxt: 'Struts'
+			// },
 			{
 				// Icon retrieved from https://www.soapui.org/open-source/features/
 				link: './images/techStacks/soapui.png',
@@ -124,39 +124,50 @@ const TimelineItems = [
 			}
 		]
 	},
-	// {
-	// 	dateRange: 'MAY. 2019 - SEP. 2019',
-	// 	title: 'Volunteer Bugfix Developer',
-	// 	company: 'Centennial College',
-	// 	duties: [
-	// 		'Acted in a chat room application project that allows students to vote and offer feedback about related topics posted in the room.',
-	// 		'Analyzed the original source code, thoroughly tested the functionalities and reported and/or fixed the bug',
-	// 		'Implemented additional functionalities with ASP.NET Core, Angular 7 and SQL Server stack and dealt with missing requirements in the original application',
-	// 		'Led the latter part of the project to completion by taking initiative and updating the team'
-	// 	],
-	// 	techStacks: [
-	// 		{
-	// 			// Icon retrieved from https://worldvectorlogo.com/logo/angular-icon-1
-	// 			link: './images/techStacks/angular.svg',
-	// 			altTxt: 'Angular'
-	// 		},
-	// 		{
-	// 			// Icon retrieved from https://worldvectorlogo.com/logo/c--4
-	// 			link: './images/techStacks/c-sharp.svg',
-	// 			altTxt: 'C#'
-	// 		},
-	// 		{
-	// 			// Icon retrieved from https://www.pngegg.com/en/png-dbugy
-	// 			link: './images/techStacks/aspnetcore.png',
-	// 			altTxt: 'ASP.NET'
-	// 		},
-	// 		{
-	// 			// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
-	// 			link: './images/techStacks/mssql.png',
-	// 			altTxt: 'SQL Server'
-	// 		}
-	// 	]
-	// },
+	{
+		dateRange: 'MAY. 2019 - SEP. 2019',
+		title: 'Volunteer Bugfix Developer',
+		company: 'Centennial College',
+		duties: [
+			'Acted in a chat room web application project that allows students to vote and offer feedback about related topics posted',
+			'Investigated the original source code, tested the functionalities, and performed bugfix',
+			'Implemented additional functionalities with ASP.NET Core, Angular 7 and SQL Server stack',
+			'Dealt with missing requirements in the original application',
+			'Led the latter part of the project to completion with the team of four'
+		],
+		techStacks: [
+			{
+				// Icon retrieved from https://worldvectorlogo.com/logo/angular-icon-1
+				link: './images/techStacks/angular.svg',
+				altTxt: 'Angular'
+			},
+			{
+				// Icon retrieved from https://worldvectorlogo.com/logo/c--4
+				link: './images/techStacks/c-sharp.svg',
+				altTxt: 'C#'
+			},
+			{
+				// Icon retrieved from https://www.pngegg.com/en/png-dbugy
+				link: './images/techStacks/aspnetcore.png',
+				altTxt: 'ASP.NET'
+			},
+			{
+				// Icon retrieved from https://user-images.githubusercontent.com/4249331/52232852-e2c4f780-28bd-11e9-835d-1e3cf3e43888.png
+				link: './images/techStacks/mssql.png',
+				altTxt: 'SQL Server'
+			},
+			{
+				// Icon retrieved from https://worldvectorlogo.com/logo/git-icon
+				link: './images/techStacks/git.svg',
+				altTxt: 'Git'
+			},
+			{
+				// Icon retrieved from https://worldvectorlogo.com/logo/github-icon
+				link: './images/techStacks/github.svg',
+				altTxt: 'GitHub'
+			}
+		]
+	},
 
 	{
 		dateRange: 'JAN. 2019 - APR. 2019',
@@ -223,14 +234,14 @@ const TimelineItems = [
 		title: 'On-Site IT Support Programmer',
 		company: 'Wizard Inc.',
 		duties: [
-			'Performed proactive maintenance, troubleshooting, backup and update of LAMP servers of a university library management system',
-			'Built, maintained, and refactored ETL pipelines using Perl 5 & Shell scripts to process Marc 21 bibliographic records into a variety of data formats',
-			'Implemented two-language (EN/JP) support for library digital archive search and an external website while handling character encoding issues',
+			'Performed maintenance, troubleshooting, software update, system integration of LAMP servers of a university library management system',
+			'Built and continuously refactored ETL pipelines using Perl 5 & Shell scripts to process Marc 21 bibliographic records into a variety of data formats',
+			'Implemented two-language(EN/JP) support for digital archives while handling character encoding issues, webpage generation, and integration of full-text search engine',
 			'Analysed and refactored existing interanal scripts/modules or escalates problems to other IT staff',
-			'Automated/Streamlined library staff’s business procedures by introducing digital tools and/or scripting such as visualization of circulation statistics into web pages',
+			'Automated/Streamlined library staff’s business processes by introducing digital tools and/or scripting such as visualization of circulation statistics into web pages',
 			'Conducted installation and configuration of open-source Java CMS for scholarly digital content',
 			'Reported web access information and project status to the library staff on a monthly basis',
-			'Implemented, modified, optimized, and tested institutional websites in PHP and MySQL',
+			'Added features and modified internal/external websites in PHP & MySQL',
 			'Performed other related duties as required'
 		],
 		techStacks: [
