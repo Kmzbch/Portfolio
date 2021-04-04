@@ -74,7 +74,7 @@ export default class Projects extends Component {
 
 										<Typography className="project-description">{item.description}</Typography>
 
-										{item.details === '' ? <div /> : <ProjectDetail src={item.details} />}
+										{/* {item.details === '' ? <div /> : <ProjectDetail src={item.details} />} */}
 
 										{item.projectLink === '' ? (
 											<Grid container direction="column">
