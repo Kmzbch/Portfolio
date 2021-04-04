@@ -234,14 +234,15 @@ const TimelineItems = [
 		title: 'On-Site IT Support Programmer',
 		company: 'Wizard Inc.',
 		duties: [
-			'Performed maintenance, troubleshooting, software update, system integration of LAMP servers of a university library management system',
-			'Built and continuously refactored ETL pipelines using Perl 5 & Shell scripts to process Marc 21 bibliographic records into a variety of data formats',
+			'Performed maintenance, troubleshooting, and system integration of LAMP servers of a university library management system',
+			'Built and continuously refactored ETL pipelines by Perl 5/Bash scripting to process Marc 21 bibliographic records into a variety of data formats',
 			'Implemented two-language(EN/JP) support for digital archives while handling character encoding issues, webpage generation, and integration of full-text search engine',
-			'Analysed and refactored existing interanal scripts/modules or escalates problems to other IT staff',
+			'Analysed and refactored existing interanal scripts/modules or escalated problems to other IT staff',
 			'Automated/Streamlined library staff’s business processes by introducing digital tools and/or scripting such as visualization of circulation statistics into web pages',
 			'Conducted installation and configuration of open-source Java CMS for scholarly digital content',
 			'Reported web access information and project status to the library staff on a monthly basis',
 			'Added features and modified internal/external websites in PHP & MySQL',
+			'Worked collaboratively with multiple departments across the organization',
 			'Performed other related duties as required'
 		],
 		techStacks: [

@@ -105,22 +105,22 @@
 		border: 2px $accent solid;
 	}
 
-	@media only screen and (min-width: 960px) {
-		&::before {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 45px 100vw 0 0;
-			border-color: transparent $neutral transparent transparent;
-		}
-		.content {
-			padding-bottom: 20vh;
-		}
-	}
+	// @media only screen and (min-width: 960px) {
+	// 	&::before {
+	// 		content: "";
+	// 		position: absolute;
+	// 		bottom: 0;
+	// 		left: 0;
+	// 		width: 0;
+	// 		height: 0;
+	// 		border-style: solid;
+	// 		border-width: 45px 100vw 0 0;
+	// 		border-color: transparent $neutral transparent transparent;
+	// 	}
+	// 	.content {
+	// 		padding-bottom: 20vh;
+	// 	}
+	// }
 
 	@media only screen and (max-width: 960px) {
 		.panel {
