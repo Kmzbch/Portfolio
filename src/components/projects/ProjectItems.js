@@ -2,6 +2,7 @@ const ProjectItems = [
 	{
 		title: 'ProHub',
 		projectType: 'team',
+		techStack: 'AngularJS | Firebase | OOP | GCP | Material UI | Agile',
 		description: 'Web application that meets all communication needs of landlords, staff, and tenants.',
 		details: '',
 		imageLink: './images/projects/prohub.png',
@@ -11,6 +12,7 @@ const ProjectItems = [
 	{
 		title: 'ProHub Mobile',
 		projectType: 'team',
+		techStack: 'Android | Firebase | GCP | MVVM | Agile',
 		description: 'Android app that meets all communication needs of landlords, staff, and tenants.',
 		details: '',
 		imageLink: './images/projects/prohub-mobile.png',
@@ -20,6 +22,7 @@ const ProjectItems = [
 	{
 		title: 'Fury: the Destroyer',
 		projectType: 'team',
+		techStack: 'TypeScript | CreateJS | OOP | Agile',
 		description: 'Web-based single screen PvP submarine game for 2 players.',
 		details: '',
 		imageLink: './images/projects/fury.png',
@@ -29,6 +32,7 @@ const ProjectItems = [
 	{
 		title: 'Staktekst',
 		projectType: 'personal',
+		techStack: 'jQuery | JavaScript | HTML | CSS | Messaging Architecture',
 		description: 'Chrome extension for web search, text-clipping, and note-taking',
 		details:
 			"This tool was developed to fulfil my own needs for English learning.\nHere's a brief article about my approach. https://scrapbox.io/scrapbox-live-demo/Staktekst",
@@ -36,6 +40,16 @@ const ProjectItems = [
 		projectLink: 'https://chrome.google.com/webstore/detail/staktekst/ecnhgpnligcapbfpaoklofmigomdjhkb/en',
 		githubLink: 'https://github.com/Kmzbch/staktekst.git'
 	}
+	// {
+	// 	title: 'Web Portfolio',
+	// 	projectType: 'personal',
+	// 	techStack: 'ReactJS | TypeScript | Redux | Gsap | Responsive',
+	// 	description: 'My portfolio(This website)',
+	// 	details: '',
+	// 	imageLink: './images/projects/portfolio.png',
+	// 	projectLink: '',
+	// 	githubLink: 'https://github.com/Kmzbch/Portfolio'
+	// }
 ];
 
 export default ProjectItems;

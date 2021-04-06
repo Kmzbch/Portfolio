@@ -72,6 +72,14 @@ export default class Projects extends Component {
 											{item.projectType + ' project'}
 										</div>
 
+										{item.techStack === '' ? (
+											<div />
+										) : (
+											<div variant="h3" className={'project-techstack'}>
+												{item.techStack}
+											</div>
+										)}
+
 										<Typography className="project-description">{item.description}</Typography>
 
 										{/* {item.details === '' ? <div /> : <ProjectDetail src={item.details} />} */}
