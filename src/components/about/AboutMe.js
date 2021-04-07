@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography, Button, Link } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import { LocationOnOutlined } from '@material-ui/icons';
 import { ProfileContent, ProfileImagePath } from './AboutItems';
@@ -37,6 +37,21 @@ export default class AboutMe extends Component {
 						<LocationOnOutlined className="location-icon" />
 						<Typography component="span">Toronto, Ontario</Typography>
 					</div>
+					{/* <Link
+						href={'#project'}
+						style={{
+							fontSize: '20px',
+							color: '#3f4e67',
+							marginTop: '30px',
+							textDecoration: 'underline'
+						}}
+					>
+						MY PROJECTS
+					</Link> */}
+
+					<Button className="view-button" size="large" variant="outlined" color="primary" href="#project">
+						My Projects
+					</Button>
 				</Grid>
 			</Grid>
 		);

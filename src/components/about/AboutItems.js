@@ -5,7 +5,7 @@ export const ProfileContent =
 	'\n' +
 	'I have five-year work experience in a university library as an On-Site IT Support Programmer, in which I performed maintenance, troubleshooting, system integration of library management system on LAMP servers. Closely interacting with the library staff and the team, I streamlined their business processes with technologies such as bibliographic record conversion.' +
 	'\n' +
-	'In my most recent positions in Canada, I have accumulated further experience in web development with various modern technologies, including but not limited to ASP.NET Core, Angular, SQL Server stacks. My current focus is RESTful APIs but I am willing to work on both front-end and back-end.';
+	'In my most recent positions in Canada, I have accumulated further experience in web development with various modern technologies, including but not limited to ASP.NET Core, Angular, SQL Server stacks.';
 
 export const LanguageImage = {
 	// Image retrieved from https://unsplash.com/photos/szrJ3wjzOMg
