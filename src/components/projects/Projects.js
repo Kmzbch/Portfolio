@@ -1,38 +1,10 @@
 import React, { Component } from 'react';
-import { Typography, Paper, Grid, Button, Link } from '@material-ui/core';
+import { Typography, Paper, Grid, Button } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
-import gsap from 'gsap';
 import ProjectItems from './ProjectItems';
+import ProjectDetails from './ProjectDetails';
 import './Projects.scss';
-
-class ProjectDetail extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		const paragraphs = this.props.src.split(/\n+/);
-
-		return (
-			<div>
-				{paragraphs.map((item, index) => {
-					return (
-						<div className="project-detail">
-							{item.match(/^https?:\/\//) ? (
-								<Link href={item} target="_blank">
-									{item}
-								</Link>
-							) : (
-								<Typography component="span">{item}</Typography>
-							)}
-						</div>
-					);
-				})}
-			</div>
-		);
-	}
-}
 
 export default class Projects extends Component {
 	constructor(props) {
@@ -82,7 +54,7 @@ export default class Projects extends Component {
 
 										<Typography className="project-description">{item.description}</Typography>
 
-										{/* {item.details === '' ? <div /> : <ProjectDetail src={item.details} />} */}
+										{/* {item.details === '' ? <div /> : <ProjectDetails src={item.details} />} */}
 
 										{item.projectLink === '' ? (
 											<Grid container direction="column">
@@ -148,6 +120,18 @@ export default class Projects extends Component {
 											alt={'screenshots of ' + item.title}
 										/>
 									</Grid>
+									{/* <Grid item className="sub-panel right" xs={12} sm={12} md={6}>
+										<Link href={'/'} target="_blank">
+											<div className="overlay">
+												<p className="overlay-text">test</p>
+												<img
+													className="project-image"
+													src={item.imageLink}
+													alt={'screenshots of ' + item.title}
+												/>
+											</div>
+										</Link>
+									</Grid> */}
 								</Grid>
 							</Paper>
 						);
