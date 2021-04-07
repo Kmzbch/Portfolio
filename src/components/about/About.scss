@@ -9,6 +9,9 @@
 		color: $primary;
 		border: 1px $primary solid;
 	}
+	.view-button:hover {
+		border: 2px $primary solid;
+	}
 
 	.content {
 		width: 100%;
@@ -25,7 +28,7 @@
 	.about-me {
 		width: 70%;
 		padding: 1vh 3vw;
-		margin: 3vh auto 5vh auto;
+		margin: 3vh auto 3vh auto;
 	}
 
 	.profile-header {

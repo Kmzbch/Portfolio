@@ -2,7 +2,7 @@ const ProjectItems = [
 	{
 		title: 'ProHub',
 		projectType: 'team',
-		techStack: 'AngularJS | Firebase | OOP | GCP | Agile | Angular Material',
+		techStack: 'AngularJS | Firebase | GCP | OOP | Agile | Angular Material',
 		description: 'Web application that meets all communication needs of landlords, staff, and tenants.',
 		details: '',
 		imageLink: './images/projects/prohub.png',
