@@ -19,7 +19,7 @@ export default class ProjectDetails extends Component {
 		const paragraphs = this.props.src.split(/\n+/);
 
 		return (
-			<div className="readmore" onClick={this.toggleProjectDetails}>
+			<div>
 				{paragraphs.map((item, index) => {
 					return (
 						<div className="project-detail" hidden={!this.state.detailsOpen}>
@@ -33,19 +33,18 @@ export default class ProjectDetails extends Component {
 						</div>
 					);
 				})}
+
 				{this.state.detailsOpen ? (
-					<div>
+					<div className="readmore" onClick={this.toggleProjectDetails}>
 						READ LESS
 						<ExpandLessOutlined className="endicon" />
 					</div>
 				) : (
-					<div>
+					<div className="readmore" onClick={this.toggleProjectDetails}>
 						READ MORE
 						<ExpandMoreOutlined className="endicon" />
 					</div>
 				)}
-
-				{/* {this.state.detailsOpen ? 'READ LESS' : 'READ MORE'} */}
 			</div>
 		);
 	}
