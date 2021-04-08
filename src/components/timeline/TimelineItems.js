@@ -4,11 +4,11 @@ const TimelineItems = [
 		title: 'Back-end Developer',
 		company: 'Centennial College: WIMTACH',
 		duties: [
-			'Built RESTful APIs and related modules of Java Electronic Medical Record web application with Spring Boot to replace Flash-based legacy system',
-			'Translated Hibernate queries into SQL Server data access helpers to ensure code reusability and router’s performance',
+			'Created RESTful APIs and related modules of Java Electronic Medical Record web application with Spring Boot to replace Flash-based legacy system',
+			'Translated Hibernate queries into SQL Server queries / data access helpers to ensure code reusability and router’s performance',
 			'Built automated unit/integration test suite with JUnit & REST Assured ',
 			'Maintained Swagger & Confluence API documentation and test tracking lists',
-			'Attended the Daily Scrum and discussed a solution with the dev team',
+			'Participated the Daily Scrum and discussed a solution with the dev team',
 			'Resolved technical issues arising during development in an Agile manner'
 		],
 		techStacks: [
