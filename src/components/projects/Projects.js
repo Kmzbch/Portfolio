@@ -54,7 +54,7 @@ export default class Projects extends Component {
 
 										<Typography className="project-description">{item.description}</Typography>
 
-										{/* {item.details === '' ? <div /> : <ProjectDetails src={item.details} />} */}
+										{item.details === '' ? <div /> : <ProjectDetails src={item.details} />}
 
 										{item.projectLink === '' ? (
 											<Grid container direction="column">
@@ -120,18 +120,6 @@ export default class Projects extends Component {
 											alt={'screenshots of ' + item.title}
 										/>
 									</Grid>
-									{/* <Grid item className="sub-panel right" xs={12} sm={12} md={6}>
-										<Link href={'/'} target="_blank">
-											<div className="overlay">
-												<p className="overlay-text">test</p>
-												<img
-													className="project-image"
-													src={item.imageLink}
-													alt={'screenshots of ' + item.title}
-												/>
-											</div>
-										</Link>
-									</Grid> */}
 								</Grid>
 							</Paper>
 						);

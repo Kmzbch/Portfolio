@@ -15,21 +15,35 @@ export default class ProjectDetails extends Component {
 		this.setState({ detailsOpen: !this.state.detailsOpen });
 	};
 
+	parseTextIntoHTML = (text, index) => {
+		if (text.match(/^https?:\/\//)) {
+			return (
+				<Link href={text} target="_blank">
+					{text}
+				</Link>
+			);
+		} else if (text.match(/^- /)) {
+			return (
+				<ul>
+					<li key={index}>{text.replace(/^- /, '')}</li>
+				</ul>
+			);
+		} else {
+			return <Typography component="span">{text}</Typography>;
+		}
+	};
+
 	render() {
-		const paragraphs = this.props.src.split(/\n+/);
+		const paragraphs = this.props.src.split(/\n{2}/);
 
 		return (
 			<div>
 				{paragraphs.map((item, index) => {
 					return (
-						<div className="project-detail" hidden={!this.state.detailsOpen}>
-							{item.match(/^https?:\/\//) ? (
-								<Link href={item} target="_blank">
-									{item}
-								</Link>
-							) : (
-								<Typography component="span">{item}</Typography>
-							)}
+						<div key={index} className="project-detail" hidden={!this.state.detailsOpen}>
+							{item.split(/\n/).map((subitem, i) => {
+								return <div key={i}>{this.parseTextIntoHTML(subitem, i)}</div>;
+							})}
 						</div>
 					);
 				})}
