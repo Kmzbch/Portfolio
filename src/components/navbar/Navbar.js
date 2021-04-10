@@ -8,6 +8,8 @@ import { fetchCurrentPage } from '../../redux/actions';
 import NavbarItems from './NavbarItems';
 import './Navbar.scss';
 
+const WIDTH_MD = 960;
+
 class Navbar extends Component {
 	constructor(props) {
 		super(props);
@@ -33,7 +35,7 @@ class Navbar extends Component {
 			windowWidth: window.innerWidth
 		});
 
-		if (this.state.menuOpened && this.state.windowWidth >= 960) {
+		if (this.state.menuOpened && this.state.windowWidth >= WIDTH_MD) {
 			this.toggleMenuIcon();
 		}
 	};
@@ -53,7 +55,7 @@ class Navbar extends Component {
 			<div className="navbar">
 				<div className="nav-container">
 					<div className="logo">
-						<HashLink className="logo-link" to="#" smooth={true} onClick={this.linkClicked}>
+						<HashLink to="#" onClick={this.linkClicked}>
 							KEI MIZUBUCHI
 						</HashLink>
 					</div>
@@ -83,7 +85,6 @@ class Navbar extends Component {
 										}
 										key={item.title}
 										component={HashLink}
-										smooth={true}
 										to={'#' + item.url}
 										onClick={this.linkClicked}
 									>

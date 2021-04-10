@@ -26,6 +26,10 @@
 		color: $secondary;
 	}
 
+	.job-title {
+		opacity: .6;
+	}
+
 	.view-button {
 		min-width: 200px;
 		height: 50px;
@@ -34,19 +38,15 @@
 		color: $neutral;
 		border: 2px $neutral solid;
 		background-color: $button-background;
-	}
 
-	.view-button:hover {
-		background-color: $accent;
-		border: 2px $accent solid;
-		.endicon {
-			transform: rotate(90deg);
-			transition: .3s;
+		&:hover {
+			background-color: $accent;
+			border: 2px $accent solid;
+			.endicon {
+				transform: rotate(90deg);
+				transition: .3s;
+			}
 		}
-	}
-
-	.jobtitle {
-		opacity: .6;
 	}
 
 	@media only screen and (max-width: 600px) {
@@ -69,13 +69,13 @@
 			.endicon {
 				display: none;
 			}
-		}
 
-		.view-button:hover {
-			background-color: $button-background;
-			border: 2px $neutral solid;
-			.endicon {
-				display: none;
+			&:hover {
+				background-color: $button-background;
+				border: 2px $neutral solid;
+				.endicon {
+					display: none;
+				}
 			}
 		}
 	}

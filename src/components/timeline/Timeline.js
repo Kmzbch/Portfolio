@@ -18,19 +18,19 @@ export default class Timeline extends Component {
 						{TimelineItems.map((item, index) => {
 							return (
 								<li key={index} className="timeline-event">
-									<div className="timeline-event-icon" />
-									<div className="timeline-event-item">
-										<div className="timeline-date-range">{item.dateRange}</div>
+									<div className="event-icon" />
+									<div className="event-item">
+										<div className="date-range">{item.dateRange}</div>
 
-										<Typography className="timeline-title" variant={'h3'}>
+										<Typography className="job-title" variant={'h3'}>
 											{item.title}
 										</Typography>
 
-										<Typography className="timeline-company" variant={'h4'}>
+										<Typography className="company" variant={'h4'}>
 											{item.company}
 										</Typography>
 
-										<List className="timeline-duty-list">
+										<List className="duties">
 											{item.duties.map((subItem, subIndex) => {
 												return (
 													<ListItem key={subIndex}>
@@ -41,7 +41,7 @@ export default class Timeline extends Component {
 											})}
 										</List>
 
-										<div className="timeline-tech-stack">
+										<div className="techstack">
 											{item.techStacks.map((subItem, subIndex) => {
 												return (
 													<TechStack

@@ -18,7 +18,7 @@ export default class Home extends Component {
 						<Typography variant="h2" className="highlight" component="span" noWrap>
 							Kei Mizubuchi
 						</Typography>
-						<Typography variant="h3" className="jobtitle" noWrap>
+						<Typography variant="h3" className="job-title" noWrap>
 							Software Developer
 						</Typography>
 					</div>

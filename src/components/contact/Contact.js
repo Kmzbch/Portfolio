@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Typography, Link, Grid } from '@material-ui/core';
 import { TextField, Button } from '@material-ui/core';
 import { List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
@@ -7,7 +6,7 @@ import { Done, ErrorOutline } from '@material-ui/icons';
 import ContactItems from './ContactItems';
 import './Contact.scss';
 
-const emailServiceApi = 'https://formspree.io/f/mnqokoqj';
+const EMAIL_SERVICE_API = 'https://formspree.io/f/mnqokoqj';
 
 export default class Contact extends Component {
 	state = {
@@ -16,7 +15,7 @@ export default class Contact extends Component {
 		hasError: false
 	};
 
-	resetFormMessage = (ev) => {
+	resetFormMessage = () => {
 		if (!this.state.inEditing) {
 			this.setState({
 				messageSent: false,
@@ -107,7 +106,7 @@ export default class Contact extends Component {
 						</Grid>
 						<Grid item sm={12} md={6}>
 							<div className="contact-form">
-								<form onSubmit={this.submitForm} action={emailServiceApi} method="POST">
+								<form onSubmit={this.submitForm} action={EMAIL_SERVICE_API} method="POST">
 									<TextField
 										className="form-input"
 										id="name"

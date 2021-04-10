@@ -38,11 +38,11 @@
 		margin-left: 1em;
 		margin-right: 0;
 		transition: 0.2s;
-	}
 
-	.contact-link:hover {
-		color: $accent;
-		text-decoration: none;
+		&:hover {
+			color: $accent;
+			text-decoration: none;
+		}
 	}
 
 	.contact-icon {
@@ -69,15 +69,15 @@
 		background-color: $primary-variant;
 		color: $neutral;
 		font-weight: bold;
-	}
 
-	.form-button[disabled] {
-		display: none;
-	}
+		&:hover {
+			background-color: $accent;
+			color: $primary-variant;
+		}
 
-	.form-button:hover {
-		background-color: $accent;
-		color: $primary-variant;
+		&:disabled {
+			display: none;
+		}
 	}
 
 	.form-message {

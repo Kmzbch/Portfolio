@@ -360,7 +360,7 @@ export default class AnimationManager {
 		const header = timeline.querySelector('.header');
 		const divider = timeline.querySelector('.divider');
 		const panel = timeline.querySelectorAll('.panel');
-		const timelineEventIcons = timeline.querySelectorAll('.timeline-event-icon');
+		const eventIcons = timeline.querySelectorAll('.event-icon');
 		const timelineEvents = timeline.querySelectorAll('.timeline-event');
 
 		gsap.from([ header, divider ], {
@@ -394,19 +394,19 @@ export default class AnimationManager {
 			}
 		});
 
-		for (let i = 0; i < timelineEventIcons.length; i++) {
-			gsap.from([ timelineEventIcons[i] ], 0.7, {
+		for (let i = 0; i < eventIcons.length; i++) {
+			gsap.from([ eventIcons[i] ], 0.7, {
 				rotation: -680,
 				z: 0.1,
 				scrollTrigger: {
-					trigger: [ timelineEventIcons[i] ],
+					trigger: [ eventIcons[i] ],
 					start: 'top 75%'
 				}
 			});
 		}
 
 		for (let i = 0; i < timelineEvents.length; i++) {
-			const dutyList = timelineEvents[i].querySelector('.timeline-duty-list');
+			const dutyList = timelineEvents[i].querySelector('.duties');
 			const techStackImages = timelineEvents[i].querySelectorAll('.tech-stack-image');
 
 			gsap.from([ timelineEvents[i] ], {

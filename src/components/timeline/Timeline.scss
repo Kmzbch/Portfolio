@@ -14,6 +14,7 @@
 		height: 100%;
 		margin: auto 0;
 		z-index: 100;
+
 		ul {
 			margin: 2em auto 0 auto;
 		}
@@ -30,6 +31,7 @@
 		padding: 0;
 		margin: 4em auto;
 		list-style: none;
+
 		&:before {
 			background-color: $accent;
 			content: " ";
@@ -46,7 +48,7 @@
 		position: relative;
 	}
 
-	.timeline-event-icon {
+	.event-icon {
 		transform: rotate(45deg);
 		background-color: $icon-inner;
 		outline: 5px solid $icon-outer;
@@ -59,7 +61,7 @@
 		height: 0.3em;
 	}
 
-	.timeline-event-item {
+	.event-item {
 		padding: 2em;
 		position: relative;
 		top: -1.875em;
@@ -67,7 +69,7 @@
 		width: 90%;
 	}
 
-	.timeline-date-range {
+	.date-range {
 		color: $neutral;
 		font-size: 0.9em;
 		font-weight: bold;
@@ -77,13 +79,13 @@
 		margin: 1.5em 0 .5em 0;
 	}
 
-	.timeline-title {
+	.job-title {
 		margin: 3vh auto;
 		font-size: 1.8em;
 		font-weight: bold;
 	}
 
-	.timeline-company {
+	.company {
 		font-size: 1.2em;
 		margin-bottom: 1.2em;
 		font-style: italic;
@@ -98,40 +100,12 @@
 		margin-left: -1.9em;
 	}
 
-	.timeline-tech-stack {
+	.techstack {
 		width: 100%;
 		margin-top: 1.2em;
 		padding: 1em;
 		border-radius: 10px;
 	}
-
-	.timeline-tech-stack-item {
-		color: $neutral;
-		font-size: 1em;
-		font-weight: bold;
-		background-color: $secondary;
-		border-radius: 5px;
-		display: inline-block;
-		padding: 0.25em 1em 0.2em 1em;
-		margin: 1em 0.3em .1em 0.3em;
-	}
-
-	// @media only screen and (min-width: 960px) {
-	// 	&::before {
-	// 		content: "";
-	// 		position: absolute;
-	// 		bottom: 0;
-	// 		left: 0;
-	// 		width: 0;
-	// 		height: 0;
-	// 		border-style: solid;
-	// 		border-width: 45px 100vw 0 0;
-	// 		border-color: transparent $secondary transparent transparent;
-	// 	}
-	// 	.content {
-	// 		padding-bottom: 15vh;
-	// 	}
-	// }
 
 	@media only screen and (max-width: 960px) {
 		.panel {
@@ -140,6 +114,7 @@
 			padding: 0;
 			margin: 4em auto;
 			list-style: none;
+
 			&:before {
 				background-color: $accent;
 				content: " ";
@@ -152,7 +127,11 @@
 			}
 		}
 
-		.timeline-event-icon {
+		.timeline-event {
+			position: relative;
+		}
+
+		.event-icon {
 			transform: rotate(45deg);
 			background-color: $icon-inner;
 			outline: 5px solid $icon-outer;
@@ -165,11 +144,7 @@
 			height: 0.3em;
 		}
 
-		.timeline-event {
-			position: relative;
-		}
-
-		.timeline-event-item {
+		.event-item {
 			padding: 2em;
 			position: relative;
 			top: -1.875em;
@@ -185,13 +160,10 @@
 			padding: 0;
 			margin: 4em auto;
 			list-style: none;
+
 			&:before {
 				display: none;
 			}
-		}
-
-		.timeline-event-icon {
-			display: none;
 		}
 
 		.timeline-event {
@@ -199,12 +171,17 @@
 			margin-left: -2.4em;
 		}
 
-		.timeline-event-item {
+		.event-icon {
+			display: none;
+		}
+
+		.event-item {
 			padding: 2em;
 			position: relative;
 			top: -1.875em;
 			width: 90%;
-			.timeline-duty-list {
+
+			.duties {
 				width: 350px;
 				margin-left: -1.4em;
 			}
