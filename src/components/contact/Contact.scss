@@ -63,7 +63,8 @@
 	}
 
 	.form-button {
-		margin: 1rem 0;
+		display: block;
+		margin: 1rem auto;
 		padding: 0.5rem 3rem;
 		border-radius: 5px;
 		background-color: $primary-variant;
